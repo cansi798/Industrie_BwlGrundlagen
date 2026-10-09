@@ -3,11 +3,13 @@ const PREFIX = "m094.";
 const memory = new Map(); // Ersatz, falls localStorage nicht verfügbar ist
 
 export function load(key, fallback) {
+  // Der Speicher-Ersatz gewinnt: Schreiben kann scheitern, obwohl Lesen klappt (Speicher voll).
+  if (memory.has(key)) return memory.get(key);
   try {
     const raw = localStorage.getItem(PREFIX + key);
     return raw == null ? fallback : JSON.parse(raw);
   } catch {
-    return memory.has(key) ? memory.get(key) : fallback;
+    return fallback;
   }
 }
 

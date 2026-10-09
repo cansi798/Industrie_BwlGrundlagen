@@ -53,7 +53,7 @@ export async function render(root) {
           `Frage ${laufend.aktuell + 1} von ${laufend.fragen.length}.`),
         h("div", { class: "actions" },
           h("a", { class: "btn btn-primary", href: "#/pruefung/laeuft" }, "Fortsetzen"),
-          h("button", { class: "btn", onclick: () => { remove("pruefung"); location.reload(); } }, "Verwerfen"))) : null,
+          h("button", { class: "btn", onclick: () => { if (confirm("Laufende Prüfung wirklich verwerfen? Deine Antworten gehen verloren.")) { remove("pruefung"); location.reload(); } } }, "Verwerfen"))) : null,
       h("div", { class: "card" },
         h("h2", {}, "So läuft die Prüfung"),
         h("ul", { class: "regeln" },
@@ -87,6 +87,7 @@ export async function render(root) {
           class: "btn btn-primary",
           disabled: setup.tage.size === 0 || startet,
           onclick: async (e) => {
+            if (laufend && !laufend.abgegeben && !confirm("Eine Prüfung läuft noch. Neue Prüfung starten und die laufende verwerfen?")) return;
             startet = true;
             e.target.disabled = true;
             e.target.textContent = "Wird vorbereitet …";
