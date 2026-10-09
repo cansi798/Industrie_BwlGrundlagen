@@ -339,3 +339,9 @@ a { color: var(--accent); }
   .day-checks { grid-template-columns: 1fr; }
   .day-check { min-height: 56px; }
 }
+
+/* Angaben zur Aufgabe */
+.angaben { margin: 0 0 12px; padding: 10px 14px; border-radius: 10px; background: var(--accent-soft); border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); }
+.angaben-titel { display: block; font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+.angaben ul { margin: 0; padding-left: 18px; font-size: .95rem; font-variant-numeric: tabular-nums; }
+.angaben li { margin: 2px 0; }

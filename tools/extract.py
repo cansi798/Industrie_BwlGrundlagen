@@ -91,6 +91,9 @@ def build(source, target):
     target.mkdir(parents=True, exist_ok=True)
     override_file = target / "erklaerungen_override.json"
     overrides = json.loads(override_file.read_text(encoding="utf-8")) if override_file.exists() else {}
+    angaben_file = target / "angaben.json"
+    angaben = json.loads(angaben_file.read_text(encoding="utf-8")) if angaben_file.exists() else {}
+    used_angaben = set()
 
     teile = [{"id": "teil1", "titel": "Teil 1 – BWL", "tage": []},
              {"id": "teil2", "titel": "Teil 2 – Recht und Klausur", "tage": []}]
@@ -108,9 +111,13 @@ def build(source, target):
             expl = overrides.get(qid, q["expl"]).strip()
             if qid in overrides:
                 used_overrides.add(qid)
-            questions.append({"id": qid, "q": q["q"].strip(),
-                              "options": [{"t": o["t"].strip(), "c": bool(o["c"])} for o in q["options"]],
-                              "expl": expl})
+            frage = {"id": qid, "q": q["q"].strip(),
+                     "options": [{"t": o["t"].strip(), "c": bool(o["c"])} for o in q["options"]],
+                     "expl": expl}
+            if qid in angaben:
+                frage["angaben"] = angaben[qid].strip()
+                used_angaben.add(qid)
+            questions.append(frage)
         datei = f"data/{sid}.json"
         (target / f"{sid}.json").write_text(json.dumps(questions, ensure_ascii=False), encoding="utf-8")
         tage[tid]["sessions"].append({
@@ -118,14 +125,14 @@ def build(source, target):
             "titel": f"{'Vormittag' if snr == 1 else 'Nachmittag'}: {pretty(slug)}",
             "datei": datei, "anzahl": len(questions)})
 
-    unknown = set(overrides) - used_overrides
+    unknown = (set(overrides) - used_overrides) | (set(angaben) - used_angaben)
     if unknown:
         raise SystemExit(f"Overrides ohne passende Frage: {sorted(unknown)}")
     (target / "index.json").write_text(json.dumps({"teile": teile}, ensure_ascii=False, indent=1),
                                        encoding="utf-8")
     total = sum(s["anzahl"] for t in tage.values() for s in t["sessions"])
     print(f"{sum(len(t['sessions']) for t in tage.values())} Sessions, {total} Fragen, "
-          f"{len(used_overrides)} Erklärungen ersetzt → {target}")
+          f"{len(used_overrides)} Erklärungen ersetzt, {len(used_angaben)} Angaben ergänzt → {target}")
 
 
 if __name__ == "__main__":

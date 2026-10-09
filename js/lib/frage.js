@@ -46,6 +46,9 @@ export function frageView(q, { selected = new Set(), onChange = null, reveal = f
     }));
 
   return h("div", { class: "frage" },
+    q.angaben ? h("div", { class: "angaben" },
+      h("span", { class: "angaben-titel" }, "Angaben"),
+      h("ul", {}, q.angaben.split(/\s*;\s*/).filter(Boolean).map((a) => h("li", {}, a)))) : null,
     h("p", { class: "frage-text", id: textId }, q.q),
     q.multi ? h("p", { class: "hint" }, "Mehrere Antworten möglich") : null,
     list,

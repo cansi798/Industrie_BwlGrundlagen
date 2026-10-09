@@ -22,6 +22,8 @@ python tools/check_expl.py          # markiert zu knappe oder zu lange Erklärun
 
 Überarbeitete Erklärungen stehen in `data/erklaerungen_override.json` (Frage-ID → Text). Beim nächsten Auslesen werden sie automatisch wieder eingesetzt.
 
+Fragen, die Zahlen aus der Fallstudie Nordholz GmbH brauchen, bekommen einen Kasten „Angaben“. Die Texte stehen in `data/angaben.json` (Frage-ID → Einträge, getrennt mit `; `). `python tools/check_angaben.py` meldet Rechenaufgaben, deren Lösung noch Zahlen braucht, die nirgends genannt sind. Bereits geprüfte Fälle ohne Handlungsbedarf stehen in `data/angaben_geprueft.json`.
+
 ## Tests
 
 ```bash

@@ -57,6 +57,19 @@ class TestExtract(unittest.TestCase):
             self.assertIn(qid, by_id)
             self.assertEqual(by_id[qid]["expl"], text)
 
+    def test_angaben_valid(self):
+        angaben = json.loads((DATA / "angaben.json").read_text(encoding="utf-8"))
+        by_id = {q["id"]: q for qs in self.questions.values() for q in qs}
+        for qid, text in angaben.items():
+            self.assertIn(qid, by_id)
+            q = by_id[qid]
+            self.assertEqual(q.get("angaben"), text.strip())
+            self.assertTrue(text.strip(), qid)
+            # Die Angaben dürfen die richtige Antwort nicht verraten
+            for o in q["options"]:
+                if o["c"] and re.search(r"\d", o["t"]) and len(o["t"]) < 25:
+                    self.assertNotIn(o["t"], text, f"{qid} verrät die Lösung")
+
     def test_titles_have_umlauts(self):
         tage = {d["id"]: d for t in self.index["teile"] for d in t["tage"]}
         self.assertIn("Liquidität", tage["tag06"]["titel"])
