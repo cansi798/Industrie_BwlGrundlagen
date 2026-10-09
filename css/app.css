@@ -268,3 +268,7 @@ a { color: var(--accent); }
 .stand-unten { font-size: .9rem; font-variant-numeric: tabular-nums; }
 .exam-nav > .stand-unten { flex: 1; }
 .exam-nav > .stand-unten + .btn-primary { flex: none; padding: 10px 18px; }
+.frage-karte.ok { border-left-color: var(--right); }
+.frage-karte.bad { border-left-color: var(--wrong); }
+.karte-aktion { display: flex; justify-content: flex-end; margin-top: 12px; }
+.expl:focus { outline: none; }

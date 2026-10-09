@@ -3,7 +3,7 @@
 // CACHE erhöhen, wenn Dateien hinzukommen oder wegfallen und nach jedem
 // neuen Auslesen der Fragen (tools/extract.py) – dann lädt jedes Gerät beim
 // nächsten Start alle Fragen neu, auch Sessions, die es selten öffnet.
-const CACHE = "m094-v2";
+const CACHE = "m094-v3";
 
 const APP = [
   "./",
