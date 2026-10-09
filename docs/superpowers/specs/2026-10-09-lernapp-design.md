@@ -88,7 +88,7 @@ js/lib/store.js          localStorage-Kapselung
 icons/                   App-Icons 192/512 px
 data/                    erzeugt von tools/extract.py
 tools/extract.py, tools/check_expl.py
-tests/quiz.test.html     Browser-Tests für js/lib/quiz.js (ohne Abhängigkeiten)
+tests/quiz.test.mjs      Tests für js/lib/quiz.js (node --test, ohne Abhängigkeiten)
 tests/test_extract.py    Tests für das Extraktionsskript (unittest)
 .nojekyll
 ```
@@ -105,5 +105,5 @@ Es gibt keine Abhängigkeiten zur Laufzeit und keinen Build-Schritt. JavaScript 
 ## 8. Tests
 
 - `tests/test_extract.py`: Es entstehen 27 Session-Dateien und 1.620 Fragen. Jede Frage hat 4 Optionen, mindestens eine richtige Option und eine nicht leere Erklärung. Die IDs sind eindeutig. Alle Overrides verweisen auf existierende IDs.
-- `tests/quiz.test.html`: Das Mischen erhält alle Elemente. Die Bewertung ist für Einfach- und Mehrfachauswahl korrekt. Das Ziehen liefert 30 eindeutige Fragen nur aus den gewählten Tagen und verteilt sie gleichmäßig.
+- `tests/quiz.test.mjs` (`node --test`): Das Mischen erhält alle Elemente. Die Bewertung ist für Einfach- und Mehrfachauswahl korrekt. Das Ziehen liefert 30 eindeutige Fragen nur aus den gewählten Tagen und verteilt sie gleichmäßig.
 - Manuelle Prüfung im Browser bei 375 px Breite: Übungsdurchlauf, Prüfung mit Abgabe, Neuladen während der Prüfung, Offline-Start.
