@@ -42,6 +42,6 @@ async function route() {
 window.addEventListener("hashchange", route);
 route();
 
-if ("serviceWorker" in navigator && location.protocol === "https:") {
+if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("sw.js").catch((e) => console.warn("Service Worker:", e));
 }
