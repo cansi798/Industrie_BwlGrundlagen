@@ -1,0 +1,298 @@
+{
+ "teile": [
+  {
+   "id": "teil1",
+   "titel": "Teil 1 – BWL",
+   "tage": [
+    {
+     "id": "tag01",
+     "nr": 1,
+     "datum": "2026-10-05",
+     "titel": "Wirtschaften verstehen und Unternehmensziele",
+     "sessions": [
+      {
+       "id": "tag01-1",
+       "titel": "Vormittag: Wirtschaften verstehen",
+       "datei": "data/tag01-1.json",
+       "anzahl": 60
+      },
+      {
+       "id": "tag01-2",
+       "titel": "Nachmittag: Unternehmensziele",
+       "datei": "data/tag01-2.json",
+       "anzahl": 60
+      }
+     ]
+    },
+    {
+     "id": "tag02",
+     "nr": 2,
+     "datum": "2026-10-06",
+     "titel": "Die Bilanz – Inventur, Inventar, Bilanz und Strukturbilanz",
+     "sessions": [
+      {
+       "id": "tag02-1",
+       "titel": "Vormittag: Bilanz-Grundlagen",
+       "datei": "data/tag02-1.json",
+       "anzahl": 60
+      },
+      {
+       "id": "tag02-2",
+       "titel": "Nachmittag: Bilanz vertiefen",
+       "datei": "data/tag02-2.json",
+       "anzahl": 60
+      }
+     ]
+    },
+    {
+     "id": "tag03",
+     "nr": 3,
+     "datum": "2026-10-07",
+     "titel": "Die Gewinn- und Verlustrechnung (GuV)",
+     "sessions": [
+      {
+       "id": "tag03-1",
+       "titel": "Vormittag: GuV in Kontenform",
+       "datei": "data/tag03-1.json",
+       "anzahl": 60
+      },
+      {
+       "id": "tag03-2",
+       "titel": "Nachmittag: GuV in Staffelform",
+       "datei": "data/tag03-2.json",
+       "anzahl": 60
+      }
+     ]
+    },
+    {
+     "id": "tag04",
+     "nr": 4,
+     "datum": "2026-10-08",
+     "titel": "Kennzahlen verstehen und Finanzierungsregeln",
+     "sessions": [
+      {
+       "id": "tag04-1",
+       "titel": "Vormittag: Kennzahlen verstehen",
+       "datei": "data/tag04-1.json",
+       "anzahl": 60
+      },
+      {
+       "id": "tag04-2",
+       "titel": "Nachmittag: Finanzierungsregeln",
+       "datei": "data/tag04-2.json",
+       "anzahl": 60
+      }
+     ]
+    },
+    {
+     "id": "tag05",
+     "nr": 5,
+     "datum": "2026-10-09",
+     "titel": "Rentabilitäten, EBIT, EBITDA und Leverage-Effekt",
+     "sessions": [
+      {
+       "id": "tag05-1",
+       "titel": "Vormittag: Rentabilitäten",
+       "datei": "data/tag05-1.json",
+       "anzahl": 60
+      },
+      {
+       "id": "tag05-2",
+       "titel": "Nachmittag: EBIT, EBITDA und Leverage-Effekt",
+       "datei": "data/tag05-2.json",
+       "anzahl": 60
+      }
+     ]
+    },
+    {
+     "id": "tag06",
+     "nr": 6,
+     "datum": "2026-10-12",
+     "titel": "Liquidität und Cashflow – Kann das Unternehmen zahlen?",
+     "sessions": [
+      {
+       "id": "tag06-1",
+       "titel": "Vormittag: Liquidität messen",
+       "datei": "data/tag06-1.json",
+       "anzahl": 60
+      },
+      {
+       "id": "tag06-2",
+       "titel": "Nachmittag: Cashflow",
+       "datei": "data/tag06-2.json",
+       "anzahl": 60
+      }
+     ]
+    },
+    {
+     "id": "tag07",
+     "nr": 7,
+     "datum": "2026-10-13",
+     "titel": "Deckungsbeitrag und Break-even",
+     "sessions": [
+      {
+       "id": "tag07-1",
+       "titel": "Vormittag: Deckungsbeitragsrechnung",
+       "datei": "data/tag07-1.json",
+       "anzahl": 60
+      },
+      {
+       "id": "tag07-2",
+       "titel": "Nachmittag: Break-even-Analyse",
+       "datei": "data/tag07-2.json",
+       "anzahl": 60
+      }
+     ]
+    },
+    {
+     "id": "tag08",
+     "nr": 8,
+     "datum": "2026-10-14",
+     "titel": "Kapitalstruktur und Bonität",
+     "sessions": [
+      {
+       "id": "tag08-1",
+       "titel": "Vormittag: Kapitalstruktur",
+       "datei": "data/tag08-1.json",
+       "anzahl": 60
+      },
+      {
+       "id": "tag08-2",
+       "titel": "Nachmittag: Bonität",
+       "datei": "data/tag08-2.json",
+       "anzahl": 60
+      }
+     ]
+    },
+    {
+     "id": "tag09",
+     "nr": 9,
+     "datum": "2026-10-15",
+     "titel": "Kennzahlensysteme – DuPont-System und Balanced Scorecard",
+     "sessions": [
+      {
+       "id": "tag09-1",
+       "titel": "Vormittag: Das DuPont-System",
+       "datei": "data/tag09-1.json",
+       "anzahl": 60
+      },
+      {
+       "id": "tag09-2",
+       "titel": "Nachmittag: Die Balanced Scorecard",
+       "datei": "data/tag09-2.json",
+       "anzahl": 60
+      }
+     ]
+    },
+    {
+     "id": "tag10",
+     "nr": 10,
+     "datum": "2026-10-16",
+     "titel": "Wiederholung und Vertiefung – Fallstudie Nordholz GmbH",
+     "sessions": [
+      {
+       "id": "tag10-1",
+       "titel": "Vormittag: Wiederholung Teil A",
+       "datei": "data/tag10-1.json",
+       "anzahl": 60
+      },
+      {
+       "id": "tag10-2",
+       "titel": "Nachmittag: Wiederholung Teil B",
+       "datei": "data/tag10-2.json",
+       "anzahl": 60
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "teil2",
+   "titel": "Teil 2 – Recht und Klausur",
+   "tage": [
+    {
+     "id": "tag11",
+     "nr": 11,
+     "datum": "2026-10-26",
+     "titel": "Kaufmann, Handelsregister, Firma und Vollmachten",
+     "sessions": [
+      {
+       "id": "tag11-2",
+       "titel": "Nachmittag: Firmenrecht und Vertretung",
+       "datei": "data/tag11-2.json",
+       "anzahl": 60
+      }
+     ]
+    },
+    {
+     "id": "tag12",
+     "nr": 12,
+     "datum": "2026-10-27",
+     "titel": "Rechtsformen der Unternehmen",
+     "sessions": [
+      {
+       "id": "tag12-1",
+       "titel": "Vormittag: Gesellschaftsrecht Teil 1",
+       "datei": "data/tag12-1.json",
+       "anzahl": 60
+      },
+      {
+       "id": "tag12-2",
+       "titel": "Nachmittag: Gesellschaftsrecht Teil 2",
+       "datei": "data/tag12-2.json",
+       "anzahl": 60
+      }
+     ]
+    },
+    {
+     "id": "tag13",
+     "nr": 13,
+     "datum": "2026-10-28",
+     "titel": "Unternehmenszusammenschlüsse, Rechtssubjekte und Rechtsobjekte",
+     "sessions": [
+      {
+       "id": "tag13-1",
+       "titel": "Vormittag: Unternehmenszusammenschlüsse",
+       "datei": "data/tag13-1.json",
+       "anzahl": 60
+      }
+     ]
+    },
+    {
+     "id": "tag14",
+     "nr": 14,
+     "datum": "2026-10-29",
+     "titel": "Verträge und Insolvenzrecht",
+     "sessions": [
+      {
+       "id": "tag14-1",
+       "titel": "Vormittag: Verträge schließen",
+       "datei": "data/tag14-1.json",
+       "anzahl": 60
+      },
+      {
+       "id": "tag14-2",
+       "titel": "Nachmittag: Insolvenzrecht kompakt",
+       "datei": "data/tag14-2.json",
+       "anzahl": 60
+      }
+     ]
+    },
+    {
+     "id": "tag15",
+     "nr": 15,
+     "datum": "2026-10-30",
+     "titel": "Klausurtag – Gesamtwiederholung und Klausur",
+     "sessions": [
+      {
+       "id": "tag15-1",
+       "titel": "Vormittag: Gesamtwiederholung M-094",
+       "datei": "data/tag15-1.json",
+       "anzahl": 60
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
