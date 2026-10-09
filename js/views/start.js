@@ -1,16 +1,18 @@
 import { h, formatDatum } from "../lib/dom.js";
 import { loadIndex } from "../lib/data.js";
 import { getProgress, load } from "../lib/store.js";
+import { tagStyle } from "../lib/farben.js";
 
-function sessionRow(s, progress) {
+function sessionKachel(s, progress) {
   const richtig = Array.from({ length: s.anzahl }, (_, i) => `${s.id}-${String(i + 1).padStart(2, "0")}`)
     .filter((id) => progress[id] === true).length;
   const pct = Math.round((richtig / s.anzahl) * 100);
-  return h("a", { class: "session", href: `#/session/${s.id}` },
-    h("span", { class: "session-titel" }, s.titel),
-    h("span", { class: "session-stand" }, `${richtig}/${s.anzahl} richtig`),
-    h("span", { class: "progress", role: "progressbar", "aria-valuenow": pct, "aria-valuemin": 0, "aria-valuemax": 100 },
-      h("span", { style: `width:${pct}%` })));
+  const [zeit, ...rest] = s.titel.split(": ");
+  return h("a", { class: "kachel", href: `#/session/${s.id}`, "aria-label": `${s.titel}, ${richtig} von ${s.anzahl} richtig` },
+    h("span", { class: "kachel-zeit" }, zeit),
+    h("span", { class: "kachel-titel" }, rest.join(": ") || zeit),
+    h("span", { class: "kachel-stand" }, `${richtig}/${s.anzahl} richtig`),
+    h("span", { class: "progress", "aria-hidden": "true" }, h("span", { style: `width:${pct}%` })));
 }
 
 export async function render(root) {
@@ -34,9 +36,13 @@ export async function render(root) {
       h("span", { class: "chev", "aria-hidden": "true" }, "›")),
     ...index.teile.map((teil) => h("section", { class: "teil" },
       h("h2", {}, teil.titel),
-      ...teil.tage.map((tag) => h("article", { class: "card tag" },
-        h("p", { class: "tag-meta" }, `Tag ${tag.nr} · ${formatDatum(tag.datum)}`),
-        h("h3", {}, tag.titel),
-        ...tag.sessions.map((s) => sessionRow(s, progress)))))),
+      ...teil.tage.map((tag) => h("article", { class: "tag day", style: tagStyle(tag.nr) },
+        h("div", { class: "day-kopf" },
+          h("span", { class: "day-nr", "aria-hidden": "true" }, String(tag.nr)),
+          h("div", {},
+            h("p", { class: "tag-meta" }, `Tag ${tag.nr} · ${formatDatum(tag.datum)}`),
+            h("h3", {}, tag.titel))),
+        h("div", { class: `kacheln ${tag.sessions.length === 1 ? "einzeln" : ""}` },
+          tag.sessions.map((s) => sessionKachel(s, progress))))))),
     h("footer", { class: "footer muted" }, "Dein Fortschritt wird nur auf diesem Gerät gespeichert."));
 }

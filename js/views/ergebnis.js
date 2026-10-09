@@ -2,6 +2,7 @@ import { h, topbar, fill } from "../lib/dom.js";
 import { load, remove } from "../lib/store.js";
 import { score, isCorrect, PRUEFUNG } from "../lib/quiz.js";
 import { frageView } from "../lib/frage.js";
+import { tagStyle, tagNr } from "../lib/farben.js";
 
 export async function render(root) {
   const state = load("pruefung", null);
@@ -13,7 +14,7 @@ export async function render(root) {
   const r = score(state.fragen, state.antworten);
   const proTag = new Map();
   for (const q of state.fragen) {
-    const t = proTag.get(q.tagId) ?? { titel: q.tagTitel, richtig: 0, gesamt: 0 };
+    const t = proTag.get(q.tagId) ?? { titel: q.tagTitel, nr: tagNr(q.tagId), richtig: 0, gesamt: 0 };
     t.gesamt++;
     if (isCorrect(q, state.antworten[q.id])) t.richtig++;
     proTag.set(q.tagId, t);
@@ -53,7 +54,7 @@ export async function render(root) {
         h("h2", {}, "Ergebnis nach Themen"),
         h("table", { class: "tabelle" },
           h("tbody", {}, [...proTag.values()].map((t) => h("tr", {},
-            h("td", {}, t.titel),
+            h("td", {}, h("span", { class: "day-dot", style: tagStyle(t.nr), "aria-hidden": "true" }), t.titel),
             h("td", { class: `zahl ${t.richtig === t.gesamt ? "ok" : t.richtig === 0 ? "bad" : ""}` }, `${t.richtig}/${t.gesamt}`)))))),
       h("h2", { class: "abschnitt" }, "Lösungen mit Erklärung"),
       h("div", { class: "chips" }, filter),

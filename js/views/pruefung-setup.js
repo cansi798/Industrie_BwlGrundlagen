@@ -2,6 +2,7 @@ import { h, topbar, fill, keepFocus } from "../lib/dom.js";
 import { loadIndex, loadSession, allDays } from "../lib/data.js";
 import { load, save, remove } from "../lib/store.js";
 import { drawExam, prepareQuestion, PRUEFUNG } from "../lib/quiz.js";
+import { tagStyle } from "../lib/farben.js";
 
 export async function startPruefung(index, tagIds, zeitlimit) {
   const tage = allDays(index).filter((d) => tagIds.includes(d.id));
@@ -69,12 +70,12 @@ export async function render(root) {
           h("button", { class: "chip", "data-focus": "chip:Teil 2 Recht", onclick: () => waehle((d) => d.teil === "teil2") }, "Teil 2 Recht"),
           h("button", { class: "chip", "data-focus": "chip:Alle", onclick: () => waehle(() => true) }, "Alle"),
           h("button", { class: "chip", "data-focus": "chip:Keine", onclick: () => waehle(() => false) }, "Keine")),
-        h("div", { class: "checks" }, tage.map((d) => h("label", { class: "check" },
+        h("div", { class: "day-checks" }, tage.map((d) => h("label", { class: "day-check", style: tagStyle(d.nr) },
           h("input", {
             type: "checkbox", checked: setup.tage.has(d.id), "data-focus": `tag:${d.id}`,
             onchange: (e) => { e.target.checked ? setup.tage.add(d.id) : setup.tage.delete(d.id); persist(); keepFocus(zeichne); },
           }),
-          h("span", {}, h("b", {}, `Tag ${d.nr}`), " ", d.titel))))),
+          h("span", { class: "day-check-text" }, h("b", {}, `Tag ${d.nr}`), h("span", {}, d.titel)))))),
       h("div", { class: "card" },
         h("label", { class: "switch" },
           h("input", {

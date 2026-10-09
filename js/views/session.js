@@ -3,6 +3,7 @@ import { loadIndex, loadSession, allSessions } from "../lib/data.js";
 import { getProgress, setResult, load, save } from "../lib/store.js";
 import { shuffle, prepareQuestion, isCorrect } from "../lib/quiz.js";
 import { frageView } from "../lib/frage.js";
+import { tagStyle } from "../lib/farben.js";
 
 export const PRUEFUNG_FALSCHE = "pruefung-falsche";
 
@@ -20,13 +21,18 @@ async function quelle(id, query) {
     const p = getProgress();
     fragen = fragen.filter((q) => p[q.id] === false);
   }
-  return { titel: `Tag ${s.tag.nr} · ${s.titel}`, fragen, back: "#/", nurFalsche };
+  return { titel: `Tag ${s.tag.nr} · ${s.titel}`, fragen, back: "#/", nurFalsche, tagNr: s.tag.nr };
 }
 
 export async function render(root, { id, query }) {
-  const { titel, fragen, back, nurFalsche } = await quelle(id, query);
+  const { titel, fragen, back, nurFalsche, tagNr } = await quelle(id, query);
   const main = h("div", { class: "page" });
-  root.append(topbar(titel, back), main);
+  const bar = topbar(titel, back);
+  if (tagNr) {
+    root.setAttribute("style", tagStyle(tagNr));
+    bar.classList.add("day-bar");
+  }
+  root.append(bar, main);
 
   if (fragen.length === 0) {
     main.append(h("div", { class: "card leer" },
