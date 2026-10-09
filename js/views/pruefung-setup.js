@@ -1,4 +1,4 @@
-import { h, topbar, fill } from "../lib/dom.js";
+import { h, topbar, fill, keepFocus } from "../lib/dom.js";
 import { loadIndex, loadSession, allDays } from "../lib/data.js";
 import { load, save, remove } from "../lib/store.js";
 import { drawExam, prepareQuestion, PRUEFUNG } from "../lib/quiz.js";
@@ -19,7 +19,8 @@ export async function startPruefung(index, tagIds, zeitlimit) {
     endsAt: zeitlimit ? Date.now() + PRUEFUNG.minuten * 60_000 : null,
     abgegeben: false,
   });
-  location.hash = "#/pruefung/laeuft";
+  // Nur weiterleiten, wenn man noch auf der Einstellungsseite ist
+  if (location.hash.startsWith("#/pruefung")) location.hash = "#/pruefung/laeuft";
 }
 
 export async function render(root) {
@@ -42,7 +43,7 @@ export async function render(root) {
   function waehle(filter) {
     setup.tage = new Set(tage.filter(filter).map((d) => d.id));
     persist();
-    zeichne();
+    keepFocus(zeichne);
   }
 
   function zeichne() {
@@ -64,14 +65,14 @@ export async function render(root) {
       h("div", { class: "card" },
         h("h2", {}, "Themen wählen"),
         h("div", { class: "chips" },
-          h("button", { class: "chip", onclick: () => waehle((d) => d.teil === "teil1") }, "Teil 1 BWL"),
-          h("button", { class: "chip", onclick: () => waehle((d) => d.teil === "teil2") }, "Teil 2 Recht"),
-          h("button", { class: "chip", onclick: () => waehle(() => true) }, "Alle"),
-          h("button", { class: "chip", onclick: () => waehle(() => false) }, "Keine")),
+          h("button", { class: "chip", "data-focus": "chip:Teil 1 BWL", onclick: () => waehle((d) => d.teil === "teil1") }, "Teil 1 BWL"),
+          h("button", { class: "chip", "data-focus": "chip:Teil 2 Recht", onclick: () => waehle((d) => d.teil === "teil2") }, "Teil 2 Recht"),
+          h("button", { class: "chip", "data-focus": "chip:Alle", onclick: () => waehle(() => true) }, "Alle"),
+          h("button", { class: "chip", "data-focus": "chip:Keine", onclick: () => waehle(() => false) }, "Keine")),
         h("div", { class: "checks" }, tage.map((d) => h("label", { class: "check" },
           h("input", {
-            type: "checkbox", checked: setup.tage.has(d.id),
-            onchange: (e) => { e.target.checked ? setup.tage.add(d.id) : setup.tage.delete(d.id); persist(); zeichne(); },
+            type: "checkbox", checked: setup.tage.has(d.id), "data-focus": `tag:${d.id}`,
+            onchange: (e) => { e.target.checked ? setup.tage.add(d.id) : setup.tage.delete(d.id); persist(); keepFocus(zeichne); },
           }),
           h("span", {}, h("b", {}, `Tag ${d.nr}`), " ", d.titel))))),
       h("div", { class: "card" },

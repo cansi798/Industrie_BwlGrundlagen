@@ -22,7 +22,7 @@ export async function render(root) {
   root.append(
     h("header", { class: "hero" },
       h("p", { class: "kicker" }, "Modul M-094"),
-      h("h1", {}, "BWL & Recht – Lernapp"),
+      h("h1", { tabindex: "-1" }, "BWL & Recht – Lernapp"),
       h("p", { class: "lead" }, "Übe jede Session mit sofortiger Erklärung oder teste dich im Prüfungssimulator.")),
     h("a", { class: "card card-exam", href: offenePruefung ? "#/pruefung/laeuft" : "#/pruefung" },
       h("span", { class: "card-exam-icon", "aria-hidden": "true" }, "✎"),

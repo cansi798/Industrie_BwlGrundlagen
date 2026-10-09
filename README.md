@@ -7,7 +7,7 @@ Mobile Lernapp zum Modul M-094 mit allen Online-Quizzen (Tag 1–15, 27 Sessions
 ## Was die App kann
 
 - **Üben pro Session:** Fragen und Antworten in zufälliger Reihenfolge, nach jeder Frage sofort die Lösung mit einer Erklärung in einfacher Sprache. Danach kann man nur die falschen Fragen wiederholen.
-- **Prüfungssimulator:** 30 Zufallsfragen aus frei wählbaren Tagen, gleichmäßig verteilt. Die Antworten erscheinen in zufälliger Reihenfolge. Während der Prüfung gibt es kein Feedback, optional läuft ein Zeitlimit von 45 Minuten. Am Ende stehen Punktzahl, Bestanden (ab 50 %), das Ergebnis nach Themen und alle Lösungen mit Erklärung.
+- **Prüfungssimulator:** 30 Zufallsfragen aus frei wählbaren Tagen, gleichmäßig verteilt. Die Antworten erscheinen in zufälliger Reihenfolge. Während der Prüfung gibt es kein Feedback, optional läuft ein Zeitlimit von 45 Minuten. Man kann Frage für Frage blättern oder alle Fragen untereinander auf einer Seite bearbeiten. Am Ende stehen Punktzahl, Bestanden (ab 50 %), das Ergebnis nach Themen und alle Lösungen mit Erklärung.
 - **Offline und als App:** Nach dem ersten Öffnen funktioniert die App ohne Internet. Über „Zum Startbildschirm hinzufügen“ lässt sie sich wie eine App installieren.
 - Der Fortschritt wird nur im Browser des Geräts gespeichert. Es gibt keine Anmeldung und keinen Server.
 

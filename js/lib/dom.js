@@ -23,7 +23,16 @@ export function fill(el, ...children) {
 export function topbar(title, back = "#/") {
   return h("header", { class: "topbar" },
     back ? h("a", { class: "back", href: back, "aria-label": "Zurück" }, "‹") : null,
-    h("h1", {}, title));
+    h("h1", { tabindex: "-1" }, title));
+}
+
+/** Zeichnet neu und setzt den Fokus wieder auf das Element mit gleichem data-focus. */
+export function keepFocus(redraw) {
+  const key = document.activeElement?.dataset?.focus;
+  redraw();
+  if (!key) return;
+  const el = [...document.querySelectorAll("[data-focus]")].find((e) => e.dataset.focus === key);
+  el?.focus({ preventScroll: true });
 }
 
 export function formatDatum(iso) {

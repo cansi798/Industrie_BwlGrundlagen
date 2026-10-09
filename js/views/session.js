@@ -1,4 +1,4 @@
-import { h, topbar, fill } from "../lib/dom.js";
+import { h, topbar, fill, keepFocus } from "../lib/dom.js";
 import { loadIndex, loadSession, allSessions } from "../lib/data.js";
 import { getProgress, setResult, load } from "../lib/store.js";
 import { shuffle, prepareQuestion, isCorrect } from "../lib/quiz.js";
@@ -51,11 +51,11 @@ export async function render(root, { id, query }) {
       h("div", { class: "card" }, frageView(q, {
         selected,
         reveal: geprueft,
-        onChange: (s) => { selected = s; zeigeFrage(); },
+        onChange: (s) => { selected = s; keepFocus(zeigeFrage); },
       })),
       h("div", { class: "actions sticky" }, geprueft
-        ? h("button", { class: "btn btn-primary", onclick: weiter }, i + 1 < runde.length ? "Weiter" : "Auswertung")
-        : h("button", { class: "btn btn-primary", disabled: selected.size === 0, onclick: pruefen }, "Prüfen")));
+        ? h("button", { class: "btn btn-primary", "data-focus": "next", onclick: weiter }, i + 1 < runde.length ? "Weiter" : "Auswertung")
+        : h("button", { class: "btn btn-primary", "data-focus": "next", disabled: selected.size === 0, onclick: pruefen }, "Prüfen")));
   }
 
   function pruefen() {
@@ -64,7 +64,7 @@ export async function render(root, { id, query }) {
     setResult(q.id, ok);
     if (!ok) falsch.push(q);
     geprueft = true;
-    zeigeFrage();
+    keepFocus(zeigeFrage);
   }
 
   function weiter() {

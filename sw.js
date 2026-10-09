@@ -1,7 +1,9 @@
 // Service Worker: speichert App und alle Fragen für die Offline-Nutzung.
 // Änderungen kommen beim nächsten Öffnen an (stale-while-revalidate).
-// CACHE erhöhen, wenn Dateien hinzukommen oder wegfallen.
-const CACHE = "m094-v1";
+// CACHE erhöhen, wenn Dateien hinzukommen oder wegfallen und nach jedem
+// neuen Auslesen der Fragen (tools/extract.py) – dann lädt jedes Gerät beim
+// nächsten Start alle Fragen neu, auch Sessions, die es selten öffnet.
+const CACHE = "m094-v2";
 
 const APP = [
   "./",
