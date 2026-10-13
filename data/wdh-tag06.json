@@ -1,0 +1,600 @@
+[
+ {
+  "id": "wdh-tag06-01",
+  "q": "Welche Gründe für ein Insolvenzverfahren nennt die Insolvenzordnung? Mehrere Antworten sind richtig.",
+  "options": [
+   {
+    "t": "Zahlungsunfähigkeit",
+    "c": true
+   },
+   {
+    "t": "Drohende Zahlungsunfähigkeit",
+    "c": true
+   },
+   {
+    "t": "Überschuldung bei Kapitalgesellschaften",
+    "c": true
+   },
+   {
+    "t": "Ein Jahresverlust in der GuV",
+    "c": false
+   }
+  ],
+  "expl": "Die Insolvenzordnung (InsO) nennt drei Gründe. Der allgemeine Grund ist die Zahlungsunfähigkeit (§ 17 InsO). Dazu kommt die drohende Zahlungsunfähigkeit (§ 18 InsO). Bei Kapitalgesellschaften zählt auch die Überschuldung (§ 19 InsO). Ein Verlust allein ist kein Insolvenzgrund. Entscheidend ist, ob das Unternehmen zahlen kann."
+ },
+ {
+  "id": "wdh-tag06-02",
+  "typ": "offen",
+  "q": "Erkläre, warum ein Unternehmen Gewinn machen und trotzdem zahlungsunfähig werden kann.",
+  "kernpunkte": [
+   "Gewinn ist eine Rechengröße: Erträge minus Aufwendungen",
+   "Liquidität ist echtes Geld, das zum Fälligkeitstermin da sein muss",
+   "Verkäufe sind gebucht, aber Kunden haben noch nicht bezahlt",
+   "Zahlungsunfähigkeit ist ein Insolvenzgrund, auch bei Gewinn"
+  ],
+  "expl": "Gewinn entsteht auf dem Papier. Ein Verkauf wird schon als Ertrag gebucht, wenn die Rechnung rausgeht. Das Geld kommt aber oft erst später. Rechnungen von Lieferanten, Löhne und Miete sind trotzdem pünktlich fällig. Fehlt dann Geld auf dem Konto, ist das Unternehmen zahlungsunfähig. Deshalb gilt: Umsatz ist schön, Gewinn ist besser, Liquidität ist lebenswichtig."
+ },
+ {
+  "id": "wdh-tag06-03",
+  "q": "Eine GmbH ist zahlungsunfähig. Bis wann muss die Geschäftsführung spätestens den Insolvenzantrag stellen?",
+  "options": [
+   {
+    "t": "Ohne schuldhaftes Zögern, spätestens nach drei Wochen",
+    "c": true
+   },
+   {
+    "t": "Spätestens nach drei Monaten",
+    "c": false
+   },
+   {
+    "t": "Erst mit dem nächsten Jahresabschluss",
+    "c": false
+   },
+   {
+    "t": "Erst wenn ein Lieferant den Antrag verlangt",
+    "c": false
+   }
+  ],
+  "expl": "Bei einer GmbH muss die Geschäftsführung schnell handeln. Das Gesetz sagt: ohne schuldhaftes Zögern, also so schnell wie möglich. Spätestens nach drei Wochen muss der Antrag gestellt sein (§ 15a Abs. 1 InsO). Man darf also nicht bis zum Jahresabschluss warten."
+ },
+ {
+  "id": "wdh-tag06-04",
+  "q": "Im Lager einer Möbelfabrik stehen fertige, verpackte Stühle. Wie nah sind sie am Geld?",
+  "options": [
+   {
+    "t": "Zwei Schritte: Erst entsteht durch den Verkauf eine Forderung, dann zahlt der Kunde",
+    "c": true
+   },
+   {
+    "t": "Ein Schritt: Sie werden direkt beim Einlagern zu Geld",
+    "c": false
+   },
+   {
+    "t": "Sie sind schon Geld, weil sie einen Wert haben",
+    "c": false
+   },
+   {
+    "t": "Gar nicht, denn fertige Erzeugnisse gehören zum Anlagevermögen",
+    "c": false
+   }
+  ],
+  "expl": "Fertige Erzeugnisse sind Vorräte. Vorräte stehen im Umlaufvermögen. Sie müssen erst verkauft werden. Dann entsteht eine Forderung an den Kunden. Erst wenn der Kunde zahlt, ist es Geld. Die Eselsbrücke H-F-G hilft: Holz wird Forderung, Forderung wird Geld."
+ },
+ {
+  "id": "wdh-tag06-05",
+  "typ": "rechnen",
+  "q": "Die Holzwerk Brenner KG bezahlt eine Lieferantenrechnung per Banküberweisung. Berechne die Liquidität 1. Grades nach der Zahlung.",
+  "angaben": "Flüssige Mittel vor der Zahlung: 120.000 €; kurzfristiges Fremdkapital vor der Zahlung: 360.000 €; bezahlte Lieferantenrechnung: 40.000 €",
+  "einheit": "%",
+  "loesung": 25,
+  "rechnung": "(120000 - 40000) / (360000 - 40000) * 100",
+  "schritte": [
+   "Liquidität 1. Grades = flüssige Mittel : kurzfristiges Fremdkapital × 100",
+   "Nach der Zahlung: flüssige Mittel 120.000 − 40.000 = 80.000 €; kurzfristiges Fremdkapital 360.000 − 40.000 = 320.000 €",
+   "80.000 : 320.000 = 0,25",
+   "0,25 × 100 = 25 %"
+  ],
+  "expl": "Die Zahlung senkt das Bankguthaben und die Lieferantenschulden um denselben Betrag. Zähler und Nenner werden also beide kleiner. Die Barliquidität fällt von 33,3 % auf 25 %. Sie liegt aber noch im Sollbereich von etwa 20 % (10 bis 30 %)."
+ },
+ {
+  "id": "wdh-tag06-06",
+  "q": "Welche Bilanzposten stehen im Zähler der Liquidität 2. Grades? Zwei Antworten sind richtig.",
+  "options": [
+   {
+    "t": "Bankguthaben",
+    "c": true
+   },
+   {
+    "t": "Forderungen aus Lieferungen und Leistungen",
+    "c": true
+   },
+   {
+    "t": "Rohstoffvorräte",
+    "c": false
+   },
+   {
+    "t": "Verbindlichkeiten aus Lieferungen und Leistungen",
+    "c": false
+   }
+  ],
+  "expl": "Die Liquidität 2. Grades heißt einzugsbedingte Liquidität. Im Zähler stehen die flüssigen Mittel plus die Forderungen. Bankguthaben gehört zu den flüssigen Mitteln. Vorräte kommen erst beim 3. Grad dazu. Verbindlichkeiten sind Schulden. Sie stehen im Nenner beim kurzfristigen Fremdkapital."
+ },
+ {
+  "id": "wdh-tag06-07",
+  "typ": "offen",
+  "q": "Ein Kollege rechnet die Liquidität 2. Grades und nimmt ein Bankdarlehen mit 8 Jahren Laufzeit in den Nenner. Erkläre seinen Fehler.",
+  "kernpunkte": [
+   "Im Nenner steht nur das kurzfristige Fremdkapital",
+   "Kurzfristig heißt: innerhalb eines Jahres zu bezahlen",
+   "Ein Darlehen über 8 Jahre ist langfristiges Fremdkapital",
+   "Mit dem Darlehen im Nenner wird die Liquidität zu niedrig berechnet"
+  ],
+  "expl": "Die Liquiditätsgrade prüfen, ob das Unternehmen seine kurzfristigen Schulden bezahlen kann. Kurzfristig heißt: Die Schulden sind innerhalb eines Jahres fällig. Das Darlehen muss aber erst in vielen Jahren zurückgezahlt werden. Es gehört deshalb nicht in den Nenner. Wer es mitrechnet, macht den Nenner zu groß und die Kennzahl zu klein. Das ist der häufigste Prüfungsfehler."
+ },
+ {
+  "id": "wdh-tag06-08",
+  "typ": "rechnen",
+  "q": "Berechne die Liquidität 2. Grades der Metallbau Kaya GmbH.",
+  "angaben": "Flüssige Mittel: 45.000 €; Forderungen aLuL: 135.000 €; Vorräte: 210.000 €; kurzfristiges Fremdkapital: 240.000 €",
+  "einheit": "%",
+  "loesung": 75,
+  "rechnung": "(45000 + 135000) / 240000 * 100",
+  "schritte": [
+   "Liquidität 2. Grades = (flüssige Mittel + Forderungen) : kurzfristiges Fremdkapital × 100",
+   "(45.000 + 135.000) : 240.000 = 180.000 : 240.000 = 0,75",
+   "0,75 × 100 = 75 %"
+  ],
+  "expl": "Die Vorräte gehören nicht in den 2. Grad. Sie kommen erst beim 3. Grad dazu. Das Ergebnis 75 % liegt unter dem Sollwert von mindestens 100 %. Das ist kritisch. Geld und Forderungen reichen nicht für die kurzfristigen Schulden. Kaya muss Vorräte verkaufen oder Forderungen schneller einziehen."
+ },
+ {
+  "id": "wdh-tag06-09",
+  "q": "Welche Zuordnung von deutschem und englischem Namen ist richtig?",
+  "options": [
+   {
+    "t": "Liquidität 2. Grades – Quick Ratio",
+    "c": true
+   },
+   {
+    "t": "Liquidität 1. Grades – Current Ratio",
+    "c": false
+   },
+   {
+    "t": "Liquidität 3. Grades – Cash Ratio",
+    "c": false
+   },
+   {
+    "t": "Liquidität 2. Grades – Current Ratio",
+    "c": false
+   }
+  ],
+  "expl": "In englischen Texten heißen die drei Grade so: Der 1. Grad ist die Cash Ratio, also nur Bargeld. Der 2. Grad ist die Quick Ratio, also Geld plus schnell eingehende Forderungen. Der 3. Grad ist die Current Ratio. Er umfasst das ganze Umlaufvermögen."
+ },
+ {
+  "id": "wdh-tag06-10",
+  "typ": "rechnen",
+  "q": "Berechne die Liquidität 3. Grades der Kunststofftechnik Albers GmbH.",
+  "angaben": "Kasse: 10.000 €; Bankguthaben: 50.000 €; Forderungen aLuL: 140.000 €; Vorräte: 250.000 €; Verbindlichkeiten aLuL: 220.000 €; kurzfristige Bankverbindlichkeiten: 80.000 €; langfristiges Darlehen: 400.000 €",
+  "einheit": "%",
+  "loesung": 150,
+  "rechnung": "(10000 + 50000 + 140000 + 250000) / (220000 + 80000) * 100",
+  "schritte": [
+   "Liquidität 3. Grades = Umlaufvermögen : kurzfristiges Fremdkapital × 100",
+   "Umlaufvermögen = 10.000 + 50.000 + 140.000 + 250.000 = 450.000 €; kurzfristiges Fremdkapital = 220.000 + 80.000 = 300.000 €",
+   "450.000 : 300.000 = 1,5",
+   "1,5 × 100 = 150 %"
+  ],
+  "expl": "Im Zähler steht das ganze Umlaufvermögen: Geld, Forderungen und Vorräte. Im Nenner steht nur das kurzfristige Fremdkapital. Das langfristige Darlehen gehört nicht dazu. 150 % liegen unter dem Idealwert von etwa 200 %. Sie erreichen aber genau die Untergrenze von 150 %. Es gibt also keinen Puffer mehr."
+ },
+ {
+  "id": "wdh-tag06-11",
+  "q": "Was besagt die Two-to-one-rule bei der Liquidität 3. Grades?",
+  "options": [
+   {
+    "t": "Das Umlaufvermögen soll doppelt so groß sein wie das kurzfristige Fremdkapital",
+    "c": true
+   },
+   {
+    "t": "Die flüssigen Mittel sollen doppelt so groß sein wie die Forderungen",
+    "c": false
+   },
+   {
+    "t": "Das Eigenkapital soll doppelt so groß sein wie das Fremdkapital",
+    "c": false
+   },
+   {
+    "t": "Das kurzfristige Fremdkapital soll doppelt so groß sein wie das Umlaufvermögen",
+    "c": false
+   }
+  ],
+  "expl": "Two-to-one heißt zwei zu eins. Beim 3. Grad soll das Umlaufvermögen doppelt so groß sein wie das kurzfristige Fremdkapital. Das entspricht dem Sollwert von etwa 200 %. Beim 2. Grad spricht man von der One-to-one-rule, also eins zu eins oder mindestens 100 %."
+ },
+ {
+  "id": "wdh-tag06-12",
+  "q": "Ein Unternehmen hat diese Werte: Liquidität 1. Grades 15 %, 2. Grades 110 %, 3. Grades 160 %. Welche Beurteilung passt?",
+  "options": [
+   {
+    "t": "Alle Werte sind vertretbar; der 3. Grad liegt unter dem Idealwert, aber über der Untergrenze",
+    "c": true
+   },
+   {
+    "t": "Der 1. Grad ist kritisch, weil er unter 100 % liegt",
+    "c": false
+   },
+   {
+    "t": "Der 2. Grad ist kritisch, weil er unter 200 % liegt",
+    "c": false
+   },
+   {
+    "t": "Das Unternehmen ist zahlungsunfähig, weil der 3. Grad unter 200 % liegt",
+    "c": false
+   }
+  ],
+  "expl": "Merke das Zahlenschloss 20, 100, 200. Der 1. Grad soll etwa 20 % sein, der Bereich 10 bis 30 % ist üblich. 15 % passt also. Der 2. Grad soll mindestens 100 % sein. 110 % erfüllt das. Der 3. Grad soll etwa 200 % sein, mindestens aber 150 %. 160 % ist ausreichend. Sollwerte sind Faustregeln, keine Gesetze."
+ },
+ {
+  "id": "wdh-tag06-13",
+  "typ": "offen",
+  "q": "Eine Firma hat eine Liquidität 1. Grades von 90 %. Der Chef ist stolz darauf. Beurteile, ob das wirklich gut ist.",
+  "kernpunkte": [
+   "Der Wert liegt weit über dem Sollwert von etwa 20 %",
+   "Geld auf dem Girokonto bringt kaum Zinsen",
+   "Zu viel Liquidität senkt die Rentabilität (Zielkonflikt)",
+   "Ziel: so viel Liquidität wie nötig, so wenig wie möglich"
+  ],
+  "expl": "90 % ist sehr sicher. Die Firma könnte fast alle kurzfristigen Schulden sofort bezahlen. Aber das Geld liegt nur auf dem Konto und arbeitet nicht. Investiert die Firma das Geld oder tilgt sie Schulden, könnte sie mehr Gewinn machen. Liquidität (Sicherheit) und Rentabilität (Gewinn) stehen im Zielkonflikt. Gesucht ist das Gleichgewicht."
+ },
+ {
+  "id": "wdh-tag06-14",
+  "typ": "rechnen",
+  "q": "Berechne das Working Capital der Druckerei Lenz OHG.",
+  "angaben": "Vorräte: 90.000 €; Forderungen aLuL: 70.000 €; flüssige Mittel: 20.000 €; Verbindlichkeiten aLuL: 150.000 €; kurzfristige Bankverbindlichkeiten: 80.000 €",
+  "einheit": "€",
+  "loesung": -50000,
+  "rechnung": "(90000 + 70000 + 20000) - (150000 + 80000)",
+  "schritte": [
+   "Working Capital = Umlaufvermögen − kurzfristiges Fremdkapital",
+   "Umlaufvermögen = 90.000 + 70.000 + 20.000 = 180.000 €; kurzfristiges Fremdkapital = 150.000 + 80.000 = 230.000 €",
+   "180.000 − 230.000 = −50.000 €"
+  ],
+  "expl": "Beim Working Capital wird nicht geteilt, sondern abgezogen. Das Ergebnis ist deshalb ein Betrag in Euro. Hier ist es negativ. Selbst wenn das ganze Umlaufvermögen zu Geld wird, fehlen 50.000 € für die kurzfristigen Schulden. Das ist ein Warnsignal. Kurzfristige Schulden finanzieren dann langfristiges Vermögen."
+ },
+ {
+  "id": "wdh-tag06-15",
+  "q": "Ein Unternehmen kauft Rohstoffe für 50.000 € auf Ziel, bezahlt also erst später. Welche Aussage stimmt?",
+  "options": [
+   {
+    "t": "Das Working Capital bleibt gleich, die Liquidität 1. Grades sinkt",
+    "c": true
+   },
+   {
+    "t": "Das Working Capital steigt um 50.000 €, weil Vorräte dazukommen",
+    "c": false
+   },
+   {
+    "t": "Die Liquidität 1. Grades steigt, weil die Vorräte zunehmen",
+    "c": false
+   },
+   {
+    "t": "Keine Kennzahl ändert sich, weil noch kein Geld geflossen ist",
+    "c": false
+   }
+  ],
+  "expl": "Die Vorräte steigen um 50.000 €. Gleichzeitig steigen die Verbindlichkeiten um 50.000 €. Umlaufvermögen und kurzfristiges Fremdkapital wachsen gleich stark. Das Working Capital bleibt also gleich. Bei der Liquidität 1. Grades bleibt der Zähler (Geld) gleich, aber der Nenner wird größer. Deshalb sinkt sie."
+ },
+ {
+  "id": "wdh-tag06-16",
+  "typ": "offen",
+  "q": "Worin unterscheidet sich das Working Capital von den Liquiditätsgraden?",
+  "kernpunkte": [
+   "Liquiditätsgrade teilen, das Working Capital zieht ab",
+   "Liquiditätsgrade sind Prozentwerte, das Working Capital ist ein Eurobetrag",
+   "Working Capital = Umlaufvermögen − kurzfristiges Fremdkapital",
+   "Zahlung an einen Lieferanten: Working Capital bleibt gleich, Grad 1 ändert sich"
+  ],
+  "expl": "Beide nutzen dieselben Zahlen: Umlaufvermögen und kurzfristiges Fremdkapital. Bei den Liquiditätsgraden wird geteilt. Das Ergebnis ist ein Prozentwert. Beim Working Capital wird abgezogen. Das Ergebnis ist ein Polster in Euro. Zahlt das Unternehmen eine Lieferantenrechnung, sinken beide Seiten gleich. Das Working Capital bleibt dann gleich, die Barliquidität ändert sich aber stark."
+ },
+ {
+  "id": "wdh-tag06-17",
+  "q": "Welche Handlungen sind Beispiele für Window Dressing? Zwei Antworten sind richtig.",
+  "options": [
+   {
+    "t": "Kurz vor dem Jahresende Forderungen schnell bei Kunden einziehen",
+    "c": true
+   },
+   {
+    "t": "Geplante Einkäufe vom Dezember ins neue Jahr verschieben",
+    "c": true
+   },
+   {
+    "t": "Einen Liquiditätsplan für die nächsten Monate aufstellen",
+    "c": false
+   },
+   {
+    "t": "Eine Maschine planmäßig über ihre Nutzungsdauer abschreiben",
+    "c": false
+   }
+  ],
+  "expl": "Window Dressing heißt Schaufensterdekoration. Das Unternehmen lässt die Bilanz am Stichtag schöner aussehen. Werden Forderungen schnell eingezogen, steigt das Geld am 31.12. Werden Einkäufe verschoben, stehen am Stichtag weniger Schulden in der Bilanz. Ein Liquiditätsplan und planmäßige Abschreibungen sind normale Arbeit, keine Schönfärberei."
+ },
+ {
+  "id": "wdh-tag06-18",
+  "typ": "offen",
+  "q": "Warum reichen die Liquiditätsgrade allein nicht aus, um die Zahlungsfähigkeit zu steuern? Nenne Grenzen und eine Ergänzung.",
+  "kernpunkte": [
+   "Die Bilanz zeigt nur einen Stichtag (Foto, nicht Film)",
+   "Fälligkeiten der Schulden sind nicht erkennbar",
+   "Laufende Zahlungen wie Löhne und Miete fehlen; Window Dressing ist möglich",
+   "Ergänzung: Liquiditätsplan mit allen Ein- und Auszahlungen"
+  ],
+  "expl": "Die Bilanz ist wie ein Foto vom 31. Dezember. Wenige Tage später kann alles anders sein. Man sieht nicht, wann eine Schuld genau fällig ist. Löhne, Miete und Strom stehen gar nicht in der Bilanz. Außerdem kann die Bilanz am Stichtag geschönt sein. Deshalb nutzen Unternehmen zusätzlich einen Liquiditätsplan. Er zeigt früh, wann Geld fehlen könnte."
+ },
+ {
+  "id": "wdh-tag06-19",
+  "q": "Welche Aussage über Rückstellungen stimmt?",
+  "options": [
+   {
+    "t": "Sie sind Schulden auf der Passivseite, bei denen Höhe oder Zeitpunkt noch unsicher sind",
+    "c": true
+   },
+   {
+    "t": "Sie sind Geld, das auf einem Sonderkonto zur Seite gelegt wird",
+    "c": false
+   },
+   {
+    "t": "Sie sind Forderungen auf der Aktivseite der Bilanz",
+    "c": false
+   },
+   {
+    "t": "Sie gehören zum Eigenkapital und erhöhen den Gewinn",
+    "c": false
+   }
+  ],
+  "expl": "Eine Rückstellung ist eine Schuld. Sie steht auf der Passivseite beim Fremdkapital (§ 249 HGB). Unsicher ist, wie hoch sie wird oder wann gezahlt wird. Beispiele sind Betriebsrenten, Prozesse oder Garantiefälle. Wichtig: Es wird kein Geld zur Seite gelegt. Geld fließt erst, wenn wirklich gezahlt wird."
+ },
+ {
+  "id": "wdh-tag06-20",
+  "q": "Welcher Vorgang verringert den Gewinn, ohne dass im selben Jahr Geld vom Bankkonto abfließt?",
+  "options": [
+   {
+    "t": "Bildung einer Rückstellung für Garantiefälle",
+    "c": true
+   },
+   {
+    "t": "Überweisung der Löhne an die Mitarbeitenden",
+    "c": false
+   },
+   {
+    "t": "Zinszahlung an die Bank",
+    "c": false
+   },
+   {
+    "t": "Ein Kunde bezahlt seine offene Rechnung",
+    "c": false
+   }
+  ],
+  "expl": "Die Bildung einer Rückstellung heißt Zuführung. Sie wird als Aufwand gebucht und senkt den Gewinn. Bezahlt wird aber erst später. Sie ist also nicht zahlungswirksam. Löhne und Zinsen sind zahlungswirksam, da fließt Geld ab. Die Kundenzahlung bringt Geld, ändert den Gewinn aber nicht mehr."
+ },
+ {
+  "id": "wdh-tag06-21",
+  "typ": "rechnen",
+  "q": "Berechne den Cashflow der Elektro Petersen GmbH nach der direkten Methode.",
+  "angaben": "Einzahlungen von Kunden: 1.400.000 €; Auszahlungen für Material: 620.000 €; Auszahlungen für Personal: 410.000 €; sonstige Auszahlungen: 130.000 €; Zinszahlungen: 20.000 €; Abschreibungen: 90.000 €",
+  "einheit": "€",
+  "loesung": 220000,
+  "rechnung": "1400000 - 620000 - 410000 - 130000 - 20000",
+  "schritte": [
+   "Cashflow = zahlungswirksame Einzahlungen − zahlungswirksame Auszahlungen",
+   "Auszahlungen = 620.000 + 410.000 + 130.000 + 20.000 = 1.180.000 €",
+   "1.400.000 − 1.180.000 = 220.000 €"
+  ],
+  "expl": "Bei der direkten Methode zählt nur, was wirklich fließt. Die Abschreibungen von 90.000 € werden nicht abgezogen. Für sie fließt in diesem Jahr kein Geld. Wer sie abzieht, berechnet den Gewinn statt des Cashflows. Petersen hat aus dem laufenden Geschäft 220.000 € Geld selbst erwirtschaftet."
+ },
+ {
+  "id": "wdh-tag06-22",
+  "q": "Ein Mitschüler rechnet nach der direkten Methode und zieht zusätzlich die Abschreibungen ab. Was hat er (vereinfacht) berechnet?",
+  "options": [
+   {
+    "t": "Den Gewinn",
+    "c": true
+   },
+   {
+    "t": "Den Cashflow nach der indirekten Methode",
+    "c": false
+   },
+   {
+    "t": "Das Working Capital",
+    "c": false
+   },
+   {
+    "t": "Die Effektivverschuldung",
+    "c": false
+   }
+  ],
+  "expl": "Abschreibungen sind Aufwand, aber es fließt kein Geld. Bei der direkten Methode werden sie deshalb nie abgezogen. Wer sie trotzdem abzieht, landet beim Gewinn. Das zeigt auch der Kiosk Yilmaz: Geldüberschuss 10.000 € minus Abschreibung 1.000 € ergibt den Gewinn von 9.000 €."
+ },
+ {
+  "id": "wdh-tag06-23",
+  "typ": "offen",
+  "q": "Vergleiche die direkte und die indirekte Methode zur Berechnung des Cashflows.",
+  "kernpunkte": [
+   "Direkt: zahlungswirksame Einzahlungen minus zahlungswirksame Auszahlungen",
+   "Indirekt: Start beim Jahresüberschuss, Korrektur um nicht zahlungswirksame Posten",
+   "Direkt braucht interne Zahlungsdaten, indirekt nur den Jahresabschluss",
+   "Bei vollständigen Daten ist das Ergebnis gleich"
+  ],
+  "expl": "Die direkte Methode schaut durch die Kasse: Was ging rein, was ging raus? Sie ist anschaulich. Sie braucht aber alle Zahlungen. Diese Daten hat meist nur das Unternehmen selbst. Die indirekte Methode startet beim Jahresüberschuss. Sie korrigiert ihn um Posten ohne Geldfluss. Dafür reicht der Jahresabschluss. Deshalb ist sie in Praxis und Prüfung häufiger. Beide Wege führen zum selben Cashflow."
+ },
+ {
+  "id": "wdh-tag06-24",
+  "q": "Eine Bank will den Cashflow eines Firmenkunden berechnen. Sie hat nur dessen Jahresabschluss. Was ist richtig?",
+  "options": [
+   {
+    "t": "Sie nutzt die indirekte Methode, weil alle nötigen Zahlen im Jahresabschluss stehen",
+    "c": true
+   },
+   {
+    "t": "Sie nutzt die direkte Methode, weil alle Zahlungen in der Bilanz stehen",
+    "c": false
+   },
+   {
+    "t": "Sie kann den Cashflow ohne interne Zahlungsdaten gar nicht berechnen",
+    "c": false
+   },
+   {
+    "t": "Sie nimmt einfach den Jahresüberschuss, denn er ist gleich dem Cashflow",
+    "c": false
+   }
+  ],
+  "expl": "Für die direkte Methode braucht man alle Ein- und Auszahlungen des Jahres. Diese Daten hat eine Bank meist nicht. Die indirekte Methode braucht nur Jahresüberschuss, Abschreibungen und Rückstellungen. Das steht im Jahresabschluss. Der Jahresüberschuss allein reicht nicht. Er enthält Posten ohne Geldfluss."
+ },
+ {
+  "id": "wdh-tag06-25",
+  "typ": "rechnen",
+  "q": "Berechne den Cashflow der Gießerei Hoffmann AG nach der indirekten Methode.",
+  "angaben": "Jahresüberschuss: 140.000 €; Abschreibungen: 85.000 €; Zuführung zu Rückstellungen: 25.000 €; Auflösung von Rückstellungen: 10.000 €",
+  "einheit": "€",
+  "loesung": 240000,
+  "rechnung": "140000 + 85000 + 25000 - 10000",
+  "schritte": [
+   "Cashflow = Jahresüberschuss + Abschreibungen + Zuführung zu Rückstellungen − Auflösung von Rückstellungen",
+   "140.000 + 85.000 + 25.000 − 10.000",
+   "= 240.000 €"
+  ],
+  "expl": "Abschreibungen und Zuführungen haben den Gewinn gesenkt, aber kein Geld gekostet. Deshalb werden sie addiert. Die Auflösung hat den Gewinn erhöht, aber kein Geld gebracht. Deshalb wird sie abgezogen. Hoffmann hat 240.000 € Geld erwirtschaftet, also 100.000 € mehr als der Gewinn zeigt."
+ },
+ {
+  "id": "wdh-tag06-26",
+  "typ": "offen",
+  "q": "Begründe die Vorzeichen im Schema der indirekten Methode: Warum werden Abschreibungen und Zuführungen zu Rückstellungen addiert, Auflösungen aber abgezogen?",
+  "kernpunkte": [
+   "Abschreibungen und Zuführungen sind Aufwand ohne Auszahlung",
+   "Sie haben den Gewinn gesenkt, aber kein Geld gekostet: plus",
+   "Die Auflösung ist Ertrag ohne Einzahlung",
+   "Sie hat den Gewinn erhöht, aber kein Geld gebracht: minus"
+  ],
+  "expl": "Die indirekte Methode verwandelt den Gewinn zurück in Geld. Abschreibungen und Zuführungen haben den Gewinn kleiner gemacht. Es ist aber kein Geld geflossen. Also zählt man sie wieder dazu. Die Auflösung einer Rückstellung hat den Gewinn größer gemacht. Auch hier floss kein Geld. Also zieht man sie ab. Eselsbrücke JAZA: Jahresüberschuss, Abschreibungen plus, Zuführung plus, Auflösung minus."
+ },
+ {
+  "id": "wdh-tag06-27",
+  "typ": "offen",
+  "q": "Die Formenbau Richter GmbH hat einen Jahresfehlbetrag (Verlust) von 30.000 € und Abschreibungen von 100.000 €. Ihr Cashflow beträgt 70.000 €. Erkläre, wie das zusammenpasst.",
+  "kernpunkte": [
+   "Der Verlust ist eine Rechengröße, der Cashflow zeigt echtes Geld",
+   "Die Abschreibungen von 100.000 € senken den Gewinn ohne Geldabfluss",
+   "−30.000 € + 100.000 € = 70.000 € Cashflow",
+   "Ein Verlust heißt nicht automatisch, dass Geld fehlt"
+  ],
+  "expl": "Im Gewinn sind Aufwendungen ohne Geldfluss enthalten, vor allem Abschreibungen. Bei Richter sind es 100.000 €. Indirekt gerechnet: −30.000 € + 100.000 € = 70.000 €. Die Abschreibungen machen den Verlust aus, aber das Geld ist im Unternehmen geblieben. Richter hat also trotz Verlust 70.000 € Geld erwirtschaftet. Ein Verlust bedeutet nicht automatisch Geldmangel."
+ },
+ {
+  "id": "wdh-tag06-28",
+  "q": "Warum macht ein hoher Cashflow ein Unternehmen unabhängiger?",
+  "options": [
+   {
+    "t": "Es kann sich aus eigener Kraft finanzieren, ohne neue Kredite und ohne neues Geld der Eigentümer",
+    "c": true
+   },
+   {
+    "t": "Es muss auf den Cashflow keine Steuern zahlen",
+    "c": false
+   },
+   {
+    "t": "Ein hoher Cashflow bedeutet immer auch einen gleich hohen Gewinn",
+    "c": false
+   },
+   {
+    "t": "Mit hohem Cashflow darf es keine Rückstellungen mehr bilden",
+    "c": false
+   }
+  ],
+  "expl": "Der Cashflow zeigt die Innenfinanzierungskraft. Innenfinanzierung heißt: Das Unternehmen finanziert sich selbst. Es braucht dafür keine neuen Kredite und kein neues Geld von den Eigentümern. Je höher der Cashflow, desto unabhängiger ist es. Gewinn und Cashflow sind dabei nicht gleich."
+ },
+ {
+  "id": "wdh-tag06-29",
+  "typ": "rechnen",
+  "q": "Berechne zuerst den Cashflow (indirekt) und dann die Cashflow-Umsatzrate der Textilwerk Sommer GmbH.",
+  "angaben": "Umsatzerlöse: 1.875.000 €; Jahresüberschuss: 60.000 €; Abschreibungen: 90.000 €; keine Rückstellungen gebildet oder aufgelöst",
+  "einheit": "%",
+  "loesung": 8,
+  "rechnung": "(60000 + 90000) / 1875000 * 100",
+  "schritte": [
+   "Cashflow = Jahresüberschuss + Abschreibungen = 60.000 + 90.000 = 150.000 €",
+   "Cashflow-Umsatzrate = Cashflow : Umsatzerlöse × 100",
+   "150.000 : 1.875.000 = 0,08",
+   "0,08 × 100 = 8 %"
+  ],
+  "expl": "Die Cashflow-Umsatzrate zeigt, wie viel Geld von 100 € Umsatz übrig bleibt. Bei Sommer sind es 8 €. Die Umsatzrentabilität ist kleiner. Dort steht der Gewinn im Zähler: 60.000 : 1.875.000 × 100 = 3,2 %. Der Unterschied kommt von den Abschreibungen. Sie senken den Gewinn, aber nicht das Geld."
+ },
+ {
+  "id": "wdh-tag06-30",
+  "typ": "offen",
+  "q": "Warum ist ein hoher Cashflow, der vor allem durch hohe Abschreibungen entsteht, kein Geschenk? Wofür sollte das Geld bereitstehen?",
+  "kernpunkte": [
+   "Abschreibungen zeigen den Wertverlust von Maschinen und Gebäuden",
+   "Die Anlagen nutzen sich ab und müssen später ersetzt werden",
+   "Das Geld aus den Abschreibungen sollte für Ersatzinvestitionen bereitstehen"
+  ],
+  "expl": "Abschreibungen erhöhen den Cashflow, weil für sie in diesem Jahr kein Geld fließt. Aber sie haben einen Grund: Die Maschinen verlieren an Wert und nutzen sich ab. Irgendwann müssen sie ersetzt werden. Dann braucht das Unternehmen Geld. Deshalb sollte das Geld aus den Abschreibungen für diese Ersatzinvestitionen bereitstehen. Es ist nicht frei zum Ausgeben."
+ },
+ {
+  "id": "wdh-tag06-31",
+  "q": "Welche Aussagen zur Verwendung des Cashflows sind richtig? Zwei Antworten sind richtig.",
+  "options": [
+   {
+    "t": "Hat ein Unternehmen hohe Schulden, ist die Tilgung sinnvoll",
+    "c": true
+   },
+   {
+    "t": "Ist die Liquidität knapp, sollte das Geld im Unternehmen bleiben",
+    "c": true
+   },
+   {
+    "t": "Der Cashflow muss immer vollständig an die Gesellschafter ausgeschüttet werden",
+    "c": false
+   },
+   {
+    "t": "Rücklagen bilden heißt, das Geld an die Gesellschafter zu überweisen",
+    "c": false
+   }
+  ],
+  "expl": "Den Cashflow kann man auf vier Arten verwenden: investieren, Schulden tilgen, ausschütten und Rücklagen bilden (I-T-A-R). Was sinnvoll ist, hängt von der Lage ab. Hohe Schulden sprechen für Tilgung. Knappe Liquidität spricht dafür, Geld im Unternehmen zu lassen. Rücklagen bleiben im Eigenkapital. Sie werden gerade nicht ausgeschüttet."
+ },
+ {
+  "id": "wdh-tag06-32",
+  "typ": "rechnen",
+  "q": "Berechne die Schuldentilgungsdauer der Maschinenbau Ostermann GmbH. Runde auf zwei Nachkommastellen.",
+  "angaben": "Fremdkapital: 1.250.000 €; flüssige Mittel: 50.000 €; Cashflow: 320.000 €",
+  "einheit": "Jahre",
+  "loesung": 3.75,
+  "rechnung": "(1250000 - 50000) / 320000",
+  "schritte": [
+   "Schuldentilgungsdauer = (Fremdkapital − flüssige Mittel) : Cashflow",
+   "Effektivverschuldung = 1.250.000 − 50.000 = 1.200.000 €",
+   "1.200.000 : 320.000 = 3,75 Jahre"
+  ],
+  "expl": "Zuerst zieht man die flüssigen Mittel vom Fremdkapital ab. Das ergibt die Effektivverschuldung. Dann teilt man durch den Cashflow. Ostermann könnte seine Schulden in 3,75 Jahren aus eigener Kraft zurückzahlen. Nach der Faustregel der Banken ist das in Ordnung (bis etwa 7 Jahre). Die Grenze für sehr gut (unter 3,5 Jahren) verfehlt es knapp. Je kleiner der Wert, desto besser."
+ },
+ {
+  "id": "wdh-tag06-33",
+  "q": "Welche Schuldentilgungsdauer gilt nach der Faustregel aus der Bankpraxis als sehr gut?",
+  "options": [
+   {
+    "t": "2,8 Jahre",
+    "c": true
+   },
+   {
+    "t": "5 Jahre",
+    "c": false
+   },
+   {
+    "t": "6,5 Jahre",
+    "c": false
+   },
+   {
+    "t": "9 Jahre",
+    "c": false
+   }
+  ],
+  "expl": "Die Faustregel der Banken lautet: unter 3,5 Jahren sehr gut, bis etwa 7 Jahre in Ordnung, über 7 Jahre kritisch. 2,8 Jahre liegen unter 3,5 Jahren. 5 und 6,5 Jahre sind in Ordnung. 9 Jahre sind kritisch. Die Grenzen sind keine Gesetze und unterscheiden sich je nach Bank."
+ }
+]
