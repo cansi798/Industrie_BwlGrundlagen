@@ -16,15 +16,44 @@ export function shuffle(arr, rand = cryptoRandom) {
   return a;
 }
 
-/** Kopie der Frage mit gemischten Antworten und Hinweis auf Mehrfachauswahl. */
+/** Standardtoleranz für Rechenaufgaben (absolut). */
+export const TOLERANZ_STANDARD = 0.01;
+
+/** Kopie der Frage mit gemischten Antworten und Hinweis auf Mehrfachauswahl; Rechnen/Offen bleiben unverändert. */
 export function prepareQuestion(q, rand = cryptoRandom) {
+  if (q.typ) return { ...q };
   const options = shuffle(q.options, rand).map((o) => ({ ...o }));
   return { ...q, options, multi: options.filter((o) => o.c).length > 1 };
 }
 
-/** Richtig nur, wenn genau die Menge der richtigen Optionen gewählt wurde. */
-export function isCorrect(question, selectedIdx) {
-  const chosen = new Set(selectedIdx ?? []);
+/** Liest eine Zahl in deutscher oder englischer Schreibweise; null bei ungültiger Eingabe. */
+export function parseZahl(text) {
+  if (typeof text !== "string") return null;
+  let t = text.replace(/[\s €%]/g, "").replace(/−/g, "-");
+  if (!/^-?[\d.,]+$/.test(t)) return null;
+  if (t.includes(",")) {
+    if (t.split(",").length > 2) return null;
+    t = t.replace(/\./g, "").replace(",", ".");
+  } else if (/^-?\d{1,3}(\.\d{3})+$/.test(t)) {
+    t = t.replace(/\./g, "");
+  }
+  const n = Number(t);
+  return Number.isNaN(n) ? null : n;
+}
+
+/**
+ * MC: richtig nur, wenn genau die Menge der richtigen Optionen gewählt wurde.
+ * Rechnen: Antwort als Text, innerhalb der Toleranz. Offen: nur Selbsteinschätzung "gewusst".
+ */
+export function isCorrect(question, antwort) {
+  if (question.typ === "rechnen") {
+    const wert = parseZahl(antwort);
+    if (wert === null) return false;
+    // Epsilon fängt Gleitkommafehler ab (30 − 29,9 = 0,10000000000000142)
+    return Math.abs(wert - question.loesung) <= (question.toleranz ?? TOLERANZ_STANDARD) + 1e-9;
+  }
+  if (question.typ === "offen") return antwort === "gewusst";
+  const chosen = new Set(antwort ?? []);
   if (chosen.size === 0) return false;
   return question.options.every((o, i) => o.c === chosen.has(i));
 }

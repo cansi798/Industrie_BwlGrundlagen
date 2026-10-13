@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { shuffle, prepareQuestion, isCorrect, drawExam, score, restTime, PRUEFUNG } from "../js/lib/quiz.js";
+import { shuffle, prepareQuestion, isCorrect, drawExam, score, restTime, PRUEFUNG, parseZahl } from "../js/lib/quiz.js";
 
 // Deterministischer Zufall (LCG) für reproduzierbare Tests
 function seeded(seed = 42) {
@@ -112,4 +112,48 @@ test("restTime", () => {
 
 test("PRUEFUNG-Konstanten aus dem Spec", () => {
   assert.deepEqual(PRUEFUNG, { fragen: 30, minuten: 45, bestehen: 50 });
+});
+
+test("parseZahl versteht deutsche und englische Schreibweisen", () => {
+  for (const [ein, aus] of [
+    ["30", 30], ["30,5", 30.5], [" 30,5 ", 30.5], ["1.234,56", 1234.56], ["1234.56", 1234.56],
+    ["1.234", 1234], ["1.200 €", 1200], ["12 %", 12], ["1.5", 1.5], ["0,25", 0.25],
+    ["-12.000", -12000], ["−12.000", -12000], ["-1,5", -1.5], ["1 200", 1200],
+  ]) assert.equal(parseZahl(ein), aus, ein);
+});
+
+test("parseZahl liefert null bei ungültiger Eingabe", () => {
+  for (const ein of ["", "   ", "abc", "12,3,4", "1.2.3,4,5", "€", "-", undefined, null])
+    assert.equal(parseZahl(ein), null, String(ein));
+});
+
+const rechnen = { id: "r1", typ: "rechnen", q: "?", loesung: 30, toleranz: 0.1, expl: "x" };
+
+test("isCorrect Rechnen: innerhalb der Toleranz richtig, außerhalb falsch", () => {
+  assert.equal(isCorrect(rechnen, "30"), true);
+  assert.equal(isCorrect(rechnen, "30,1"), true);
+  assert.equal(isCorrect(rechnen, "29,9 %"), true);
+  assert.equal(isCorrect(rechnen, "30,2"), false);
+  assert.equal(isCorrect(rechnen, ""), false);
+  assert.equal(isCorrect(rechnen, undefined), false);
+});
+
+test("isCorrect Rechnen: ohne toleranz gilt 0,01", () => {
+  const q = { ...rechnen, toleranz: undefined, loesung: -1250.5 };
+  assert.equal(isCorrect(q, "-1.250,51"), true);
+  assert.equal(isCorrect(q, "-1.250,52"), false);
+});
+
+test("isCorrect Offen: nur 'gewusst' zählt als richtig", () => {
+  const q = { id: "o1", typ: "offen", q: "?", kernpunkte: ["a", "b"], expl: "x" };
+  assert.equal(isCorrect(q, "gewusst"), true);
+  assert.equal(isCorrect(q, "teilweise"), false);
+  assert.equal(isCorrect(q, "nicht"), false);
+  assert.equal(isCorrect(q, undefined), false);
+});
+
+test("prepareQuestion lässt Rechnen und Offen unverändert", () => {
+  const out = prepareQuestion(rechnen, seeded());
+  assert.deepEqual(out, rechnen);
+  assert.notEqual(out, rechnen);
 });
