@@ -356,3 +356,4 @@ textarea { display: block; width: 100%; min-height: 6.5em; box-sizing: border-bo
 .loesung p { margin: 4px 0 0; }
 ol.schritte { margin: 8px 0; padding-left: 22px; font-variant-numeric: tabular-nums; }
 .segmented.drei { grid-template-columns: repeat(3, 1fr); }
+.hint[hidden] { display: none; }

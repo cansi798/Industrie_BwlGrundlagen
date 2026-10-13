@@ -21,7 +21,7 @@ export function aufgabeView(q, opts = {}) {
 function rechnenView(q, { selected = "", onChange = null, reveal = false } = {}) {
   const inputId = `eingabe-${q.id}`;
   const text = typeof selected === "string" ? selected : "";
-  const hinweis = h("p", { class: "hint", hidden: true, id: `hinweis-${q.id}` }, "Bitte eine Zahl eingeben, z. B. 12,5");
+  const hinweis = h("p", { class: "hint", hidden: text.trim() === "" || parseZahl(text) !== null, id: `hinweis-${q.id}` }, "Bitte eine Zahl eingeben, z. B. 12,5");
   const input = h("input", {
     id: inputId,
     type: "text",
@@ -57,7 +57,7 @@ function rechnenView(q, { selected = "", onChange = null, reveal = false } = {})
   if (reveal) {
     const beantwortet = parseZahl(text) !== null;
     const ok = beantwortet && isCorrect(q, text);
-    const lsg = q.loesung.toLocaleString("de-DE") + (q.einheit ? " " + q.einheit : "");
+    const lsg = q.loesung.toLocaleString("de-DE", { maximumFractionDigits: 2 }) + (q.einheit ? " " + q.einheit : "");
     ergebnis = h("div", { class: `expl ${ok ? "expl-ok" : "expl-bad"}`, role: "status" },
       h("strong", {}, ok ? "Richtig!" : beantwortet ? "Leider falsch." : "Nicht beantwortet."),
       h("p", {}, `Lösung: ${lsg}`),
