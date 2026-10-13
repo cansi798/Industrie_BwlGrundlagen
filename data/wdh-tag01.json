@@ -1,0 +1,620 @@
+[
+ {
+  "id": "wdh-tag01-01",
+  "typ": "offen",
+  "q": "Erkläre, warum Knappheit der Grund dafür ist, dass Menschen und Unternehmen wirtschaften müssen.",
+  "kernpunkte": [
+   "Wünsche und Bedürfnisse sind praktisch unbegrenzt",
+   "Mittel wie Geld, Rohstoffe und Zeit sind begrenzt",
+   "Deshalb muss man planvoll entscheiden, wofür man die Mittel einsetzt",
+   "Ohne Knappheit müsste niemand rechnen oder verzichten"
+  ],
+  "expl": "Menschen haben fast unbegrenzt viele Wünsche. Die Mittel sind aber knapp. Knapp heißt: Es ist weniger da, als alle haben möchten. Darum muss man auswählen, was zuerst kommt und worauf man verzichtet. Dieses planvolle Entscheiden über knappe Mittel heißt Wirtschaften. Wäre alles im Überfluss da, müsste niemand wirtschaften."
+ },
+ {
+  "id": "wdh-tag01-02",
+  "q": "In welcher Reihenfolge stehen die fünf Stufen nach Maslow, wenn man unten beginnt?",
+  "options": [
+   {
+    "t": "Grundbedürfnisse, Sicherheit, soziale Bedürfnisse, Wertschätzung, Selbstverwirklichung",
+    "c": true
+   },
+   {
+    "t": "Grundbedürfnisse, soziale Bedürfnisse, Sicherheit, Selbstverwirklichung, Wertschätzung",
+    "c": false
+   },
+   {
+    "t": "Sicherheit, Grundbedürfnisse, Wertschätzung, soziale Bedürfnisse, Selbstverwirklichung",
+    "c": false
+   },
+   {
+    "t": "Selbstverwirklichung, Wertschätzung, soziale Bedürfnisse, Sicherheit, Grundbedürfnisse",
+    "c": false
+   }
+  ],
+  "expl": "Ganz unten stehen die Grundbedürfnisse wie Essen und Schlafen. Darauf folgen Sicherheit und soziale Bedürfnisse. Danach kommt die Wertschätzung. Die Spitze ist die Selbstverwirklichung. Die letzte Antwort nennt die Stufen von oben nach unten. Merkhilfe: Gut Schlafen Schafft Wahre Stärke."
+ },
+ {
+  "id": "wdh-tag01-03",
+  "typ": "rechnen",
+  "q": "Die Polsterei Krämer KG fertigt Sessel. Berechne die Arbeitsproduktivität in Sesseln je Arbeitsstunde.",
+  "angaben": "Mitarbeitende: 6; Arbeitszeit je Mitarbeitenden: 40 Stunden; hergestellte Sessel: 360 Stück",
+  "einheit": "Sessel je Std.",
+  "loesung": 1.5,
+  "rechnung": "360 / (6 * 40)",
+  "schritte": [
+   "Arbeitsproduktivität = hergestellte Stück ÷ Arbeitsstunden",
+   "Arbeitsstunden: 6 × 40 = 240 Std.",
+   "360 ÷ 240 = 1,5 Sessel je Arbeitsstunde"
+  ],
+  "expl": "Die Produktivität vergleicht Mengen: Output geteilt durch Input. Der Output sind die 360 Sessel. Der Input sind die Arbeitsstunden. Sie müssen zuerst ausgerechnet werden: 6 Personen mal 40 Stunden. Pro Arbeitsstunde entstehen also 1,5 Sessel. Euro kommen in dieser Rechnung nicht vor."
+ },
+ {
+  "id": "wdh-tag01-04",
+  "q": "Ein Hotel möchte neue Stühle für den Speisesaal. Es hat dafür 20.000 € eingeplant, aber noch nichts bestellt. Was liegt vor?",
+  "options": [
+   {
+    "t": "Bedarf",
+    "c": true
+   },
+   {
+    "t": "Nachfrage",
+    "c": false
+   },
+   {
+    "t": "Nur ein Bedürfnis",
+    "c": false
+   },
+   {
+    "t": "Ein Kollektivbedürfnis",
+    "c": false
+   }
+  ],
+  "expl": "Bedarf ist ein Bedürfnis, für das Kaufkraft da ist. Kaufkraft heißt: Das Geld ist vorhanden. Das Hotel hat den Wunsch und 20.000 €. Es hat aber noch nicht gekauft. Nachfrage entsteht erst, wenn am Markt bestellt wird. Ein Kollektivbedürfnis wäre ein Bedürfnis der Allgemeinheit, etwa nach Straßen."
+ },
+ {
+  "id": "wdh-tag01-05",
+  "typ": "offen",
+  "q": "Worin unterscheiden sich Bedürfnis, Bedarf und Nachfrage? Erkläre es an einem eigenen Beispiel.",
+  "kernpunkte": [
+   "Bedürfnis: Wunsch, einen Mangel zu beseitigen, egal ob bezahlbar",
+   "Bedarf: Bedürfnis mit Kaufkraft (Geld ist da)",
+   "Nachfrage: Bedarf, der am Markt als Kauf auftritt",
+   "Nur die Nachfrage bringt dem Unternehmen Umsatz"
+  ],
+  "expl": "Die drei Begriffe bauen aufeinander auf. Jede Stufe ist enger als die vorherige. Beispiel: Ich wünsche mir Laufschuhe (Bedürfnis). Ich habe 120 € dafür gespart (Bedarf). Ich kaufe die Schuhe im Sportgeschäft (Nachfrage). Erst der Kauf ist für das Unternehmen sichtbar. Nur er bringt Umsatz."
+ },
+ {
+  "id": "wdh-tag01-06",
+  "q": "Welches Beispiel aus einem Industriebetrieb spricht vor allem die sozialen Bedürfnisse nach Maslow an?",
+  "options": [
+   {
+    "t": "Ein gemeinsames Sommerfest mit dem Team",
+    "c": true
+   },
+   {
+    "t": "Ein unbefristeter Arbeitsvertrag",
+    "c": false
+   },
+   {
+    "t": "Ein Lob des Meisters vor der ganzen Abteilung",
+    "c": false
+   },
+   {
+    "t": "Eigene Produktentwürfe einbringen dürfen",
+    "c": false
+   }
+  ],
+  "expl": "Soziale Bedürfnisse heißen: dazugehören, Freundschaft, ein gutes Team. Das Sommerfest stärkt die Gemeinschaft. Der unbefristete Vertrag gehört zur Sicherheit. Das Lob vor allen gehört zur Wertschätzung. Eigene Entwürfe einbringen ist Selbstverwirklichung."
+ },
+ {
+  "id": "wdh-tag01-07",
+  "typ": "offen",
+  "q": "Warum setzt sich ein Unternehmen Ziele? Nenne mehrere Aufgaben, die Ziele erfüllen.",
+  "kernpunkte": [
+   "Orientierung: Alle wissen, wohin es geht",
+   "Entscheidungshilfe: Man prüft, ob eine Maßnahme zum Ziel passt",
+   "Kontrolle: Erfolg wird messbar durch Vergleich von Ergebnis und Ziel",
+   "Motivation der Mitarbeitenden"
+  ],
+  "expl": "Ein Ziel ist ein gewünschter, möglichst messbarer Zustand in der Zukunft. Ohne Ziele arbeiten Abteilungen in verschiedene Richtungen. Ziele geben eine Richtung vor. Sie helfen bei Entscheidungen. Am Ende kann man das Ergebnis mit dem Ziel vergleichen. So wird Erfolg messbar. Außerdem motivieren klare Ziele die Mitarbeitenden."
+ },
+ {
+  "id": "wdh-tag01-08",
+  "q": "Eine Stadt baut eine neue Feuerwache. Welche Art von Bedürfnis wird damit erfüllt, wenn man nach dem Träger des Bedürfnisses einteilt?",
+  "options": [
+   {
+    "t": "Ein Kollektivbedürfnis",
+    "c": true
+   },
+   {
+    "t": "Ein Individualbedürfnis",
+    "c": false
+   },
+   {
+    "t": "Ein Luxusbedürfnis",
+    "c": false
+   },
+   {
+    "t": "Ein Kulturbedürfnis",
+    "c": false
+   }
+  ],
+  "expl": "Nach dem Träger gibt es zwei Arten. Individualbedürfnisse hat ein einzelner Mensch, etwa nach einem Fahrrad. Kollektivbedürfnisse hat die Gemeinschaft. Meist erfüllt sie der Staat, zum Beispiel mit Straßen, Schulen, Polizei oder Feuerwehr. Luxus- und Kulturbedürfnisse gehören zu einer anderen Einteilung, nämlich nach der Dringlichkeit."
+ },
+ {
+  "id": "wdh-tag01-09",
+  "q": "Welche Ziele eines Möbelherstellers sind Sachziele? Mehrere Antworten sind richtig.",
+  "options": [
+   {
+    "t": "Pro Jahr 1.200 Schränke fertigen",
+    "c": true
+   },
+   {
+    "t": "Die Lieferzeit auf zehn Tage senken",
+    "c": true
+   },
+   {
+    "t": "Eine Eigenkapitalrentabilität von 12 % erreichen",
+    "c": false
+   },
+   {
+    "t": "Jederzeit zahlungsfähig bleiben",
+    "c": false
+   }
+  ],
+  "expl": "Sachziele beschreiben die Leistung: Produkte, Mengen, Qualität, Lieferzeit. Das gilt auch, wenn eine Zahl im Ziel steht. 1.200 Schränke und zehn Tage Lieferzeit beschreiben also, WAS geleistet wird. Rentabilität und Zahlungsfähigkeit (Liquidität) messen den wirtschaftlichen Erfolg. Das sind Formalziele."
+ },
+ {
+  "id": "wdh-tag01-10",
+  "q": "Welche Aussagen zu den Güterarten sind richtig? Mehrere Antworten sind richtig.",
+  "options": [
+   {
+    "t": "Nur knappe Güter sind wirtschaftliche Güter.",
+    "c": true
+   },
+   {
+    "t": "Dienstleistungen und Rechte gehören zu den immateriellen Gütern.",
+    "c": true
+   },
+   {
+    "t": "Freie Güter haben einen niedrigen, aber festen Preis.",
+    "c": false
+   },
+   {
+    "t": "Auch Dienstleistungen teilt man in Gebrauchs- und Verbrauchsgüter ein.",
+    "c": false
+   }
+  ],
+  "expl": "Freie Güter wie Atemluft sind unbegrenzt da. Sie kosten gar nichts. Knappe Güter sind begrenzt und haben einen Preis. Nur sie sind Gegenstand der Wirtschaft. Immateriell heißt: nicht anfassbar. Das sind Dienstleistungen und Rechte. Die Einteilung in Gebrauch und Verbrauch gilt nur für Sachgüter."
+ },
+ {
+  "id": "wdh-tag01-11",
+  "typ": "rechnen",
+  "q": "Berechne die Wirtschaftlichkeit der Metallbau Vogt GmbH. Runde auf zwei Nachkommastellen.",
+  "angaben": "Erträge: 1.300.000 €; Aufwendungen: 1.200.000 €",
+  "einheit": "",
+  "loesung": 1.08,
+  "rechnung": "1300000 / 1200000",
+  "schritte": [
+   "Wirtschaftlichkeit = Ertrag ÷ Aufwand",
+   "1.300.000 ÷ 1.200.000 = 1,0833…",
+   "gerundet: 1,08"
+  ],
+  "expl": "Die Wirtschaftlichkeit vergleicht Euro mit Euro: Ertrag geteilt durch Aufwand. Das Ergebnis hat keine Einheit. Der Wert 1,08 ist größer als 1. Der Ertrag ist also größer als der Aufwand. Für jeden Euro Aufwand kommen etwa 1,08 € Ertrag herein. Das Unternehmen arbeitet wirtschaftlich und macht Gewinn."
+ },
+ {
+  "id": "wdh-tag01-12",
+  "q": "Eine Bäckerei nutzt einen Lieferwagen, um jeden Tag Brot an Cafés zu liefern. Wie ordnet man den Lieferwagen ein?",
+  "options": [
+   {
+    "t": "Sachgut, Produktionsgut (Investitionsgut), Gebrauchsgut",
+    "c": true
+   },
+   {
+    "t": "Sachgut, Konsumgut, Gebrauchsgut",
+    "c": false
+   },
+   {
+    "t": "Sachgut, Produktionsgut, Verbrauchsgut",
+    "c": false
+   },
+   {
+    "t": "Dienstleistung, Produktionsgut, Gebrauchsgut",
+    "c": false
+   }
+  ],
+  "expl": "Drei Fragen helfen. Kann man es anfassen? Ja, also Sachgut. Wer nutzt es? Ein Betrieb, also Produktionsgut. Ist es nach der Nutzung weg? Nein, also Gebrauchsgut. Ein langlebiges Produktionsgut, das viele Jahre genutzt wird, heißt Investitionsgut. Für eine Privatperson wäre derselbe Wagen ein Konsumgut."
+ },
+ {
+  "id": "wdh-tag01-13",
+  "typ": "offen",
+  "q": "Warum kann dasselbe Gut einmal ein Konsumgut und einmal ein Produktionsgut sein? Erkläre es an einem Beispiel.",
+  "kernpunkte": [
+   "Entscheidend ist, wer das Gut wofür verwendet",
+   "Private Haushalte nutzen Konsumgüter",
+   "Unternehmen nutzen Produktionsgüter, um andere Güter herzustellen",
+   "Beispiel: Auto privat = Konsumgut, im Handwerksbetrieb = Investitionsgut"
+  ],
+  "expl": "Die Einteilung hängt nicht vom Gut selbst ab, sondern von der Verwendung. Nutzt ein privater Haushalt das Gut, ist es ein Konsumgut. Nutzt ein Betrieb es für seine Arbeit, ist es ein Produktionsgut. Ein Tisch im Wohnzimmer ist ein Konsumgut. Derselbe Tisch im Büro eines Betriebs ist ein Produktionsgut. Weil er dort lange genutzt wird, ist er ein Investitionsgut."
+ },
+ {
+  "id": "wdh-tag01-14",
+  "q": "Ein Unternehmen bietet jedes Jahr drei neue Ausbildungsplätze an. Zu welchem Zielbereich gehört dieses Ziel?",
+  "options": [
+   {
+    "t": "Soziales Ziel",
+    "c": true
+   },
+   {
+    "t": "Ökologisches Ziel",
+    "c": false
+   },
+   {
+    "t": "Ökonomisches Ziel",
+    "c": false
+   },
+   {
+    "t": "Liquiditätsziel",
+    "c": false
+   }
+  ],
+  "expl": "Soziale Ziele betreffen die Menschen im und um das Unternehmen. Dazu gehören sichere Arbeitsplätze, faire Bezahlung, Arbeitsschutz und Ausbildung. Ökologische Ziele betreffen die Umwelt. Ökonomische Ziele betreffen Gewinn, Kosten oder Umsatz. Liquidität ist ein Formalziel."
+ },
+ {
+  "id": "wdh-tag01-15",
+  "q": "Eine Schreinerei verbraucht Strom für ihre Sägen. Wie ordnet man den Strom nach der Einteilung der kaufmännischen Ausbildung (RHB-Stoffe) ein?",
+  "options": [
+   {
+    "t": "Betriebsstoff",
+    "c": true
+   },
+   {
+    "t": "Rohstoff",
+    "c": false
+   },
+   {
+    "t": "Hilfsstoff",
+    "c": false
+   },
+   {
+    "t": "Dispositiver Faktor",
+    "c": false
+   }
+  ],
+  "expl": "Betriebsstoffe gehen nicht ins Produkt ein. Sie werden aber bei der Herstellung verbraucht. Beispiele sind Strom und Schmieröl. Rohstoffe sind der Hauptbestandteil, etwa Holz. Hilfsstoffe sind Nebenbestandteile, etwa Leim. Gutenberg zählt Betriebsstoffe zu den Betriebsmitteln. In der Ausbildung gilt aber die Einteilung RHB-Stoffe."
+ },
+ {
+  "id": "wdh-tag01-16",
+  "typ": "offen",
+  "q": "Worin unterscheiden sich Betriebsmittel und Werkstoffe? Nenne je ein Beispiel aus einer Möbelfertigung.",
+  "kernpunkte": [
+   "Betriebsmittel werden genutzt, gehen aber nicht ins Produkt ein",
+   "Werkstoffe gehen ins Produkt ein oder werden bei der Herstellung verbraucht",
+   "Beispiel Betriebsmittel: Säge, Halle, Lieferwagen",
+   "Beispiel Werkstoffe: Holz, Leim, Schrauben, Lack"
+  ],
+  "expl": "Beide sind elementare Produktionsfaktoren nach Gutenberg. Betriebsmittel sind Gebäude, Maschinen, Werkzeuge und Fahrzeuge. Sie werden lange genutzt und bleiben im Betrieb. Die Säge bleibt in der Werkstatt. Werkstoffe werden verarbeitet oder verbraucht. Das Holz steckt am Ende im Tisch."
+ },
+ {
+  "id": "wdh-tag01-17",
+  "typ": "rechnen",
+  "q": "Die Fahrradmanufaktur Lindner OHG möchte wissen, wie sich das Kapital der Eigentümer verzinst. Berechne die Eigenkapitalrentabilität.",
+  "angaben": "Erträge: 900.000 €; Aufwendungen: 846.000 €; Eigenkapital: 360.000 €",
+  "einheit": "%",
+  "loesung": 15,
+  "rechnung": "(900000 - 846000) / 360000 * 100",
+  "schritte": [
+   "Gewinn = Ertrag − Aufwand = 900.000 − 846.000 = 54.000 €",
+   "Eigenkapitalrentabilität = Gewinn ÷ Eigenkapital × 100",
+   "54.000 ÷ 360.000 = 0,15",
+   "0,15 × 100 = 15 %"
+  ],
+  "expl": "Zuerst braucht man den Gewinn. Er ist der Ertrag minus der Aufwand. Dann teilt man den Gewinn durch das Eigenkapital und nimmt mal 100. 15 % heißt: Auf 100 € Eigenkapital kommen 15 € Gewinn. Das ist deutlich mehr als bei einer sicheren Geldanlage. Das ist gerechtfertigt, denn die Eigentümer tragen das Risiko."
+ },
+ {
+  "id": "wdh-tag01-18",
+  "q": "Welche Einteilung der Produktionsfaktoren nutzt die Betriebswirtschaftslehre nach Gutenberg?",
+  "options": [
+   {
+    "t": "Ausführende Arbeit, Betriebsmittel und Werkstoffe als elementare Faktoren, dazu die Leitung als dispositiver Faktor",
+    "c": true
+   },
+   {
+    "t": "Arbeit, Boden und Kapital",
+    "c": false
+   },
+   {
+    "t": "Rohstoffe, Hilfsstoffe und Betriebsstoffe als elementare Faktoren, dazu das Kapital als dispositiver Faktor",
+    "c": false
+   },
+   {
+    "t": "Sachgüter, Dienstleistungen und Rechte",
+    "c": false
+   }
+  ],
+  "expl": "Gutenberg betrachtet einen einzelnen Betrieb. Er nennt drei elementare Faktoren: ausführende Arbeit, Betriebsmittel und Werkstoffe. Dazu kommt die Leitung als dispositiver Faktor. Sie plant, organisiert und kontrolliert. Arbeit, Boden und Kapital ist die Sicht der Volkswirtschaftslehre. RHB-Stoffe sind nur die Werkstoffe."
+ },
+ {
+  "id": "wdh-tag01-19",
+  "typ": "offen",
+  "q": "Welche Aufgabe hat der dispositive Faktor, und was würde in einem Betrieb ohne ihn fehlen?",
+  "kernpunkte": [
+   "Dispositiver Faktor = leitende Arbeit (Geschäftsführung, Führungskräfte)",
+   "Er plant, organisiert und kontrolliert",
+   "Er sorgt dafür, dass Arbeit, Betriebsmittel und Werkstoffe sinnvoll zusammenwirken",
+   "Ohne ihn gäbe es keinen geordneten Ablauf"
+  ],
+  "expl": "Der dispositive Faktor ist die Leitung des Betriebs. Dazu gehören Geschäftsführung und Führungskräfte. Sie planen, organisieren und kontrollieren. So werden die elementaren Faktoren kombiniert. Ohne Leitung gäbe es Holz, Maschinen und Menschen, aber keinen geordneten Ablauf. Bild: ein Orchester ohne Dirigent."
+ },
+ {
+  "id": "wdh-tag01-20",
+  "q": "Eine Druckerei teilt die Zahl der gedruckten Bücher durch die Laufzeit ihrer Druckmaschinen in Stunden. Welche Kennzahl berechnet sie?",
+  "options": [
+   {
+    "t": "Maschinenproduktivität",
+    "c": true
+   },
+   {
+    "t": "Arbeitsproduktivität",
+    "c": false
+   },
+   {
+    "t": "Materialproduktivität",
+    "c": false
+   },
+   {
+    "t": "Wirtschaftlichkeit",
+    "c": false
+   }
+  ],
+  "expl": "Produktivität ist Ausbringungsmenge geteilt durch Einsatzmenge. Je nach Input heißt sie anders. Teilt man durch Maschinenstunden, ist es die Maschinenproduktivität. Bei Arbeitsstunden ist es die Arbeitsproduktivität. Bei Material ist es die Materialproduktivität. Die Wirtschaftlichkeit rechnet mit Euro, nicht mit Mengen."
+ },
+ {
+  "id": "wdh-tag01-21",
+  "q": "Welche Fälle folgen dem Minimalprinzip? Mehrere Antworten sind richtig.",
+  "options": [
+   {
+    "t": "Ein Fahrradhändler will 50 bestellte Räder mit möglichst wenig Arbeitszeit montieren.",
+    "c": true
+   },
+   {
+    "t": "Eine Spedition will eine feste Lieferung nach Hamburg mit möglichst geringen Kosten fahren.",
+    "c": true
+   },
+   {
+    "t": "Ein Betrieb will mit einem Werbebudget von 5.000 € möglichst viele neue Kunden gewinnen.",
+    "c": false
+   },
+   {
+    "t": "Eine Näherei will in einer 8-Stunden-Schicht möglichst viele Hemden nähen.",
+    "c": false
+   }
+  ],
+  "expl": "Die wichtigste Frage lautet: Was ist fest vorgegeben? Beim Minimalprinzip ist das Ziel fest. Der Einsatz soll möglichst klein sein. 50 Räder und die feste Lieferung sind solche Ziele. Beim Werbebudget und bei der Schicht sind die Mittel fest. Das Ergebnis soll möglichst groß sein. Das ist das Maximalprinzip."
+ },
+ {
+  "id": "wdh-tag01-22",
+  "typ": "offen",
+  "q": "Vergleiche Produktivität und Wirtschaftlichkeit: Was wird jeweils ins Verhältnis gesetzt, und warum macht eine höhere Produktivität ein Unternehmen nicht automatisch wirtschaftlicher?",
+  "kernpunkte": [
+   "Produktivität = Ausbringungsmenge : Einsatzmenge, in Mengen (technische Kennzahl)",
+   "Wirtschaftlichkeit = Ertrag : Aufwand, in Euro (wirtschaftliche Kennzahl)",
+   "Teure Maschinen oder unverkaufte Produkte erhöhen den Aufwand bzw. senken den Ertrag",
+   "Dann kann die Wirtschaftlichkeit trotz höherer Produktivität sinken"
+  ],
+  "expl": "Die Produktivität zählt nur Mengen, zum Beispiel Stühle je Stunde. Euro kommen nicht vor. Die Wirtschaftlichkeit vergleicht Euro: Ertrag geteilt durch Aufwand. Werte über 1 sind gut. Eine neue Maschine kann mehr Stück je Stunde schaffen. Ist sie aber sehr teuer, steigt der Aufwand. Werden die Möbel nicht verkauft, fehlt der Ertrag. Dann sinkt die Wirtschaftlichkeit trotzdem."
+ },
+ {
+  "id": "wdh-tag01-23",
+  "q": "Die Wirtschaftlichkeit eines Betriebs beträgt 0,95. Welche Aussage ist richtig?",
+  "options": [
+   {
+    "t": "Der Aufwand ist größer als der Ertrag, der Betrieb macht Verlust.",
+    "c": true
+   },
+   {
+    "t": "Der Betrieb macht 95 % Gewinn.",
+    "c": false
+   },
+   {
+    "t": "Ertrag und Aufwand sind genau gleich hoch.",
+    "c": false
+   },
+   {
+    "t": "Pro Arbeitsstunde werden 0,95 Stück hergestellt.",
+    "c": false
+   }
+  ],
+  "expl": "Wirtschaftlichkeit ist Ertrag geteilt durch Aufwand. Ein Wert unter 1 heißt: Der Ertrag ist kleiner als der Aufwand. Für jeden Euro Aufwand kommen nur 0,95 € herein. Das ist ein Verlust. Gleich hoch wären Ertrag und Aufwand erst bei genau 1. Stück je Stunde wäre eine Produktivität."
+ },
+ {
+  "id": "wdh-tag01-24",
+  "typ": "offen",
+  "q": "Ein Kollege sagt: „Wir arbeiten nach dem ökonomischen Prinzip, also mit möglichst wenig Mitteln möglichst viel erreichen.“ Was entgegnest du ihm?",
+  "kernpunkte": [
+   "Die Aussage ist ein logischer Widerspruch",
+   "Man kann nicht zwei Größen gleichzeitig optimieren",
+   "Der kleinste Einsatz wäre null, und mit null entsteht kein Ergebnis",
+   "Richtig: Maximalprinzip (Mittel fest) oder Minimalprinzip (Ziel fest)"
+  ],
+  "expl": "Beim ökonomischen Prinzip ist immer genau eine Größe fest. Beim Maximalprinzip sind die Mittel fest. Beim Minimalprinzip ist das Ziel fest. Will man beides zugleich optimieren, geht das nicht. Der kleinste Einsatz wäre null. Mit null kann man nichts herstellen. Deshalb ist der Satz in Prüfungen immer falsch."
+ },
+ {
+  "id": "wdh-tag01-25",
+  "q": "Welche Aussagen zur Rentabilität sind richtig? Mehrere Antworten sind richtig.",
+  "options": [
+   {
+    "t": "Die Rentabilität setzt den Gewinn ins Verhältnis zum eingesetzten Kapital und wird in Prozent angegeben.",
+    "c": true
+   },
+   {
+    "t": "Die Umsatzrentabilität berechnet man mit Gewinn ÷ Umsatz × 100.",
+    "c": true
+   },
+   {
+    "t": "Bei der Eigenkapitalrentabilität steht der Umsatz im Nenner.",
+    "c": false
+   },
+   {
+    "t": "Die Rentabilität vergleicht hergestellte Mengen mit eingesetzten Mengen.",
+    "c": false
+   }
+  ],
+  "expl": "Die Rentabilität zeigt, wie gut sich das Kapital verzinst. Man teilt den Gewinn durch das Kapital und nimmt mal 100. Bei der Eigenkapitalrentabilität steht das Eigenkapital im Nenner, nicht der Umsatz. Die Umsatzrentabilität zeigt, wie viel Gewinn von jedem Euro Umsatz bleibt. Mengen vergleicht die Produktivität."
+ },
+ {
+  "id": "wdh-tag01-26",
+  "typ": "offen",
+  "q": "Ökologische Ziele kosten ein Unternehmen oft zunächst Geld. Erkläre, wie sie trotzdem den ökonomischen Zielen helfen können.",
+  "kernpunkte": [
+   "Ökologische Ziele betreffen die Umwelt, z. B. FSC-Holz, Energie sparen",
+   "Kunden und Auftraggeber achten auf Umweltsiegel",
+   "Dadurch kann man Aufträge gewinnen und mehr Umsatz erzielen",
+   "Wer ökonomische, ökologische und soziale Ziele verbindet, wirtschaftet nachhaltig"
+  ],
+  "expl": "Umweltfreundliches Material ist oft teurer. Kurzfristig sinkt deshalb der Gewinn. Viele Kunden achten aber auf Umweltsiegel. Manche Auftraggeber verlangen sie sogar. Beispiel: Ein Hotel bestellt nur Stühle aus FSC-Holz. Ein Hersteller mit FSC-Holz bekommt den Auftrag. So hilft das ökologische Ziel dem ökonomischen Ziel."
+ },
+ {
+  "id": "wdh-tag01-27",
+  "q": "Wann ist ein Unternehmen nach der Insolvenzordnung zahlungsunfähig?",
+  "options": [
+   {
+    "t": "Wenn es seine fälligen Zahlungen nicht mehr erfüllen kann",
+    "c": true
+   },
+   {
+    "t": "Wenn es in einem Geschäftsjahr keinen Gewinn macht",
+    "c": false
+   },
+   {
+    "t": "Wenn seine Wirtschaftlichkeit unter 1 liegt",
+    "c": false
+   },
+   {
+    "t": "Wenn seine Eigenkapitalrentabilität unter dem Sparbuchzins liegt",
+    "c": false
+   }
+  ],
+  "expl": "Liquidität heißt Zahlungsfähigkeit. Wer seine fälligen Zahlungen nicht mehr erfüllen kann, ist zahlungsunfähig (§ 17 Abs. 2 InsO). Das ist ein Grund für ein Insolvenzverfahren. Ein Verlust allein macht noch nicht zahlungsunfähig. Ein Unternehmen kann eine Zeit lang ohne Gewinn überleben, wenn genug Geld da ist."
+ },
+ {
+  "id": "wdh-tag01-28",
+  "typ": "rechnen",
+  "q": "Die Spielwaren Brandt GmbH hat im letzten Jahr einen Gewinn erzielt. Berechne die Umsatzrentabilität.",
+  "angaben": "Gewinn: 42.000 €; Umsatzerlöse: 1.400.000 €",
+  "einheit": "%",
+  "loesung": 3,
+  "rechnung": "42000 / 1400000 * 100",
+  "schritte": [
+   "Umsatzrentabilität = Gewinn ÷ Umsatz × 100",
+   "42.000 ÷ 1.400.000 = 0,03",
+   "0,03 × 100 = 3 %"
+  ],
+  "expl": "Die Umsatzrentabilität zeigt, wie viel Gewinn von jedem Euro Umsatz übrig bleibt. Man teilt den Gewinn durch den Umsatz und nimmt mal 100. 3 % heißt: Von 100 € Umsatz bleiben 3 € Gewinn. Der Rest wird für Material, Löhne und andere Aufwendungen gebraucht."
+ },
+ {
+  "id": "wdh-tag01-29",
+  "typ": "offen",
+  "q": "Ein Möbelhersteller weist in seiner Gewinn- und Verlustrechnung einen Gewinn aus und kann trotzdem die Löhne nicht pünktlich zahlen. Wie ist das möglich, und was kann er dagegen tun?",
+  "kernpunkte": [
+   "Gewinn entsteht auf dem Papier, z. B. durch Verkäufe auf Rechnung",
+   "Kunden zahlen spät oder viel Geld steckt in Maschinen und Vorräten",
+   "Liquidität = fällige Zahlungen pünktlich leisten können",
+   "Maßnahmen: Forderungen eintreiben, kurzfristigen Kredit aufnehmen, spätere Zahlung mit Lieferanten vereinbaren"
+  ],
+  "expl": "Gewinn und Geld auf dem Konto sind nicht dasselbe. Ein Verkauf auf Rechnung erhöht den Gewinn sofort. Das Geld kommt aber erst, wenn der Kunde zahlt. Auch Geld in Maschinen und Vorräten ist gebunden. Dann fehlt Geld für fällige Löhne. Helfen können: Forderungen eintreiben, ein kurzfristiger Kredit oder spätere Zahlungstermine bei Lieferanten."
+ },
+ {
+  "id": "wdh-tag01-30",
+  "q": "Welche Aussagen zum magischen Dreieck sind richtig? Mehrere Antworten sind richtig.",
+  "options": [
+   {
+    "t": "Es verbindet die Ziele Liquidität, Rentabilität und Sicherheit.",
+    "c": true
+   },
+   {
+    "t": "Man kann die drei Ziele nicht gleichzeitig voll erreichen.",
+    "c": true
+   },
+   {
+    "t": "Sicherheit bedeutet hier vor allem Arbeitssicherheit an den Maschinen.",
+    "c": false
+   },
+   {
+    "t": "Liquidität und Rentabilität ergänzen sich immer gegenseitig.",
+    "c": false
+   }
+  ],
+  "expl": "Das magische Dreieck besteht aus Liquidität, Rentabilität und Sicherheit. Magisch heißt es, weil man nicht alle drei Ziele zugleich voll erreichen kann. Sicherheit meint hier: Das Kapital soll erhalten bleiben, Risiken sollen begrenzt sein. Liquidität und Rentabilität stehen oft im Konflikt. Geld auf dem Konto ist verfügbar, bringt aber kaum Zinsen."
+ },
+ {
+  "id": "wdh-tag01-31",
+  "typ": "offen",
+  "q": "Warum stehen Liquidität und Rentabilität häufig im Konflikt? Erkläre es mit einem Beispiel.",
+  "kernpunkte": [
+   "Geld auf dem Bankkonto ist sofort verfügbar, bringt aber kaum Zinsen",
+   "Geld in Maschinen oder langfristigen Anlagen kann mehr Gewinn bringen, ist aber gebunden",
+   "Mehr Liquidität bedeutet meist weniger Rentabilität und umgekehrt",
+   "Oft gilt: Liquidität zuerst sichern, dann Rentabilität steigern"
+  ],
+  "expl": "Liquide Mittel sind schnell verfügbar, aber sie bringen wenig Ertrag. Beispiel: Ein Betrieb legt 300.000 € für fünf Jahre als Festgeld an. Er bekommt mehr Zinsen, die Rentabilität steigt. Das Geld ist aber gebunden, die Liquidität sinkt. Darum muss die Leitung abwägen. Meist muss die Liquidität immer gesichert sein."
+ },
+ {
+  "id": "wdh-tag01-32",
+  "q": "Ein Betrieb will den Energieverbrauch seiner Maschinen senken und zugleich seine Kosten senken. Welche Zielbeziehung liegt vor?",
+  "options": [
+   {
+    "t": "Komplementär",
+    "c": true
+   },
+   {
+    "t": "Konkurrierend",
+    "c": false
+   },
+   {
+    "t": "Indifferent",
+    "c": false
+   },
+   {
+    "t": "Magisch",
+    "c": false
+   }
+  ],
+  "expl": "Komplementär heißt ergänzend: Ein Ziel fördert das andere. Weniger Energieverbrauch bedeutet weniger Stromkosten. Also hilft das erste Ziel dem zweiten. Konkurrierend wäre ein Zielkonflikt. Indifferent hieße, die Ziele beeinflussen sich nicht. Magisch ist keine Zielbeziehung, sondern der Name des Dreiecks."
+ },
+ {
+  "id": "wdh-tag01-33",
+  "typ": "offen",
+  "q": "Erkläre die drei Arten von Zielbeziehungen und nenne zu jeder ein eigenes Beispiel aus einem Industriebetrieb.",
+  "kernpunkte": [
+   "Komplementär: Ziele fördern sich (z. B. Kosten senken und Gewinn steigern)",
+   "Konkurrierend: Ziele behindern sich, Zielkonflikt (z. B. höhere Löhne und kurzfristig mehr Gewinn)",
+   "Indifferent: Ziele beeinflussen sich nicht (z. B. neues Logo und Maschinenproduktivität)"
+  ],
+  "expl": "Zwischen zwei Zielen gibt es drei Möglichkeiten. Fördert das eine Ziel das andere, ist die Beziehung komplementär. Behindert es das andere, sind die Ziele konkurrierend. Das nennt man Zielkonflikt. Haben die Ziele keinen Einfluss aufeinander, sind sie indifferent. Bei Zielkonflikten muss die Leitung Prioritäten setzen."
+ },
+ {
+  "id": "wdh-tag01-34",
+  "q": "Ein Schreiner hat für ein Projekt Eichenholz im Wert von 3.000 € gekauft. Daraus sollen möglichst viele Hocker entstehen. Welches Prinzip wendet er an?",
+  "options": [
+   {
+    "t": "Maximalprinzip",
+    "c": true
+   },
+   {
+    "t": "Minimalprinzip",
+    "c": false
+   },
+   {
+    "t": "Mit minimalem Einsatz maximalen Erfolg erzielen",
+    "c": false
+   },
+   {
+    "t": "Komplementäres Prinzip",
+    "c": false
+   }
+  ],
+  "expl": "Fest vorgegeben ist hier das Holz für 3.000 €, also die Mittel. Daraus soll ein möglichst großes Ergebnis entstehen. Das ist das Maximalprinzip. Beim Minimalprinzip wäre die Zahl der Hocker fest. Minimaler Einsatz mit maximalem Erfolg ist ein Widerspruch und kein ökonomisches Prinzip."
+ }
+]
