@@ -139,13 +139,16 @@ export async function render(root, { id, query }) {
     const q = runde[i];
     const geprueft = ergebnis.has(q.id);
     const knopf = geprueft ? null : aktionsknopf(q, "next",
-      () => keepFocus(zeichne),
+      () => { keepFocus(zeichne); main.querySelector('[data-focus="next"]')?.focus(); },
       () => { keepFocus(zeichne); fokusBewerten(main, q); });
     const karteEl = h("div", { class: "card" }, frageView(q, optionen(q, geprueft, (bewertet) => {
       keepFocus(zeichne);
       if (bewertet) main.querySelector('[data-focus="next"]')?.focus();
     })));
     verdrahte(karteEl, q, knopf);
+    const aktion = geprueft
+      ? h("button", { class: "btn btn-primary", "data-focus": "next", onclick: weiter }, offenIndex() === -1 ? "Auswertung" : "Weiter")
+      : knopf;
     fill(main,
       umschalter(),
       h("div", { class: "quiz-head" },
@@ -153,9 +156,7 @@ export async function render(root, { id, query }) {
         h("span", { class: "muted" }, `${richtigAnzahl()} richtig`)),
       h("div", { class: "progress progress-thin" }, h("span", { style: `width:${(ergebnis.size / n) * 100}%` })),
       karteEl,
-      h("div", { class: "actions sticky" }, geprueft
-        ? h("button", { class: "btn btn-primary", "data-focus": "next", onclick: weiter }, offenIndex() === -1 ? "Auswertung" : "Weiter")
-        : knopf));
+      aktion ? h("div", { class: "actions sticky" }, aktion) : null);
   }
 
   function weiter() {

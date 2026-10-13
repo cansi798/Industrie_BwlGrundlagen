@@ -29,7 +29,7 @@ export function prepareQuestion(q, rand = cryptoRandom) {
 /** Liest eine Zahl in deutscher oder englischer Schreibweise; null bei ungültiger Eingabe. */
 export function parseZahl(text) {
   if (typeof text !== "string") return null;
-  let t = text.replace(/[\s €%]/g, "").replace(/−/g, "-");
+  let t = text.replace(/[\s €%]/g, "").replace(/[−–]/g, "-");
   if (!/^-?[\d.,]+$/.test(t)) return null;
   if (t.includes(",")) {
     if (t.split(",").length > 2) return null;

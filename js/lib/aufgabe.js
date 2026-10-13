@@ -21,7 +21,7 @@ export function aufgabeView(q, opts = {}) {
 function rechnenView(q, { selected = "", onChange = null, reveal = false } = {}) {
   const inputId = `eingabe-${q.id}`;
   const text = typeof selected === "string" ? selected : "";
-  const hinweis = h("p", { class: "hint", hidden: text.trim() === "" || parseZahl(text) !== null, id: `hinweis-${q.id}` }, "Bitte eine Zahl eingeben, z. B. 12,5");
+  const hinweis = h("p", { class: "hint", "aria-live": "polite", hidden: text.trim() === "" || parseZahl(text) !== null, id: `hinweis-${q.id}` }, "Bitte eine Zahl eingeben, z. B. 12,5");
   const input = h("input", {
     id: inputId,
     type: "text",
@@ -45,11 +45,26 @@ function rechnenView(q, { selected = "", onChange = null, reveal = false } = {})
   });
   input.value = text;
 
+  // iOS-Dezimaltastatur hat kein Minus: Taste ± setzt/entfernt das Vorzeichen (löst wie Tippen "input" aus)
+  const vorzeichen = reveal || !onChange ? null : h("button", {
+    type: "button",
+    class: "btn vorzeichen",
+    "aria-label": "Vorzeichen wechseln",
+    "data-focus": `vorzeichen:${q.id}`,
+    onmousedown: (e) => e.preventDefault(),
+    onclick: () => {
+      const t = input.value.trim();
+      input.value = /^[-−–]/.test(t) ? t.replace(/^[-−–]\s*/, "") : "-" + t;
+      input.focus();
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+    },
+  }, "±");
+
   const kopf = [
     angabenBox(q),
     h("p", { class: "frage-text" }, q.q),
     h("label", { for: inputId }, "Dein Ergebnis"),
-    h("div", { class: "zahl-eingabe" }, input, q.einheit ? h("span", { class: "einheit" }, q.einheit) : null),
+    h("div", { class: "zahl-eingabe" }, input, vorzeichen, q.einheit ? h("span", { class: "einheit" }, q.einheit) : null),
     hinweis,
   ];
 

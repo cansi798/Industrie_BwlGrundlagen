@@ -349,6 +349,7 @@ a { color: var(--accent); }
 /* Rechen- und offene Aufgaben */
 .zahl-eingabe { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
 .zahl-eingabe input { flex: 1 1 auto; min-width: 0; width: 100%; font: inherit; font-size: max(16px, 1rem); font-variant-numeric: tabular-nums; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.zahl-eingabe .vorzeichen { flex: 0 0 auto; min-width: 48px; padding: 10px 14px; font-size: 1.2rem; }
 .einheit { flex: 0 0 auto; font-weight: 700; color: var(--muted); }
 textarea { display: block; width: 100%; min-height: 6.5em; box-sizing: border-box; font: inherit; font-size: max(16px, 1rem); padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); resize: vertical; }
 .loesung { margin: 16px 0 12px; padding: 10px 14px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); }
