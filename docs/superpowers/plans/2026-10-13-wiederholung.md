@@ -28,8 +28,8 @@
 
 1. **Negative Ergebnisse** (Cashflow, Jahresfehlbetrag): Eingaben wie `-12.000`, `−12.000` (Unicode-Minus) oder `-1,5` müssen als negative Zahl erkannt werden. → Tests in Task 1.
 2. **Einheiten und Leerzeichen in der Eingabe**: `12 %`, `1.200 €`, ` 30,5 ` müssen gültig sein. `abc`, `12,3,4` und leere Eingaben müssen `null` ergeben. → Tests in Task 1.
-3. **Tippen im Rechenfeld**: Die Ansicht darf bei jedem Tastendruck nicht neu zeichnen, sonst springen Fokus und Cursor. → Prüfung im Browser in Task 4.
-4. **„Teilweise“ bei offenen Fragen**: Die Frage muss danach bei „Nur falsche wiederholen“ erscheinen, und die Kachel darf sie nicht als richtig zählen. → Prüfung im Browser in Task 4.
+3. **Tippen im Rechenfeld**: Die Ansicht darf bei jedem Tastendruck nicht neu zeichnen, sonst springen Fokus und Cursor. → Prüfung im Browser in Task 10.
+4. **„Teilweise“ bei offenen Fragen**: Die Frage muss danach bei „Nur falsche wiederholen“ erscheinen, und die Kachel darf sie nicht als richtig zählen. → Prüfung im Browser in Task 10.
 5. **Offline-Installation**: Fehlt eine in `wiederholung.json` genannte Datei, schlägt `cache.addAll` fehl und die ganze App ist nicht offline verfügbar. → Datentest „jede datei existiert“ in Task 2.
 
 ---
@@ -103,7 +103,7 @@ Expected: FAIL, weil `parseZahl` nicht exportiert ist
 - Ohne Komma: Passt `^-?\d{1,3}(\.\d{3})+$` → Punkte entfernen.
 - Am Ende `Number(...)` und bei `NaN` `null` zurückgeben.
 
-`isCorrect` verzweigt nach `q.typ`. MC bleibt unverändert. `prepareQuestion` gibt bei `q.typ` den Wert `{ ...q }` zurück.
+`isCorrect` verzweigt nach `q.typ`. MC bleibt unverändert. Rechnen vergleicht `Math.abs(wert - loesung) <= (q.toleranz ?? TOLERANZ_STANDARD) + 1e-9`. Das Epsilon fängt Gleitkommafehler ab (30 − 29,9 = 0,10000000000000142). `prepareQuestion` gibt bei `q.typ` den Wert `{ ...q }` zurück.
 
 - [ ] **Step 4: Run tests to verify they pass**
 
@@ -151,7 +151,7 @@ Dazu ein Test `Gesamt: 200 Aufgaben, 100 MC, 50 offen, 50 Rechnen`, der über al
 - [ ] **Step 3: Run test to verify it fails**
 
 Run: `node --test tests/wiederholung.test.mjs`
-Expected: FAIL mit „datei existiert“ für alle 6 Sessions (die Aufgabendateien fehlen noch)
+Expected: FAIL mit „datei existiert“ für alle 6 Sessions (die Aufgabendateien fehlen noch). `npm test` schließt diese Datei ein und bleibt deshalb rot, bis Task 3–8 fertig sind. Task 3–8 prüfen gezielt mit `--test-name-pattern`.
 
 - [ ] **Step 4: Commit**
 
@@ -205,10 +205,6 @@ git commit -m "feat: Wiederholungsaufgaben Tag N"
 Nach Task 8 muss `node --test tests/wiederholung.test.mjs` komplett PASS sein, einschließlich „Gesamt“.
 
 ---
-
-### Task 4: Darstellung der neuen Aufgabentypen
-
-(Nummerierung nach den Inhalts-Tasks: **Task 9**)
 
 ### Task 9: Darstellung der neuen Aufgabentypen
 
@@ -350,7 +346,7 @@ git commit -m "feat: Wiederholungs-Sessions im Übungsablauf"
 
 - [ ] **Step 5: Gesamttests und Commit**
 
-Run: `npm test && node --test tests/wiederholung.test.mjs`
+Run: `npm test` (schließt `tests/wiederholung.test.mjs` ein)
 Expected: alles PASS
 
 ```bash
