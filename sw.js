@@ -3,7 +3,7 @@
 // CACHE erhöhen, wenn Dateien hinzukommen oder wegfallen und nach jedem
 // neuen Auslesen der Fragen (tools/extract.py) – dann lädt jedes Gerät beim
 // nächsten Start alle Fragen neu, auch Sessions, die es selten öffnet.
-const CACHE = "m094-v6";
+const CACHE = "m094-v7";
 
 const APP = [
   "./",
@@ -17,6 +17,7 @@ const APP = [
   "js/lib/dom.js",
   "js/lib/frage.js",
   "js/lib/farben.js",
+  "js/lib/aufgabe.js",
   "js/views/start.js",
   "js/views/session.js",
   "js/views/pruefung-setup.js",
@@ -26,6 +27,7 @@ const APP = [
   "icons/icon-192.png",
   "icons/icon-512.png",
   "data/index.json",
+  "data/wiederholung.json",
 ];
 
 self.addEventListener("install", (event) => {
@@ -35,6 +37,8 @@ self.addEventListener("install", (event) => {
     const index = await (await cache.match("data/index.json")).json();
     const dateien = index.teile.flatMap((t) => t.tage.flatMap((d) => d.sessions.map((s) => s.datei)));
     await cache.addAll(dateien);
+    const wdh = await (await cache.match("data/wiederholung.json")).json();
+    await cache.addAll(wdh.sessions.map((s) => s.datei));
     await self.skipWaiting();
   })());
 });

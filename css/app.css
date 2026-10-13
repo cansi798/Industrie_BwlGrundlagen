@@ -274,7 +274,7 @@ a { color: var(--accent); }
 .expl:focus { outline: none; }
 
 /* ---------- Tagesfarben (--h wird je Tag per style gesetzt) ---------- */
-.day, .day-check, .day-dot, .view[style] {
+.day, .day-check, .day-dot, .wiederholung .kachel, .view[style] {
   --day: hsl(var(--h) 58% 30%);
   --day-strong: hsl(var(--h) 55% 38%);
   --day-soft: hsl(var(--h) 55% 95%);
@@ -282,7 +282,7 @@ a { color: var(--accent); }
   --day-on: #ffffff;
 }
 @media (prefers-color-scheme: dark) {
-  .day, .day-check, .day-dot, .view[style] {
+  .day, .day-check, .day-dot, .wiederholung .kachel, .view[style] {
     --day: hsl(var(--h) 65% 72%);
     --day-strong: hsl(var(--h) 50% 55%);
     --day-soft: hsl(var(--h) 28% 16%);

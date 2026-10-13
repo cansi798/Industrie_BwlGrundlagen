@@ -24,10 +24,21 @@ python tools/check_expl.py          # markiert zu knappe oder zu lange Erklärun
 
 Fragen, die Zahlen aus der Fallstudie Nordholz GmbH brauchen, bekommen einen Kasten „Angaben“. Die Texte stehen in `data/angaben.json` (Frage-ID → Einträge, getrennt mit `; `). `python tools/check_angaben.py` meldet Rechenaufgaben, deren Lösung noch Zahlen braucht, die nirgends genannt sind. Bereits geprüfte Fälle ohne Handlungsbedarf stehen in `data/angaben_geprueft.json`.
 
+## Wiederholung Tag 1–6
+
+Eigener Abschnitt auf der Startseite mit 200 Aufgaben zu Tag 1–6, in drei Typen: 100 Multiple Choice, 50 Rechenaufgaben und 50 offene Fragen (Antwort selbst formulieren, danach „gewusst“ oder „nicht gewusst“). Es gibt eine Session je Tag und eine Session „Alle 200 gemischt“.
+
+Die Daten stehen in `data/wiederholung.json` (Übersicht) und `data/wdh-tag0N.json` (Aufgaben je Tag). Diese Dateien werden nicht von `extract.py` erzeugt, sondern von Hand gepflegt.
+
+```bash
+node --test tests/wiederholung.test.mjs
+```
+
 ## Tests
 
 ```bash
-npm test                                   # Quizlogik (node --test)
+npm test                                   # Quizlogik und Wiederholung (node --test)
+node --test tests/wiederholung.test.mjs    # Wiederholung Tag 1–6: 200 Aufgaben, IDs, Typen
 python -m unittest tests/test_extract.py   # Daten: 27 Sessions, 1.620 Fragen, IDs, Erklärungen
 ```
 
