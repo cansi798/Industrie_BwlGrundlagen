@@ -26,7 +26,7 @@ Fragen, die Zahlen aus der Fallstudie Nordholz GmbH brauchen, bekommen einen Kas
 
 ## Wiederholung Tag 1–6
 
-Eigener Abschnitt auf der Startseite mit 200 Aufgaben zu Tag 1–6, in drei Typen: 100 Multiple Choice, 50 Rechenaufgaben und 50 offene Fragen (Antwort selbst formulieren, danach „gewusst“ oder „nicht gewusst“). Es gibt eine Session je Tag und eine Session „Alle 200 gemischt“.
+Eigene Karte „Wiederholung Tag 1–6“ auf der Startseite (unter dem Prüfungssimulator); sie öffnet die Übersicht `#/wiederholung` mit 200 Aufgaben zu Tag 1–6, in drei Typen: 100 Multiple Choice, 50 Rechenaufgaben und 50 offene Fragen (Antwort selbst formulieren, danach selbst einschätzen: „Gewusst“, „Teilweise“ oder „Nicht gewusst“). Es gibt eine Session je Tag und eine Session „Alle 200 gemischt“.
 
 Die Daten stehen in `data/wiederholung.json` (Übersicht) und `data/wdh-tag0N.json` (Aufgaben je Tag). Diese Dateien werden nicht von `extract.py` erzeugt, sondern von Hand gepflegt.
 

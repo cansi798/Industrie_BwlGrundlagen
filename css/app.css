@@ -105,6 +105,10 @@ a { color: var(--accent); }
 .card-exam .muted { color: inherit; opacity: .85; font-size: .92rem; }
 .card-exam-icon { display: grid; place-items: center; flex: none; width: 46px; height: 46px; border-radius: 12px; background: rgb(255 255 255 / 18%); font-size: 1.4rem; }
 .chev { margin-left: auto; font-size: 1.8rem; }
+/* Wiederholung: zweite Karte direkt unter dem Prüfungssimulator, heller abgesetzt */
+.card-exam:has(+ .card-wdh) { margin-bottom: 12px; }
+.card-wdh { background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 35%, transparent); color: var(--ink); }
+.card-wdh .card-exam-icon { background: var(--accent); color: var(--accent-ink); }
 
 .teil > h2 { margin: 8px 0 12px; font-size: 1.35rem; }
 .tag-meta { margin: 0 0 4px; font-size: .8rem; color: var(--muted); letter-spacing: .02em; }

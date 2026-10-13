@@ -20,9 +20,9 @@ async function quelle(id, query) {
       const p = getProgress();
       fragen = fragen.filter((q) => p[q.id] === false);
     }
-    if (id === WDH_ALLE) return { titel: "Wiederholung · Alle 200 gemischt", fragen, back: "#/", nurFalsche };
+    if (id === WDH_ALLE) return { titel: "Wiederholung · Alle 200 gemischt", fragen, back: "#/wiederholung", nurFalsche };
     const w = (await loadWiederholung()).sessions.find((x) => x.id === id);
-    return { titel: `Wiederholung · ${w.titel}`, fragen, back: "#/", nurFalsche, tagNr: w.tagNr };
+    return { titel: `Wiederholung · ${w.titel}`, fragen, back: "#/wiederholung", nurFalsche, tagNr: w.tagNr };
   }
   const s = allSessions(await loadIndex()).find((x) => x.id === id);
   if (!s) throw new Error(`Unbekannte Session ${id}`);

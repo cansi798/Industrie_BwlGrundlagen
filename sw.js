@@ -3,7 +3,7 @@
 // CACHE erhöhen, wenn Dateien hinzukommen oder wegfallen und nach jedem
 // neuen Auslesen der Fragen (tools/extract.py) – dann lädt jedes Gerät beim
 // nächsten Start alle Fragen neu, auch Sessions, die es selten öffnet.
-const CACHE = "m094-v7";
+const CACHE = "m094-v8";
 
 const APP = [
   "./",
@@ -20,6 +20,7 @@ const APP = [
   "js/lib/aufgabe.js",
   "js/views/start.js",
   "js/views/session.js",
+  "js/views/wiederholung.js",
   "js/views/pruefung-setup.js",
   "js/views/pruefung.js",
   "js/views/ergebnis.js",

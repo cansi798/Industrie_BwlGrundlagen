@@ -1,9 +1,9 @@
 import { h, formatDatum } from "../lib/dom.js";
-import { loadIndex, loadWiederholung, WDH_ALLE } from "../lib/data.js";
+import { loadIndex, loadWiederholung } from "../lib/data.js";
 import { getProgress, load } from "../lib/store.js";
 import { tagStyle } from "../lib/farben.js";
 
-function sessionKachel(s, progress, ids) {
+export function sessionKachel(s, progress, ids) {
   const alleIds = ids ?? Array.from({ length: s.anzahl }, (_, i) => `${s.id}-${String(i + 1).padStart(2, "0")}`);
   const richtig = alleIds.filter((id) => progress[id] === true).length;
   const pct = Math.round((richtig / s.anzahl) * 100);
@@ -15,29 +15,21 @@ function sessionKachel(s, progress, ids) {
     h("span", { class: "progress", "aria-hidden": "true" }, h("span", { style: `width:${pct}%` })));
 }
 
-function idsVon(s) {
+export function idsVon(s) {
   return Array.from({ length: s.anzahl }, (_, i) => `${s.id}-${String(i + 1).padStart(2, "0")}`);
 }
 
-async function wiederholungAbschnitt(progress) {
+async function wiederholungKarte(progress) {
   try {
     const w = await loadWiederholung();
-    const alleIds = w.sessions.flatMap(idsVon);
-    const alle = { id: WDH_ALLE, titel: "Alle Tage: Alle 200 gemischt", anzahl: alleIds.length };
-    return h("section", { class: "teil wiederholung" },
-      h("h2", {}, w.titel),
-      h("p", { class: "muted" }, w.untertitel),
-      h("div", { class: "kacheln" },
-        ...w.sessions.map((s) => {
-          const k = sessionKachel(s, progress);
-          k.setAttribute("style", tagStyle(s.tagNr));
-          return k;
-        }),
-        (() => {
-          const k = sessionKachel(alle, progress, alleIds);
-          k.setAttribute("style", tagStyle(0));
-          return k;
-        })()));
+    const ids = w.sessions.flatMap(idsVon);
+    const richtig = ids.filter((id) => progress[id] === true).length;
+    return h("a", { class: "card card-exam card-wdh", href: "#/wiederholung" },
+      h("span", { class: "card-exam-icon", "aria-hidden": "true" }, "↻"),
+      h("span", {},
+        h("strong", {}, w.titel),
+        h("span", { class: "muted" }, `${ids.length} Aufgaben · ${richtig}/${ids.length} richtig`)),
+      h("span", { class: "chev", "aria-hidden": "true" }, "›"));
   } catch {
     return h("p", { class: "muted" }, "Die Wiederholung konnte nicht geladen werden.");
   }
@@ -45,8 +37,8 @@ async function wiederholungAbschnitt(progress) {
 
 export async function render(root) {
   const index = await loadIndex();
-  const wiederholung = await wiederholungAbschnitt(getProgress());
   const progress = getProgress();
+  const wiederholung = await wiederholungKarte(progress);
   const laufend = load("pruefung", null);
   const offenePruefung = laufend && !laufend.abgegeben;
 
