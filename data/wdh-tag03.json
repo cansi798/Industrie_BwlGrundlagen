@@ -1,0 +1,616 @@
+[
+ {
+  "id": "wdh-tag03-01",
+  "q": "Welche Aussagen beschreiben die GuV richtig? (Mehrere Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Sie betrachtet einen Zeitraum, meist das Geschäftsjahr.",
+    "c": true
+   },
+   {
+    "t": "Sie enthält Bewegungsgrößen wie Aufwand und Ertrag.",
+    "c": true
+   },
+   {
+    "t": "Sie zeigt Vermögen und Kapital an einem Stichtag.",
+    "c": false
+   },
+   {
+    "t": "Sie ist in Aktiva und Passiva gegliedert.",
+    "c": false
+   }
+  ],
+  "expl": "Die GuV ist wie ein Film. Sie zeigt das ganze Geschäftsjahr. Darin stehen Bewegungsgrößen, also Aufwand und Ertrag. Vermögen und Kapital am Stichtag zeigt die Bilanz. Auch Aktiva und Passiva gehören zur Bilanz. Die Bilanz ist das Foto."
+ },
+ {
+  "id": "wdh-tag03-02",
+  "q": "Ein Geschäftsvorgang verändert das Eigenkapital weder nach oben noch nach unten. Wie ordnen Sie ihn ein?",
+  "options": [
+   {
+    "t": "Er ist erfolgsneutral und gehört nicht in die GuV.",
+    "c": true
+   },
+   {
+    "t": "Er ist erfolgswirksam und wird als Aufwand gebucht.",
+    "c": false
+   },
+   {
+    "t": "Er ist erfolgswirksam und wird als Ertrag gebucht.",
+    "c": false
+   },
+   {
+    "t": "Er ist erfolgsneutral und steht als Saldo in der GuV.",
+    "c": false
+   }
+  ],
+  "expl": "Der Eigenkapital-Test hilft bei der Einordnung. Steigt das Eigenkapital, ist es ein Ertrag. Sinkt es, ist es ein Aufwand. Bleibt es gleich, ist der Vorgang erfolgsneutral. Er verändert nur die Bilanz, zum Beispiel als Aktivtausch. In die GuV kommt er nicht."
+ },
+ {
+  "id": "wdh-tag03-03",
+  "typ": "rechnen",
+  "q": "Ermitteln Sie das Ergebnis der Metallbau Kaya GmbH aus der GuV in Kontenform.",
+  "angaben": "Umsatzerlöse: 1.200.000 €; Zinserträge: 4.000 €; Materialaufwand: 480.000 €; Personalaufwand: 390.000 €; Abschreibungen: 85.000 €; sonstige betriebliche Aufwendungen: 110.000 €; Zinsaufwand: 19.000 €; Steuern vom Einkommen und vom Ertrag: 30.000 €",
+  "einheit": "€",
+  "loesung": 90000,
+  "rechnung": "(1200000 + 4000) - (480000 + 390000 + 85000 + 110000 + 19000 + 30000)",
+  "schritte": [
+   "Ergebnis = Summe der Erträge − Summe der Aufwendungen",
+   "Erträge: 1.200.000 € + 4.000 € = 1.204.000 €",
+   "Aufwendungen: 480.000 € + 390.000 € + 85.000 € + 110.000 € + 19.000 € + 30.000 € = 1.114.000 €",
+   "1.204.000 € − 1.114.000 € = 90.000 € Gewinn (Jahresüberschuss)"
+  ],
+  "expl": "Zuerst addiert man alle Erträge. Dazu gehören auch die Zinserträge. Dann addiert man alle Aufwendungen, auch Zinsen und Steuern. Die Erträge sind größer. Darum entsteht ein Gewinn von 90.000 €. Er steht in der Kontenform links als Saldo."
+ },
+ {
+  "id": "wdh-tag03-04",
+  "q": "Welches Zwischenergebnis erhalten Sie, wenn Sie vom Rohergebnis den Personalaufwand, die Abschreibungen und die sonstigen betrieblichen Aufwendungen abziehen?",
+  "options": [
+   {
+    "t": "Betriebsergebnis (EBIT)",
+    "c": true
+   },
+   {
+    "t": "Ergebnis vor Steuern (EBT)",
+    "c": false
+   },
+   {
+    "t": "Gesamtleistung",
+    "c": false
+   },
+   {
+    "t": "Jahresüberschuss",
+    "c": false
+   }
+  ],
+  "expl": "Das Rohergebnis ist Stufe 1. Davon zieht man die übrigen betrieblichen Aufwendungen ab. Das sind Personal, Abschreibungen und Sonstiges. So entsteht Stufe 2, das Betriebsergebnis oder EBIT. Zinsen und Steuern sind hier noch nicht abgezogen. Darum ist es weder EBT noch Jahresüberschuss."
+ },
+ {
+  "id": "wdh-tag03-05",
+  "typ": "offen",
+  "q": "Ein Betrieb kauft eine Maschine für 80.000 € per Bank. Warum ist das eine Ausgabe, aber im Moment des Kaufs kein Aufwand?",
+  "kernpunkte": [
+   "Geld fließt ab, also liegt eine Ausgabe vor",
+   "Die Maschine ist noch da, es wird kein Wert verbraucht",
+   "Der Kauf ist ein Aktivtausch und erfolgsneutral",
+   "Der Aufwand entsteht später nach und nach über die Abschreibungen"
+  ],
+  "expl": "Eine Ausgabe heißt: Geld fließt ab. Das passiert beim Kauf. Ein Aufwand heißt: Ein Wert wird verbraucht. Die Maschine ist aber noch vollständig da. Bank wird zu Maschine, das Eigenkapital bleibt gleich. Erst durch die Nutzung verliert die Maschine an Wert. Dieser Werteverbrauch wird jedes Jahr als Abschreibung zum Aufwand."
+ },
+ {
+  "id": "wdh-tag03-06",
+  "q": "Welcher Vorgang ist ein Aufwand, aber keine Ausgabe?",
+  "options": [
+   {
+    "t": "Abschreibung auf den Lieferwagen",
+    "c": true
+   },
+   {
+    "t": "Kauf von Lack auf Rechnung, der noch komplett im Lager liegt",
+    "c": false
+   },
+   {
+    "t": "Zahlung der Gehälter per Bank",
+    "c": false
+   },
+   {
+    "t": "Bargeld wird auf das Bankkonto eingezahlt",
+    "c": false
+   }
+  ],
+  "expl": "Bei der Abschreibung verliert der Lieferwagen an Wert. Das ist Werteverbrauch, also Aufwand. Geld fließt dabei nicht, denn bezahlt wurde schon beim Kauf. Der Lack auf Rechnung ist eine Ausgabe, weil eine Schuld entsteht. Er ist aber noch nicht verbraucht. Gehälter sind Ausgabe und Aufwand. Die Bareinzahlung ist keins von beiden."
+ },
+ {
+  "id": "wdh-tag03-07",
+  "typ": "rechnen",
+  "q": "Berechnen Sie das Rohergebnis der Polsterei Brandt GmbH (vereinfachte Staffelform, Gesamtkostenverfahren).",
+  "angaben": "Umsatzerlöse: 900.000 €; Bestandsminderung an fertigen Erzeugnissen: 40.000 €; Materialaufwand: 350.000 €",
+  "einheit": "€",
+  "loesung": 510000,
+  "rechnung": "900000 - 40000 - 350000",
+  "schritte": [
+   "Rohergebnis = Umsatzerlöse − Bestandsminderung − Materialaufwand",
+   "Gesamtleistung: 900.000 € − 40.000 € = 860.000 €",
+   "Rohergebnis: 860.000 € − 350.000 € = 510.000 €"
+  ],
+  "expl": "Bei einer Bestandsminderung wurde mehr verkauft als hergestellt. Ein Teil der verkauften Ware stammt aus dem Lager vom Vorjahr. Darum wird die Minderung abgezogen. Umsatzerlöse minus Bestandsminderung ergibt die Gesamtleistung. Davon zieht man das Material ab und erhält das Rohergebnis."
+ },
+ {
+  "id": "wdh-tag03-08",
+  "q": "Eine GmbH hat Erträge von 700.000 € und Aufwendungen von 740.000 €. Wo steht der Saldo in der Kontenform und wie heißt er?",
+  "options": [
+   {
+    "t": "Rechts auf der Ertragsseite, als Jahresfehlbetrag von 40.000 €",
+    "c": true
+   },
+   {
+    "t": "Links auf der Aufwandsseite, als Jahresfehlbetrag von 40.000 €",
+    "c": false
+   },
+   {
+    "t": "Rechts auf der Ertragsseite, als Jahresüberschuss von 40.000 €",
+    "c": false
+   },
+   {
+    "t": "Links auf der Aufwandsseite, als Jahresüberschuss von 40.000 €",
+    "c": false
+   }
+  ],
+  "expl": "Die Aufwendungen sind um 40.000 € größer als die Erträge. Es entsteht also ein Verlust. Der Saldo steht immer auf der kleineren Seite. Das ist hier die Ertragsseite rechts. So sind beide Seiten gleich groß. Bei einer Kapitalgesellschaft heißt der Verlust Jahresfehlbetrag."
+ },
+ {
+  "id": "wdh-tag03-09",
+  "q": "Die Kreditzinsen eines Unternehmens steigen, alles andere bleibt gleich. Welche Zwischenergebnisse ändern sich dadurch NICHT? (Mehrere Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Rohergebnis",
+    "c": true
+   },
+   {
+    "t": "Betriebsergebnis (EBIT)",
+    "c": true
+   },
+   {
+    "t": "Ergebnis vor Steuern (EBT)",
+    "c": false
+   },
+   {
+    "t": "Jahresüberschuss",
+    "c": false
+   }
+  ],
+  "expl": "Kreditzinsen sind Finanzaufwendungen. Sie gehören zum Finanzergebnis, also zu Stufe 3. Rohergebnis und EBIT werden vorher berechnet. Darum bleiben sie gleich. EBIT heißt ja Ergebnis vor Zinsen und Steuern. Das EBT und der Jahresüberschuss kommen nach dem Finanzergebnis. Sie sinken deshalb."
+ },
+ {
+  "id": "wdh-tag03-10",
+  "typ": "offen",
+  "q": "Beide Formen der GuV führen zum gleichen Ergebnis. Warum ist die Staffelform trotzdem aussagekräftiger als die Kontenform?",
+  "kernpunkte": [
+   "Sie zeigt Zwischenergebnisse wie Rohergebnis, EBIT und EBT",
+   "Man erkennt, ob das Kerngeschäft Gewinn bringt",
+   "Man sieht, wie stark Zinsen und Steuern das Ergebnis mindern",
+   "Banken und Controlling arbeiten mit den Zwischenergebnissen"
+  ],
+  "expl": "Die Kontenform zeigt nur das Endergebnis. Die Staffelform rechnet Stufe für Stufe. Nach jeder Stufe gibt es ein Zwischenergebnis. Am EBIT sieht man, ob das eigentliche Geschäft Geld verdient. Am Finanzergebnis sieht man, wie teuer die Kredite sind. Darum arbeiten Banken und Controlling gern mit der Staffelform."
+ },
+ {
+  "id": "wdh-tag03-11",
+  "typ": "rechnen",
+  "q": "Berechnen Sie das Betriebsergebnis (EBIT) der Lackierwerk Sommer GmbH.",
+  "angaben": "Umsatzerlöse: 1.600.000 €; Materialaufwand: 640.000 €; Personalaufwand: 520.000 €; Abschreibungen: 90.000 €; sonstige betriebliche Aufwendungen: 150.000 €",
+  "einheit": "€",
+  "loesung": 200000,
+  "rechnung": "1600000 - 640000 - 520000 - 90000 - 150000",
+  "schritte": [
+   "Rohergebnis = Umsatzerlöse − Materialaufwand; EBIT = Rohergebnis − Personalaufwand − Abschreibungen − sonstige betriebliche Aufwendungen",
+   "Rohergebnis: 1.600.000 € − 640.000 € = 960.000 €",
+   "EBIT: 960.000 € − 520.000 € − 90.000 € − 150.000 € = 200.000 €"
+  ],
+  "expl": "Zuerst zieht man das Material vom Umsatz ab. Das ergibt das Rohergebnis. Dann zieht man Personal, Abschreibungen und sonstige betriebliche Aufwendungen ab. Die Abschreibungen darf man nicht vergessen, auch wenn kein Geld fließt. Übrig bleibt das EBIT. Es zeigt, was das Kerngeschäft verdient."
+ },
+ {
+  "id": "wdh-tag03-12",
+  "q": "Welcher Vorgang ist weder eine Einnahme noch ein Ertrag?",
+  "options": [
+   {
+    "t": "Ein Kunde überweist den Betrag für eine Forderung aus dem Vormonat.",
+    "c": true
+   },
+   {
+    "t": "Die Bank schreibt Zinsen auf das Guthaben gut.",
+    "c": false
+   },
+   {
+    "t": "Der Betrieb verkauft Schränke auf Rechnung.",
+    "c": false
+   },
+   {
+    "t": "Der Betrieb verkauft Stühle gegen Barzahlung.",
+    "c": false
+   }
+  ],
+  "expl": "Beim Verkauf auf Rechnung entsteht eine Forderung. Das ist schon Einnahme und Ertrag. Zahlt der Kunde später, wird nur die Forderung zu Bankguthaben. Das ist nur eine Einzahlung. Einnahme und Ertrag wurden ja schon beim Verkauf erfasst. Zinsgutschrift und Barverkauf bringen dagegen Geld und einen Wertezuwachs."
+ },
+ {
+  "id": "wdh-tag03-13",
+  "typ": "rechnen",
+  "q": "Berechnen Sie das Eigenkapital der Elektro Brinkmann GmbH am 31.12. Es gab keine weiteren Veränderungen des Eigenkapitals.",
+  "angaben": "Eigenkapital am 01.01.: 420.000 €; Summe der Erträge: 1.050.000 €; Summe der Aufwendungen: 1.095.000 €",
+  "einheit": "€",
+  "loesung": 375000,
+  "rechnung": "420000 + (1050000 - 1095000)",
+  "schritte": [
+   "Eigenkapital 31.12. = Eigenkapital 01.01. + Ergebnis der GuV",
+   "Ergebnis: 1.050.000 € − 1.095.000 € = −45.000 € (Jahresfehlbetrag)",
+   "420.000 € − 45.000 € = 375.000 €"
+  ],
+  "expl": "Zuerst ermittelt man das Ergebnis der GuV. Die Aufwendungen sind größer als die Erträge. Es gibt also einen Verlust von 45.000 €. Die GuV ist ein Unterkonto des Eigenkapitals. Ihr Saldo fließt am Jahresende ins Eigenkapital. Ein Verlust macht das Eigenkapital kleiner."
+ },
+ {
+  "id": "wdh-tag03-14",
+  "q": "Was kennzeichnet das Gesamtkostenverfahren nach § 275 HGB? (Mehrere Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Die Aufwendungen werden nach Arten gegliedert, z. B. Material, Personal, Abschreibungen.",
+    "c": true
+   },
+   {
+    "t": "Bestandsveränderungen an fertigen und unfertigen Erzeugnissen werden berücksichtigt.",
+    "c": true
+   },
+   {
+    "t": "Es ist das einzige Verfahren, das § 275 HGB für Kapitalgesellschaften erlaubt.",
+    "c": false
+   },
+   {
+    "t": "Es stellt Aufwand und Ertrag in einem T-Konto nebeneinander.",
+    "c": false
+   }
+  ],
+  "expl": "Beim Gesamtkostenverfahren gliedert man alle Aufwendungen nach ihrer Art. Damit der Gewinn stimmt, rechnet man Bestandsveränderungen ein. § 275 HGB erlaubt aber zwei Verfahren. Das andere ist das Umsatzkostenverfahren. Das T-Konto ist die Kontenform. Das Gesamtkostenverfahren nutzt die Staffelform."
+ },
+ {
+  "id": "wdh-tag03-15",
+  "typ": "offen",
+  "q": "Erklären Sie, warum ein Gewinn in der GuV in Kontenform links bei den Aufwendungen steht, obwohl er etwas Positives ist.",
+  "kernpunkte": [
+   "Bei Gewinn sind die Erträge größer als die Aufwendungen",
+   "Die GuV muss ausgeglichen sein, beide Seiten gleich groß",
+   "Der Saldo steht immer auf der kleineren Seite",
+   "Bei Verlust steht der Saldo deshalb rechts bei den Erträgen"
+  ],
+  "expl": "Bei einem Gewinn ist die Ertragsseite größer. Die GuV muss aber am Ende ausgeglichen sein. Beide Seiten brauchen die gleiche Summe. Darum trägt man den Saldo auf der kleineren Seite ein. Das ist bei Gewinn die Aufwandsseite links. Es ist also eine Rechenregel und keine Bewertung."
+ },
+ {
+  "id": "wdh-tag03-16",
+  "typ": "rechnen",
+  "q": "Berechnen Sie das Jahresergebnis der Kunststofftechnik Lorenz GmbH mit der Staffelform. Steuern fallen nicht an. Geben Sie einen Jahresfehlbetrag als negative Zahl an.",
+  "angaben": "Umsatzerlöse: 800.000 €; Materialaufwand: 360.000 €; Personalaufwand: 300.000 €; Abschreibungen: 60.000 €; sonstige betriebliche Aufwendungen: 70.000 €; Zinserträge: 2.000 €; Zinsaufwand: 27.000 €",
+  "einheit": "€",
+  "loesung": -15000,
+  "rechnung": "800000 - 360000 - 300000 - 60000 - 70000 + 2000 - 27000",
+  "schritte": [
+   "Jahresergebnis = EBIT + Finanzergebnis − Steuern",
+   "Rohergebnis: 800.000 € − 360.000 € = 440.000 €; EBIT: 440.000 € − 300.000 € − 60.000 € − 70.000 € = 10.000 €",
+   "Finanzergebnis: 2.000 € − 27.000 € = −25.000 €",
+   "EBT: 10.000 € − 25.000 € = −15.000 €; ohne Steuern: Jahresfehlbetrag −15.000 €"
+  ],
+  "expl": "Das Kerngeschäft bringt ein kleines Plus von 10.000 €. Die Zinsen für Kredite sind aber höher als die Zinserträge. Das Finanzergebnis ist minus 25.000 €. Der Verlust aus dem Finanzbereich (25.000 €) ist größer als das EBIT (10.000 €). Darum rutscht das Ergebnis ins Minus. Ein negatives Ergebnis heißt Jahresfehlbetrag."
+ },
+ {
+  "id": "wdh-tag03-17",
+  "q": "Welche Vorgänge sind erfolgswirksam? (Mehrere Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Der Versicherungsbeitrag für die Werkhalle wird per Bank bezahlt.",
+    "c": true
+   },
+   {
+    "t": "Die Bank belastet Zinsen für den Kontokorrentkredit.",
+    "c": true
+   },
+   {
+    "t": "Ein Darlehen wird zum Teil getilgt.",
+    "c": false
+   },
+   {
+    "t": "Ein Lieferwagen wird per Bank gekauft.",
+    "c": false
+   }
+  ],
+  "expl": "Erfolgswirksam heißt: Der Vorgang verändert das Eigenkapital. Versicherung und Zinsen sind Aufwand. Sie machen das Eigenkapital kleiner. Bei der Tilgung sinken Bank und Schulden gleich stark. Beim Kauf des Lieferwagens wird nur Bank zu Fahrzeug. Beides ist erfolgsneutral."
+ },
+ {
+  "id": "wdh-tag03-18",
+  "typ": "offen",
+  "q": "Wie hängen GuV und Bilanz zusammen? Erklären Sie den Weg vom Geschäftsvorgang bis ins Eigenkapital.",
+  "kernpunkte": [
+   "Die GuV ist ein Unterkonto des Eigenkapitals",
+   "Aufwendungen und Erträge werden im Jahr auf eigenen Konten gesammelt",
+   "Am Jahresende fließt der Saldo der GuV ins Eigenkapital",
+   "Gewinn erhöht das Eigenkapital, Verlust mindert es"
+  ],
+  "expl": "Im Laufe des Jahres sammelt man Aufwendungen und Erträge auf eigenen Konten. Diese laufen im GuV-Konto zusammen. Der Saldo ist der Gewinn oder Verlust. Er wird am Jahresende ins Eigenkapital übertragen. In der Bilanz steht ein Gewinn als Jahresüberschuss auf der Passivseite. So hängen beide Rechnungen zusammen."
+ },
+ {
+  "id": "wdh-tag03-19",
+  "typ": "offen",
+  "q": "Warum wird beim Gesamtkostenverfahren eine Bestandserhöhung an fertigen Erzeugnissen als Ertrag dazugerechnet?",
+  "kernpunkte": [
+   "Es wurde mehr hergestellt als verkauft",
+   "Material und Löhne für die Lagerware sind schon als Aufwand erfasst",
+   "Ohne Gegenrechnung wäre der Gewinn zu niedrig",
+   "Die Lagerware wird zu Herstellungskosten angesetzt"
+  ],
+  "expl": "Beim Gesamtkostenverfahren zählen alle Aufwendungen des Jahres. Dazu gehören auch Material und Löhne für Produkte, die noch im Lager stehen. Für diese Produkte gibt es aber noch keine Umsatzerlöse. Ohne Ausgleich wäre der Gewinn zu klein. Darum rechnet man ihren Wert zu Herstellungskosten als Ertrag dazu."
+ },
+ {
+  "id": "wdh-tag03-20",
+  "q": "Welcher Posten gehört NICHT zum Finanzergebnis?",
+  "options": [
+   {
+    "t": "Gewerbesteuer",
+    "c": true
+   },
+   {
+    "t": "Zinsen für einen Kontokorrentkredit",
+    "c": false
+   },
+   {
+    "t": "Erträge aus Beteiligungen",
+    "c": false
+   },
+   {
+    "t": "Zinsen auf Bankguthaben",
+    "c": false
+   }
+  ],
+  "expl": "Das Finanzergebnis umfasst Erträge und Aufwendungen aus Geldanlagen und Krediten. Dazu gehören Zinsen auf Guthaben, Erträge aus Beteiligungen und Kreditzinsen. Die Gewerbesteuer ist eine Steuer vom Einkommen und vom Ertrag. Sie kommt erst nach dem EBT, also in der letzten Stufe."
+ },
+ {
+  "id": "wdh-tag03-21",
+  "q": "Die Personalquote eines Betriebs sinkt von 36,0 % auf 33,5 %. Wie beschreiben Sie die Veränderung fachlich richtig?",
+  "options": [
+   {
+    "t": "Die Personalquote ist um 2,5 Prozentpunkte gesunken.",
+    "c": true
+   },
+   {
+    "t": "Die Personalquote ist um 2,5 Prozent gesunken.",
+    "c": false
+   },
+   {
+    "t": "Die Personalquote ist um 2,5 Prozentpunkte gestiegen.",
+    "c": false
+   },
+   {
+    "t": "Die Personalquote ist um rund 6,9 Prozentpunkte gesunken.",
+    "c": false
+   }
+  ],
+  "expl": "Die Quote fällt von 36,0 % auf 33,5 %. Der Abstand zwischen zwei Prozentwerten heißt Prozentpunkte. Hier sind es 2,5 Prozentpunkte. 2,5 Prozent wäre etwas anderes. Das wäre eine Veränderung im Verhältnis zum alten Wert. Eine sinkende Personalquote ist meist ein gutes Zeichen."
+ },
+ {
+  "id": "wdh-tag03-22",
+  "typ": "rechnen",
+  "q": "Berechnen Sie den Jahresüberschuss der Gießerei Hartmann GmbH.",
+  "angaben": "Betriebsergebnis (EBIT): 340.000 €; Zinserträge: 6.000 €; Zinsaufwand: 46.000 €; Steuern vom Einkommen und vom Ertrag: 90.000 €",
+  "einheit": "€",
+  "loesung": 210000,
+  "rechnung": "340000 + (6000 - 46000) - 90000",
+  "schritte": [
+   "Finanzergebnis = Finanzerträge − Finanzaufwendungen; EBT = EBIT + Finanzergebnis; Jahresüberschuss = EBT − Steuern",
+   "Finanzergebnis: 6.000 € − 46.000 € = −40.000 €",
+   "EBT: 340.000 € − 40.000 € = 300.000 €",
+   "Jahresüberschuss: 300.000 € − 90.000 € = 210.000 €"
+  ],
+  "expl": "Zuerst bildet man das Finanzergebnis. Die Zinsaufwendungen sind höher als die Zinserträge. Es ist also negativ. EBIT plus Finanzergebnis ergibt das EBT. Davon zieht man die Steuern ab. Was übrig bleibt, ist der Jahresüberschuss. Er gehört den Eigentümern."
+ },
+ {
+  "id": "wdh-tag03-23",
+  "q": "Welcher Posten folgt in der Kontenform auf der Aufwandsseite direkt nach den sonstigen betrieblichen Aufwendungen?",
+  "options": [
+   {
+    "t": "Zinsaufwendungen",
+    "c": true
+   },
+   {
+    "t": "Steuern vom Einkommen und vom Ertrag",
+    "c": false
+   },
+   {
+    "t": "Abschreibungen",
+    "c": false
+   },
+   {
+    "t": "Personalaufwand",
+    "c": false
+   }
+  ],
+  "expl": "Die Aufwandsseite hat eine feste Reihenfolge. Zuerst kommen die betrieblichen Posten: Material, Personal, Abschreibungen, sonstige betriebliche Aufwendungen. Danach folgen die Finanzposten, also die Zinsaufwendungen. Ganz am Schluss stehen die Steuern. Denn sie hängen vom Gewinn ab."
+ },
+ {
+  "id": "wdh-tag03-24",
+  "typ": "offen",
+  "q": "Warum entspricht der Gewinn laut GuV nicht automatisch dem Geld, das im Jahr auf dem Bankkonto dazugekommen ist?",
+  "kernpunkte": [
+   "Die GuV erfasst Werteverbrauch und Wertezuwachs, nicht den Geldfluss",
+   "Abschreibungen sind Aufwand ohne Geldabfluss",
+   "Verkäufe auf Rechnung sind Ertrag, bevor Geld kommt",
+   "Kreditaufnahme und Tilgung ändern das Konto, aber nicht den Gewinn"
+  ],
+  "expl": "Für die GuV zählt, wann ein Wert verbraucht wird oder hinzukommt. Wann das Geld fließt, spielt keine Rolle. Abschreibungen mindern den Gewinn, aber es fließt kein Geld. Ein Verkauf auf Rechnung erhöht den Gewinn, das Geld kommt erst später. Ein Kredit bringt Geld, ist aber kein Ertrag."
+ },
+ {
+  "id": "wdh-tag03-25",
+  "q": "Ein Unternehmen hat ein Betriebsergebnis von minus 20.000 € und ein Finanzergebnis von plus 35.000 €. Steuern fallen nicht an. Was trifft zu?",
+  "options": [
+   {
+    "t": "Das Kerngeschäft macht Verlust. Der Gewinn von 15.000 € kommt nur aus dem Finanzbereich.",
+    "c": true
+   },
+   {
+    "t": "Das Kerngeschäft arbeitet mit Gewinn, die Finanzen belasten das Ergebnis.",
+    "c": false
+   },
+   {
+    "t": "Das Ergebnis vor Steuern beträgt minus 55.000 €.",
+    "c": false
+   },
+   {
+    "t": "Es entsteht ein Jahresfehlbetrag von 15.000 €.",
+    "c": false
+   }
+  ],
+  "expl": "Das EBIT zeigt das Kerngeschäft. Es ist negativ, also verdient der Betrieb mit seinen Produkten kein Geld. EBT ist EBIT plus Finanzergebnis: minus 20.000 € plus 35.000 € ergibt 15.000 €. Ohne Steuern ist das ein Jahresüberschuss. Er stammt aber nur aus Zinsen oder Beteiligungen. Genau das macht die Staffelform sichtbar."
+ },
+ {
+  "id": "wdh-tag03-26",
+  "q": "Zwei Firmen haben dasselbe EBIT. Firma A hat hohe Bankkredite, Firma B hat keine Kredite. Alle anderen Zahlen sind gleich. Was trifft zu?",
+  "options": [
+   {
+    "t": "Firma A hat ein niedrigeres Ergebnis vor Steuern (EBT).",
+    "c": true
+   },
+   {
+    "t": "Firma A hat ein niedrigeres Rohergebnis.",
+    "c": false
+   },
+   {
+    "t": "Beide Firmen haben denselben Jahresüberschuss.",
+    "c": false
+   },
+   {
+    "t": "Firma B hat ein höheres EBIT.",
+    "c": false
+   }
+  ],
+  "expl": "Das EBIT ist das Ergebnis vor Zinsen und Steuern. Die Finanzierung spielt dafür keine Rolle. Darum kann man Firmen mit dem EBIT fair vergleichen. Die Kreditzinsen von Firma A kommen erst im Finanzergebnis. Sie senken das EBT und damit auch den Jahresüberschuss. Das Rohergebnis bleibt davon unberührt."
+ },
+ {
+  "id": "wdh-tag03-27",
+  "typ": "rechnen",
+  "q": "Berechnen Sie das Rohergebnis der Fensterbau Yildiz GmbH (vereinfachte Staffelform, Gesamtkostenverfahren).",
+  "angaben": "Umsatzerlöse: 1.100.000 €; Bestandserhöhung an fertigen Erzeugnissen: 30.000 €; sonstige betriebliche Erträge: 20.000 €; Materialaufwand: 450.000 €",
+  "einheit": "€",
+  "loesung": 700000,
+  "rechnung": "1100000 + 30000 + 20000 - 450000",
+  "schritte": [
+   "Rohergebnis = Umsatzerlöse + Bestandserhöhung + sonstige betriebliche Erträge − Materialaufwand",
+   "1.100.000 € + 30.000 € + 20.000 € = 1.150.000 €",
+   "1.150.000 € − 450.000 € = 700.000 €"
+  ],
+  "expl": "Die Bestandserhöhung wird dazugezählt. Die Fenster im Lager haben schon Material und Löhne verbraucht. Im vereinfachten Schema gehören auch die sonstigen betrieblichen Erträge ins Rohergebnis. Zum Schluss zieht man den Materialaufwand ab."
+ },
+ {
+  "id": "wdh-tag03-28",
+  "q": "Aus welchen Teilen besteht der Jahresabschluss einer GmbH?",
+  "options": [
+   {
+    "t": "Bilanz, GuV und Anhang",
+    "c": true
+   },
+   {
+    "t": "Nur Bilanz und GuV",
+    "c": false
+   },
+   {
+    "t": "Bilanz, GuV und Inventar",
+    "c": false
+   },
+   {
+    "t": "GuV und Anhang",
+    "c": false
+   }
+  ],
+  "expl": "Jeder Kaufmann muss eine Bilanz und eine GuV aufstellen. Beide bilden den Jahresabschluss. Kapitalgesellschaften wie die GmbH müssen ihn um einen Anhang erweitern. Das steht in § 264 HGB. Das Inventar ist ein Verzeichnis aller Vermögensteile und Schulden. Es gehört nicht zum Jahresabschluss."
+ },
+ {
+  "id": "wdh-tag03-29",
+  "typ": "offen",
+  "q": "Die Stahlbau Krüger GmbH hat in zwei Jahren je 1.500.000 € Umsatz. Der Personalaufwand steigt von 450.000 € auf 525.000 €, die Personalquote also von 30 % auf 35 %. Interpretieren Sie das nach dem Schema Zahl, Ursache, Maßnahme.",
+  "kernpunkte": [
+   "Zahl: Personalquote steigt um 5 Prozentpunkte (plus 75.000 €)",
+   "Ursache: z. B. Lohnerhöhung oder mehr Personal ohne mehr Umsatz",
+   "Maßnahme: z. B. Abläufe verbessern, Überstunden abbauen",
+   "Maßnahme: Umsatz steigern oder Verkaufspreise erhöhen"
+  ],
+  "expl": "Zuerst nennt man die Zahl. Die Personalquote steigt von 30 % auf 35 %, also um 5 Prozentpunkte. Bei sonst gleichen Zahlen sinkt dadurch das EBIT. Dann sucht man die Ursache, etwa höhere Löhne oder mehr Mitarbeitende. Zum Schluss schlägt man eine Maßnahme vor. So wird aus einer Zahl eine Entscheidungshilfe."
+ },
+ {
+  "id": "wdh-tag03-30",
+  "q": "Warum stehen die Steuern vom Einkommen und vom Ertrag erst am Ende der GuV?",
+  "options": [
+   {
+    "t": "Weil ihre Höhe vom Gewinn abhängt",
+    "c": true
+   },
+   {
+    "t": "Weil Steuern keine Aufwendungen sind",
+    "c": false
+   },
+   {
+    "t": "Weil sie zum Finanzergebnis gehören",
+    "c": false
+   },
+   {
+    "t": "Weil sie nur in der Kontenform vorkommen",
+    "c": false
+   }
+  ],
+  "expl": "Die Körperschaftsteuer und die Gewerbesteuer richten sich nach dem Gewinn. Darum rechnet man zuerst das Ergebnis vor Steuern aus. Erst danach zieht man die Steuern ab. Sie sind trotzdem Aufwand. Sie gehören aber nicht zum Finanzergebnis. Merksatz: Erst bekommt die Bank ihre Zinsen, dann der Staat seine Steuern."
+ },
+ {
+  "id": "wdh-tag03-31",
+  "typ": "rechnen",
+  "q": "Berechnen Sie die EBIT-Marge der Verpackungswerk Neumann GmbH.",
+  "angaben": "Umsatzerlöse: 2.400.000 €; Betriebsergebnis (EBIT): 180.000 €",
+  "einheit": "%",
+  "loesung": 7.5,
+  "rechnung": "180000 / 2400000 * 100",
+  "schritte": [
+   "EBIT-Marge in % = EBIT : Umsatzerlöse × 100",
+   "180.000 € : 2.400.000 € = 0,075",
+   "0,075 × 100 = 7,5 %"
+  ],
+  "expl": "Die EBIT-Marge setzt das EBIT ins Verhältnis zum Umsatz. So kann man Firmen verschiedener Größe vergleichen. 7,5 % bedeutet: Von jedem Euro Umsatz bleiben 7,5 Cent aus dem Kerngeschäft übrig. Zinsen und Steuern sind dabei noch nicht abgezogen."
+ },
+ {
+  "id": "wdh-tag03-32",
+  "q": "Welche Posten sind Erträge? (Mehrere Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Versicherungsentschädigung nach einem Sturmschaden",
+    "c": true
+   },
+   {
+    "t": "Zinserträge aus Bankguthaben",
+    "c": true
+   },
+   {
+    "t": "Aufnahme eines Bankkredits über 60.000 €",
+    "c": false
+   },
+   {
+    "t": "Umsatzsteuer auf die verkauften Produkte",
+    "c": false
+   }
+  ],
+  "expl": "Ertrag ist ein Wertezuwachs. Er erhöht den Gewinn. Die Versicherungsentschädigung und die Zinserträge sind solche Wertezuwächse. Ein Kredit bringt zwar Geld, aber genauso viel Schulden. Das Eigenkapital bleibt gleich. Die Umsatzsteuer gehört dem Finanzamt. Umsatzerlöse zählen deshalb immer ohne Umsatzsteuer."
+ },
+ {
+  "id": "wdh-tag03-33",
+  "typ": "rechnen",
+  "q": "Ermitteln Sie das Ergebnis der Maschinenbau Ehlers GmbH aus der GuV in Kontenform.",
+  "angaben": "Umsatzerlöse: 950.000 €; Bestandserhöhungen: 25.000 €; Materialaufwand: 400.000 €; Personalaufwand: 330.000 €; Abschreibungen: 70.000 €; sonstige betriebliche Aufwendungen: 95.000 €; Zinsaufwand: 20.000 €; Steuern vom Einkommen und vom Ertrag: 15.000 €",
+  "einheit": "€",
+  "loesung": 45000,
+  "rechnung": "(950000 + 25000) - (400000 + 330000 + 70000 + 95000 + 20000 + 15000)",
+  "schritte": [
+   "Ergebnis = Summe der Erträge − Summe der Aufwendungen",
+   "Erträge: 950.000 € + 25.000 € = 975.000 €",
+   "Aufwendungen: 400.000 € + 330.000 € + 70.000 € + 95.000 € + 20.000 € + 15.000 € = 930.000 €",
+   "975.000 € − 930.000 € = 45.000 € Gewinn (Jahresüberschuss)"
+  ],
+  "expl": "Bestandserhöhungen stehen auf der Ertragsseite. Die Maschinen im Lager haben schon Aufwand verursacht. Damit der Gewinn stimmt, rechnet man ihren Wert als Ertrag dagegen. Die Erträge sind 45.000 € größer als die Aufwendungen. Das ist der Gewinn."
+ }
+]
