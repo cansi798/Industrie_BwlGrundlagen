@@ -1,0 +1,606 @@
+[
+ {
+  "id": "wdh-tag05-01",
+  "q": "Firma A erzielt 20.000 € Gewinn mit 200.000 € Kapital. Firma B erzielt 30.000 € Gewinn mit 600.000 € Kapital. Welche Aussage stimmt?",
+  "options": [
+   {
+    "t": "A ist rentabler, denn A verzinst ihr Kapital mit 10 %, B nur mit 5 %.",
+    "c": true
+   },
+   {
+    "t": "B ist rentabler, denn B macht 10.000 € mehr Gewinn.",
+    "c": false
+   },
+   {
+    "t": "Beide sind gleich rentabel, denn beide machen Gewinn.",
+    "c": false
+   },
+   {
+    "t": "Ohne den Umsatz kann man keine Rentabilität berechnen.",
+    "c": false
+   }
+  ],
+  "expl": "Rentabilität setzt den Gewinn ins Verhältnis zum eingesetzten Kapital. A: 20.000 : 200.000 × 100 = 10 %. B: 30.000 : 600.000 × 100 = 5 %. B hat zwar mehr Gewinn in Euro. Aber B braucht dafür dreimal so viel Kapital. Jeder Euro Kapital arbeitet bei A also doppelt so gut."
+ },
+ {
+  "id": "wdh-tag05-02",
+  "typ": "offen",
+  "q": "Erklären Sie an einem eigenen Beispiel, warum ein höherer Gewinn nicht automatisch eine höhere Eigenkapitalrentabilität bedeutet.",
+  "kernpunkte": [
+   "Rentabilität ist ein Verhältnis aus Gewinn und Kapital",
+   "Wächst das Eigenkapital stärker als der Gewinn, sinkt die Rentabilität",
+   "Beispiel mit Zahlen, z. B. 40.000 € : 400.000 € = 10 % gegen 45.000 € : 600.000 € = 7,5 %"
+  ],
+  "expl": "Die Eigenkapitalrentabilität ist ein Bruch: Jahresüberschuss geteilt durch Eigenkapital. Es kommt also auf beide Zahlen an. Steigt der Gewinn nur ein wenig, das Eigenkapital aber stark, wird der Bruch kleiner. Beispiel: 40.000 € Gewinn bei 400.000 € Eigenkapital ergeben 10 %. 45.000 € Gewinn bei 600.000 € Eigenkapital ergeben nur 7,5 %. Mehr Gewinn, aber weniger Rendite."
+ },
+ {
+  "id": "wdh-tag05-03",
+  "q": "Welche Größe steht bei der Eigenkapitalrentabilität im Zähler?",
+  "options": [
+   {
+    "t": "Der Jahresüberschuss, also der Gewinn nach Zinsen und Steuern",
+    "c": true
+   },
+   {
+    "t": "Der Jahresüberschuss plus die Fremdkapitalzinsen",
+    "c": false
+   },
+   {
+    "t": "Das EBIT, also das Ergebnis vor Zinsen und Steuern",
+    "c": false
+   },
+   {
+    "t": "Die Umsatzerlöse",
+    "c": false
+   }
+  ],
+  "expl": "Die Formel lautet: Eigenkapitalrentabilität = Jahresüberschuss : Eigenkapital × 100. Der Jahresüberschuss ist der Gewinn, der nach Zinsen und Steuern übrig bleibt. Er gehört den Eigentümern. Deshalb passt er zum Eigenkapital. Jahresüberschuss plus Zinsen gehört zur Gesamtkapitalrentabilität."
+ },
+ {
+  "id": "wdh-tag05-04",
+  "typ": "rechnen",
+  "q": "Berechnen Sie die Eigenkapitalrentabilität der Holzwerk Lindner GmbH.",
+  "angaben": "Jahresüberschuss: 63.000 €; Eigenkapital: 450.000 €; Fremdkapital: 550.000 €",
+  "einheit": "%",
+  "loesung": 14,
+  "rechnung": "63000 / 450000 * 100",
+  "schritte": [
+   "Eigenkapitalrentabilität = Jahresüberschuss : Eigenkapital × 100",
+   "63.000 : 450.000 = 0,14",
+   "0,14 × 100 = 14 %"
+  ],
+  "expl": "Bei der Eigenkapitalrentabilität gehören Jahresüberschuss und Eigenkapital zusammen. Das Fremdkapital brauchen Sie hier nicht. Ergebnis: 14 %. Das heißt: Für 100 € Eigenkapital erhalten die Eigentümer 14 € Gewinn im Jahr."
+ },
+ {
+  "id": "wdh-tag05-05",
+  "q": "Die Eigenkapitalrentabilität steigt von 8 % auf 11 %. Wie groß ist der Anstieg in Prozentpunkten?",
+  "options": [
+   {
+    "t": "3 Prozentpunkte",
+    "c": true
+   },
+   {
+    "t": "37,5 Prozentpunkte",
+    "c": false
+   },
+   {
+    "t": "11 Prozentpunkte",
+    "c": false
+   },
+   {
+    "t": "19 Prozentpunkte",
+    "c": false
+   }
+  ],
+  "expl": "Prozentpunkte sind der einfache Abstand zwischen zwei Prozentzahlen. Man rechnet also nur: 11 % minus 8 % = 3 Prozentpunkte. Die 37,5 entstehen, wenn man den Anstieg ins Verhältnis zu 8 setzt. Das wäre eine Veränderung in Prozent, nicht in Prozentpunkten."
+ },
+ {
+  "id": "wdh-tag05-06",
+  "q": "Welche Größen für die Rentabilitäten entnehmen Sie der Bilanz? (Zwei Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Das Eigenkapital",
+    "c": true
+   },
+   {
+    "t": "Das Gesamtkapital (Bilanzsumme)",
+    "c": true
+   },
+   {
+    "t": "Den Zinsaufwand",
+    "c": false
+   },
+   {
+    "t": "Die Umsatzerlöse",
+    "c": false
+   }
+  ],
+  "expl": "Die Bilanz zeigt, woher das Kapital kommt. Dort stehen Eigenkapital, Fremdkapital und die Bilanzsumme, also das Gesamtkapital. Die GuV zeigt dagegen Erträge und Aufwendungen eines Jahres. Dort finden Sie den Jahresüberschuss, den Zinsaufwand und die Umsatzerlöse."
+ },
+ {
+  "id": "wdh-tag05-07",
+  "typ": "rechnen",
+  "q": "Berechnen Sie die Gesamtkapitalrentabilität der Polstermanufaktur Berger GmbH.",
+  "angaben": "Jahresüberschuss: 72.000 €; Fremdkapitalzinsen: 28.000 €; Eigenkapital: 500.000 €; Fremdkapital: 750.000 €",
+  "einheit": "%",
+  "loesung": 8,
+  "rechnung": "(72000 + 28000) / (500000 + 750000) * 100",
+  "schritte": [
+   "Gesamtkapitalrentabilität = (Jahresüberschuss + Fremdkapitalzinsen) : Gesamtkapital × 100",
+   "Gesamtkapital = 500.000 + 750.000 = 1.250.000 €",
+   "72.000 + 28.000 = 100.000 €",
+   "100.000 : 1.250.000 = 0,08",
+   "0,08 × 100 = 8 %"
+  ],
+  "expl": "Das Gesamtkapital ist Eigenkapital plus Fremdkapital. Es erwirtschaftet zwei Teile: Die Bank bekommt die Zinsen, die Eigentümer den Jahresüberschuss. Deshalb zählen beide in den Zähler. Ergebnis: 8 %. Das ganze Kapital verzinst sich also mit 8 % im Jahr."
+ },
+ {
+  "id": "wdh-tag05-08",
+  "q": "Eine Kollegin rechnet die Gesamtkapitalrentabilität nur mit dem Jahresüberschuss im Zähler. Welche Folge hat dieser Fehler?",
+  "options": [
+   {
+    "t": "Das Ergebnis fällt zu niedrig aus, weil der Anteil der Bank am Ertrag fehlt.",
+    "c": true
+   },
+   {
+    "t": "Das Ergebnis fällt zu hoch aus, weil die Zinsen doppelt gezählt werden.",
+    "c": false
+   },
+   {
+    "t": "Das Ergebnis bleibt gleich, weil Zinsen im Jahresüberschuss schon enthalten sind.",
+    "c": false
+   },
+   {
+    "t": "Es entsteht die Eigenkapitalrentabilität.",
+    "c": false
+   }
+  ],
+  "expl": "Der Jahresüberschuss ist schon um die Zinsen gekürzt. Das Gesamtkapital hat aber Gewinn und Zinsen zusammen erwirtschaftet. Fehlen die Zinsen, ist der Zähler zu klein. Das Ergebnis wird zu niedrig. Es ist auch nicht die Eigenkapitalrentabilität, denn im Nenner steht weiter das Gesamtkapital."
+ },
+ {
+  "id": "wdh-tag05-09",
+  "typ": "offen",
+  "q": "Mit welchen Werten vergleicht man die Eigenkapitalrentabilität und die Gesamtkapitalrentabilität, um sie zu beurteilen? Begründen Sie kurz.",
+  "kernpunkte": [
+   "EK-Rentabilität mit dem Zins einer sicheren Geldanlage vergleichen",
+   "Sie sollte deutlich darüber liegen (Risikoprämie für das Unternehmerrisiko)",
+   "GK-Rentabilität mit dem Kreditzins (FK-Zins) vergleichen",
+   "Liegt sie darüber, bringt geliehenes Geld mehr ein, als es kostet"
+  ],
+  "expl": "Eine Prozentzahl allein sagt wenig. Die Eigentümer könnten ihr Geld auch sicher anlegen, zum Beispiel als Festgeld. Weil ein Unternehmen riskanter ist, wollen sie einen Zuschlag. Dieser heißt Risikoprämie. Die Gesamtkapitalrentabilität vergleicht man mit dem Kreditzins. Liegt sie darüber, verdient das geliehene Geld mehr, als es kostet."
+ },
+ {
+  "id": "wdh-tag05-10",
+  "q": "Welche Zuordnungen von Kapital und Ertrag sind richtig? (Zwei Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Eigenkapital gehört zum Jahresüberschuss.",
+    "c": true
+   },
+   {
+    "t": "Gesamtkapital gehört zu Jahresüberschuss plus Fremdkapitalzinsen.",
+    "c": true
+   },
+   {
+    "t": "Gesamtkapital gehört nur zum Jahresüberschuss.",
+    "c": false
+   },
+   {
+    "t": "Eigenkapital gehört zu Jahresüberschuss plus Fremdkapitalzinsen.",
+    "c": false
+   }
+  ],
+  "expl": "Die Regel lautet: Zu jedem Kapital sein Ertrag. Den Eigentümern gehört der Jahresüberschuss. Den Fremdkapitalgebern gehören die Zinsen. Das Gesamtkapital umfasst beide Gruppen. Deshalb gehören zu ihm Jahresüberschuss und Zinsen zusammen."
+ },
+ {
+  "id": "wdh-tag05-11",
+  "typ": "rechnen",
+  "q": "Berechnen Sie die Umsatzrentabilität des Küchenstudios Albrecht KG.",
+  "angaben": "Umsatzerlöse: 1.800.000 €; Jahresüberschuss: 54.000 €; Eigenkapital: 360.000 €",
+  "einheit": "%",
+  "loesung": 3,
+  "rechnung": "54000 / 1800000 * 100",
+  "schritte": [
+   "Umsatzrentabilität = Jahresüberschuss : Umsatzerlöse × 100",
+   "54.000 : 1.800.000 = 0,03",
+   "0,03 × 100 = 3 %"
+  ],
+  "expl": "Die Umsatzrentabilität schaut auf den Umsatz, nicht auf das Kapital. Das Eigenkapital brauchen Sie hier also nicht. Ergebnis: 3 %. Das heißt: Von 100 € Umsatz bleiben dem Küchenstudio 3 € Gewinn. Die anderen 97 € werden für Aufwendungen, Zinsen und Steuern gebraucht."
+ },
+ {
+  "id": "wdh-tag05-12",
+  "q": "Ein Unternehmen hat eine Umsatzrentabilität von 6 %. Was bedeutet das?",
+  "options": [
+   {
+    "t": "Von 100 € Umsatz bleiben 6 € als Jahresüberschuss übrig.",
+    "c": true
+   },
+   {
+    "t": "Für 100 € Eigenkapital erhalten die Eigentümer 6 € Gewinn.",
+    "c": false
+   },
+   {
+    "t": "Der Umsatz ist gegenüber dem Vorjahr um 6 % gestiegen.",
+    "c": false
+   },
+   {
+    "t": "Die Kosten betragen 6 % des Umsatzes.",
+    "c": false
+   }
+  ],
+  "expl": "Die Umsatzrentabilität ist Jahresüberschuss : Umsatzerlöse × 100. Der Prozentwert entspricht genau den Euro, die von 100 € Umsatz als Gewinn übrig bleiben. Bei 6 % sind das 6 €. Die Kosten sind dann nicht 6 %, sondern zusammen mit Zinsen und Steuern 94 € von 100 €."
+ },
+ {
+  "id": "wdh-tag05-13",
+  "typ": "offen",
+  "q": "Worin unterscheiden sich Eigenkapitalrentabilität, Gesamtkapitalrentabilität und Umsatzrentabilität in ihrer Sichtweise?",
+  "kernpunkte": [
+   "EK-Rentabilität: Sicht der Eigentümer (Verzinsung ihres Geldes)",
+   "GK-Rentabilität: Sicht des ganzen Betriebs, egal woher das Kapital kommt",
+   "Umsatzrentabilität: Gewinn je 100 € Umsatz, nicht je Kapital"
+  ],
+  "expl": "Alle drei setzen einen Erfolg ins Verhältnis zu einer Bezugsgröße. Die Eigenkapitalrentabilität fragt: Wie gut verzinst sich das Geld der Eigentümer? Die Gesamtkapitalrentabilität fragt: Wie gut arbeitet das ganze Kapital, also Eigen- und Fremdkapital? Die Umsatzrentabilität fragt: Wie viel Gewinn bleibt von 100 € Umsatz übrig?"
+ },
+ {
+  "id": "wdh-tag05-14",
+  "typ": "rechnen",
+  "q": "Berechnen Sie den Kapitalumschlag der Fensterbau Kröger GmbH.",
+  "angaben": "Umsatzerlöse: 2.400.000 €; Gesamtkapital: 1.600.000 €; Jahresüberschuss: 96.000 €",
+  "einheit": "",
+  "loesung": 1.5,
+  "rechnung": "2400000 / 1600000",
+  "schritte": [
+   "Kapitalumschlag = Umsatz : Gesamtkapital",
+   "2.400.000 : 1.600.000 = 1,5"
+  ],
+  "expl": "Der Kapitalumschlag zeigt, wie oft das Gesamtkapital im Jahr über den Umsatz zurückfließt. Er ist kein Prozentwert, deshalb wird nicht mit 100 multipliziert. Ergebnis: 1,5. Das Kapital kommt also 1,5 Mal im Jahr über den Umsatz herein. Der Jahresüberschuss wird hier nicht gebraucht."
+ },
+ {
+  "id": "wdh-tag05-15",
+  "q": "Ein Unternehmen hat eine Umsatzrentabilität von 5 % und einen Kapitalumschlag von 2. Wie hoch ist der ROI?",
+  "options": [
+   {
+    "t": "10 %",
+    "c": true
+   },
+   {
+    "t": "2,5 %",
+    "c": false
+   },
+   {
+    "t": "7 %",
+    "c": false
+   },
+   {
+    "t": "3 %",
+    "c": false
+   }
+  ],
+  "expl": "Der ROI lässt sich zerlegen: ROI = Umsatzrentabilität × Kapitalumschlag. Hier also 5 % × 2 = 10 %. Man multipliziert, man addiert nicht. Dahinter steckt: Jeder Euro Umsatz bringt 5 Cent Gewinn. Und jeder Euro Kapital bringt 2 € Umsatz im Jahr."
+ },
+ {
+  "id": "wdh-tag05-16",
+  "typ": "rechnen",
+  "q": "Die Metallbau Yilmaz GmbH kauft einen Laserschneider. Berechnen Sie den ROI dieser Investition.",
+  "angaben": "Anschaffungskosten (investiertes Kapital): 80.000 €; zusätzlicher Gewinn pro Jahr: 10.000 €",
+  "einheit": "%",
+  "loesung": 12.5,
+  "toleranz": 0.1,
+  "rechnung": "10000 / 80000 * 100",
+  "schritte": [
+   "ROI = Gewinn : investiertes Kapital × 100",
+   "10.000 : 80.000 = 0,125",
+   "0,125 × 100 = 12,5 %"
+  ],
+  "expl": "Der ROI zeigt, was von dem investierten Geld als Gewinn zurückkommt. Ergebnis: 12,5 %. Das heißt: Für jeden investierten Euro kommen jedes Jahr 12,5 Cent Gewinn zurück. So kann man den Laserschneider mit anderen Investitionen vergleichen."
+ },
+ {
+  "id": "wdh-tag05-17",
+  "typ": "offen",
+  "q": "Welchen Nutzen hat es, den ROI in Umsatzrentabilität und Kapitalumschlag zu zerlegen?",
+  "kernpunkte": [
+   "Man sieht zwei Stellschrauben für den ROI",
+   "Mehr Gewinn je Umsatz: Kosten senken oder Preise erhöhen",
+   "Mehr Umsatz mit demselben Kapital: z. B. weniger Lagerbestand, schnellere Fertigung"
+  ],
+  "expl": "ROI = Umsatzrentabilität × Kapitalumschlag. Das Ergebnis ist dasselbe wie bei Gewinn : Kapital × 100. Die Zerlegung zeigt aber, woher der ROI kommt. Die erste Stellschraube ist mehr Gewinn je 100 € Umsatz. Die zweite ist mehr Umsatz mit demselben Kapital. So erkennt man, wo ein Unternehmen ansetzen kann."
+ },
+ {
+  "id": "wdh-tag05-18",
+  "q": "Welche Reihenfolge der Stufen in der GuV-Treppe ist richtig (von oben nach unten)?",
+  "options": [
+   {
+    "t": "Umsatzerlöse → EBIT → EBT → Jahresüberschuss",
+    "c": true
+   },
+   {
+    "t": "Umsatzerlöse → EBT → EBIT → Jahresüberschuss",
+    "c": false
+   },
+   {
+    "t": "Umsatzerlöse → Jahresüberschuss → EBIT → EBT",
+    "c": false
+   },
+   {
+    "t": "EBIT → Umsatzerlöse → EBT → Jahresüberschuss",
+    "c": false
+   }
+  ],
+  "expl": "Oben stehen die Umsatzerlöse. Zieht man die betrieblichen Aufwendungen ab, erhält man das EBIT. Zieht man dann die Zinsen ab, erhält man das EBT, also das Ergebnis vor Steuern. Nach Abzug der Steuern bleibt der Jahresüberschuss. Jede Stufe zieht etwas ab."
+ },
+ {
+  "id": "wdh-tag05-19",
+  "typ": "rechnen",
+  "q": "Berechnen Sie das EBIT der Stuhlfabrik Wendt GmbH.",
+  "angaben": "Umsatzerlöse: 3.000.000 €; Materialaufwand: 1.200.000 €; Personalaufwand: 900.000 €; Abschreibungen: 250.000 €; sonstige betriebliche Aufwendungen: 330.000 €; Zinsaufwand: 40.000 €",
+  "einheit": "€",
+  "loesung": 320000,
+  "rechnung": "3000000 - 1200000 - 900000 - 250000 - 330000",
+  "schritte": [
+   "EBIT = Umsatzerlöse − Materialaufwand − Personalaufwand − Abschreibungen − sonstige betriebliche Aufwendungen",
+   "3.000.000 − 1.200.000 − 900.000 − 250.000 − 330.000",
+   "EBIT = 320.000 €"
+  ],
+  "expl": "Für das EBIT ziehen Sie nur die betrieblichen Aufwendungen ab. Die Zinsen gehören nicht dazu, denn EBIT heißt Ergebnis vor Zinsen und Steuern. Ergebnis: 320.000 €. So viel hat die Stuhlfabrik mit ihrem Kerngeschäft verdient, bevor Bank und Finanzamt ihren Teil bekommen."
+ },
+ {
+  "id": "wdh-tag05-20",
+  "q": "Welche Aufwendungen lässt das EBITDA zusätzlich zum EBIT heraus?",
+  "options": [
+   {
+    "t": "Die Abschreibungen auf Sachanlagen und auf immaterielle Vermögensgegenstände",
+    "c": true
+   },
+   {
+    "t": "Den Materialaufwand und den Personalaufwand",
+    "c": false
+   },
+   {
+    "t": "Nur die Zinsaufwendungen",
+    "c": false
+   },
+   {
+    "t": "Die Steuern und die sonstigen betrieblichen Aufwendungen",
+    "c": false
+   }
+  ],
+  "expl": "EBITDA heißt Ergebnis vor Zinsen, Steuern und Abschreibungen. Zinsen und Steuern lässt schon das EBIT heraus. Neu kommen D und A dazu. D sind Abschreibungen auf Sachanlagen, A sind Abschreibungen auf immaterielle Werte. Zusammen sind das alle Abschreibungen. Deshalb gilt: EBITDA = EBIT + Abschreibungen."
+ },
+ {
+  "id": "wdh-tag05-21",
+  "q": "Ein Unternehmen schreibt eine gekaufte Softwarelizenz ab. Zu welchem Buchstaben im EBITDA gehört diese Abschreibung?",
+  "options": [
+   {
+    "t": "A wie Amortization",
+    "c": true
+   },
+   {
+    "t": "D wie Depreciation",
+    "c": false
+   },
+   {
+    "t": "I wie Interest",
+    "c": false
+   },
+   {
+    "t": "T wie Taxes",
+    "c": false
+   }
+  ],
+  "expl": "Software und Lizenzen sind immaterielle Vermögensgegenstände. Man kann sie nicht anfassen. Abschreibungen darauf heißen Amortization, also A. D steht für Depreciation. Das sind Abschreibungen auf Sachanlagen wie Maschinen, Gebäude und Fahrzeuge. I steht für Zinsen, T für Steuern."
+ },
+ {
+  "id": "wdh-tag05-22",
+  "typ": "rechnen",
+  "q": "Berechnen Sie das EBITDA der Treppenbau Hoffmann GmbH vom Jahresüberschuss aus.",
+  "angaben": "Jahresüberschuss: 70.000 €; Steuern: 30.000 €; Zinsaufwand: 25.000 €; Abschreibungen: 95.000 €; keine Zinserträge",
+  "einheit": "€",
+  "loesung": 220000,
+  "rechnung": "70000 + 30000 + 25000 + 95000",
+  "schritte": [
+   "EBT = Jahresüberschuss + Steuern = 70.000 + 30.000 = 100.000 €",
+   "EBIT = EBT + Zinsaufwand = 100.000 + 25.000 = 125.000 €",
+   "EBITDA = EBIT + Abschreibungen = 125.000 + 95.000 = 220.000 €"
+  ],
+  "expl": "Von unten geht man die GuV-Treppe rückwärts nach oben. Alles, was vorher abgezogen wurde, wird wieder addiert: erst die Steuern, dann die Zinsen, dann die Abschreibungen. So erhalten Sie unterwegs auch EBT und EBIT. Ergebnis: 220.000 € EBITDA. Das ist grob der Geldzufluss aus dem laufenden Geschäft."
+ },
+ {
+  "id": "wdh-tag05-23",
+  "q": "Die Leuchten Vogel GmbH hat einen Jahresüberschuss von 60.000 €, Steuern von 25.000 €, Zinsaufwendungen von 20.000 € und Zinserträge von 5.000 €. Wie hoch ist das EBIT?",
+  "options": [
+   {
+    "t": "100.000 €",
+    "c": true
+   },
+   {
+    "t": "110.000 €",
+    "c": false
+   },
+   {
+    "t": "105.000 €",
+    "c": false
+   },
+   {
+    "t": "85.000 €",
+    "c": false
+   }
+  ],
+  "expl": "Von unten gilt: EBT = Jahresüberschuss + Steuern = 85.000 €. Dann EBIT = EBT + Zinsaufwand − Zinserträge. Also 85.000 + 20.000 − 5.000 = 100.000 €. Die Zinserträge werden abgezogen. Sie gehören zum Finanzergebnis und nicht zum Kerngeschäft."
+ },
+ {
+  "id": "wdh-tag05-24",
+  "q": "In welchem Fall kann das EBT ausnahmsweise größer sein als das EBIT?",
+  "options": [
+   {
+    "t": "Wenn das Unternehmen mehr Zinserträge als Zinsaufwendungen hat",
+    "c": true
+   },
+   {
+    "t": "Wenn das Unternehmen besonders hohe Abschreibungen hat",
+    "c": false
+   },
+   {
+    "t": "Wenn das Unternehmen hohe Steuern zahlt",
+    "c": false
+   },
+   {
+    "t": "Wenn das Unternehmen viel Fremdkapital hat",
+    "c": false
+   }
+  ],
+  "expl": "Zwischen EBIT und EBT steht nur das Finanzergebnis, also Zinsen. Normalerweise zahlt ein Unternehmen mehr Zinsen, als es bekommt. Dann ist das EBT kleiner. Sind die Zinserträge größer als die Zinsaufwendungen, ist das Finanzergebnis positiv. Dann liegt das EBT über dem EBIT. Abschreibungen und Steuern spielen hier keine Rolle."
+ },
+ {
+  "id": "wdh-tag05-25",
+  "typ": "rechnen",
+  "q": "Berechnen Sie die EBIT-Marge der Parkett Sommer GmbH.",
+  "angaben": "Umsatzerlöse: 2.400.000 €; EBIT: 180.000 €; Jahresüberschuss: 90.000 €",
+  "einheit": "%",
+  "loesung": 7.5,
+  "toleranz": 0.1,
+  "rechnung": "180000 / 2400000 * 100",
+  "schritte": [
+   "EBIT-Marge = EBIT : Umsatzerlöse × 100",
+   "180.000 : 2.400.000 = 0,075",
+   "0,075 × 100 = 7,5 %"
+  ],
+  "expl": "Die Marge setzt das EBIT ins Verhältnis zum Umsatz. Ergebnis: 7,5 %. Von 100 € Umsatz bleiben also 7,50 € Ergebnis vor Zinsen und Steuern. Die Umsatzrentabilität ist kleiner: 90.000 : 2.400.000 × 100 = 3,75 %. Der Unterschied sind Zinsen und Steuern."
+ },
+ {
+  "id": "wdh-tag05-26",
+  "typ": "offen",
+  "q": "Worin unterscheiden sich EBIT und EBITDA in ihrer Aussage, und wo liegen die Grenzen des EBITDA?",
+  "kernpunkte": [
+   "EBIT zeigt die Ertragskraft des Kerngeschäfts, unabhängig von Finanzierung und Steuern",
+   "EBITDA lässt zusätzlich Abschreibungen weg und nähert den Geldzufluss (Cashflow) an",
+   "Grenze: Abschreibungen, Zinsen und Steuern sind echte Belastungen",
+   "Grenze: nicht gesetzlich geregelt, kann ein zu gutes Bild zeigen"
+  ],
+  "expl": "Das EBIT zeigt, was das eigentliche Geschäft verdient. Zinsen und Steuern sind ausgeblendet. So kann man Firmen mit anderer Finanzierung vergleichen. Das EBITDA lässt auch die Abschreibungen weg. Für sie fließt in diesem Jahr kein Geld ab. Deshalb nähert es den Geldzufluss an. Aber: Maschinen müssen irgendwann ersetzt werden. Zudem regelt das HGB das EBITDA nicht."
+ },
+ {
+  "id": "wdh-tag05-27",
+  "q": "Die Gesamtkapitalrentabilität eines Unternehmens beträgt 7 %, der Fremdkapitalzins ebenfalls 7 %. Was passiert mit der Eigenkapitalrentabilität, wenn das Unternehmen mehr Fremdkapital aufnimmt?",
+  "options": [
+   {
+    "t": "Sie bleibt gleich und entspricht der Gesamtkapitalrentabilität von 7 %.",
+    "c": true
+   },
+   {
+    "t": "Sie steigt, weil mehr Kapital eingesetzt wird.",
+    "c": false
+   },
+   {
+    "t": "Sie sinkt, weil mehr Zinsen gezahlt werden.",
+    "c": false
+   },
+   {
+    "t": "Sie wird negativ, weil Zinsen fix sind.",
+    "c": false
+   }
+  ],
+  "expl": "Die Leverage-Formel lautet: EK-Rentabilität = GK-Rentabilität + (GK-Rentabilität − FK-Zins) × FK : EK. Hier ist die Klammer 7 % − 7 % = 0. Der Hebel hat dann keine Wirkung, egal wie hoch der Verschuldungsgrad ist. Jeder Euro Kredit bringt genau so viel ein, wie er kostet. Die EK-Rentabilität bleibt bei 7 %."
+ },
+ {
+  "id": "wdh-tag05-28",
+  "typ": "rechnen",
+  "q": "Berechnen Sie die Eigenkapitalrentabilität der Büromöbel Krause GmbH mit der Leverage-Formel (vor Steuern).",
+  "angaben": "Gesamtkapitalrentabilität (vor Zinsen): 9 %; Fremdkapitalzins: 5 %; Eigenkapital: 300.000 €; Fremdkapital: 600.000 €",
+  "einheit": "%",
+  "loesung": 17,
+  "rechnung": "9 + (9 - 5) * 600000 / 300000",
+  "schritte": [
+   "EK-Rentabilität = GK-Rentabilität + (GK-Rentabilität − FK-Zins) × FK : EK",
+   "Verschuldungsgrad = 600.000 : 300.000 = 2",
+   "9 % + (9 % − 5 %) × 2 = 9 % + 8 %",
+   "EK-Rentabilität = 17 %"
+  ],
+  "expl": "Das Kapital bringt 9 %, der Kredit kostet nur 5 %. Den Überschuss von 4 Prozentpunkten bekommen die Eigentümer, und zwar zweimal, weil das Fremdkapital doppelt so groß ist wie das Eigenkapital. Ergebnis: 17 %. Probe: 900.000 × 9 % = 81.000 €, minus 30.000 € Zinsen = 51.000 €, geteilt durch 300.000 € = 17 %. Das ist ein positiver Leverage-Effekt."
+ },
+ {
+  "id": "wdh-tag05-29",
+  "q": "Zwei Firmen haben je 10 % Gesamtkapitalrentabilität und zahlen 6 % Kreditzins. Firma A hat einen Verschuldungsgrad von 1, Firma B von 3. Welche Aussagen stimmen? (Zwei Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "B hat die höhere Eigenkapitalrentabilität: 22 % statt 14 %.",
+    "c": true
+   },
+   {
+    "t": "Fällt die Gesamtkapitalrentabilität unter 6 %, sinkt die Eigenkapitalrentabilität bei B stärker als bei A.",
+    "c": true
+   },
+   {
+    "t": "A hat die höhere Eigenkapitalrentabilität, weil A weniger Zinsen zahlt.",
+    "c": false
+   },
+   {
+    "t": "Der Verschuldungsgrad bestimmt, ob der Hebel nach oben oder nach unten wirkt.",
+    "c": false
+   }
+  ],
+  "expl": "Mit der Formel: A = 10 % + 4 % × 1 = 14 %. B = 10 % + 4 % × 3 = 22 %. Die Richtung des Hebels bestimmt die Differenz aus GK-Rentabilität und Zins. Der Verschuldungsgrad bestimmt nur die Stärke. Deshalb wirkt der Hebel bei B auch im Schlechten stärker."
+ },
+ {
+  "id": "wdh-tag05-30",
+  "typ": "offen",
+  "q": "Erklären Sie, warum zusätzliches Fremdkapital die Eigenkapitalrentabilität erhöhen kann, und nennen Sie die Bedingung dafür.",
+  "kernpunkte": [
+   "Bedingung: GK-Rentabilität liegt über dem FK-Zins",
+   "Die Bank bekommt nur den festen Zins, der Überschuss geht an die Eigentümer",
+   "Die Eigentümer setzen weniger eigenes Geld ein",
+   "Je höher der Verschuldungsgrad, desto stärker der Effekt"
+  ],
+  "expl": "Leverage heißt Hebel. Ein Kredit kostet einen festen Zins. Bringt das Kapital im Unternehmen mehr als diesen Zins, bleibt ein Überschuss. Dieser Überschuss gehört den Eigentümern. Sie haben aber weniger eigenes Geld eingesetzt. Deshalb steigt ihre Rendite. Das klappt nur, solange die Gesamtkapitalrentabilität über dem Fremdkapitalzins liegt."
+ },
+ {
+  "id": "wdh-tag05-31",
+  "typ": "rechnen",
+  "q": "In einer Absatzkrise sinkt die Rendite der Gartenmöbel Petersen GmbH. Berechnen Sie die Eigenkapitalrentabilität mit der Leverage-Formel (vor Steuern).",
+  "angaben": "Gesamtkapitalrentabilität (vor Zinsen): 3 %; Fremdkapitalzins: 6 %; Eigenkapital: 250.000 €; Fremdkapital: 750.000 €",
+  "einheit": "%",
+  "loesung": -6,
+  "rechnung": "3 + (3 - 6) * 750000 / 250000",
+  "schritte": [
+   "EK-Rentabilität = GK-Rentabilität + (GK-Rentabilität − FK-Zins) × FK : EK",
+   "Verschuldungsgrad = 750.000 : 250.000 = 3",
+   "3 % + (3 % − 6 %) × 3 = 3 % − 9 %",
+   "EK-Rentabilität = −6 %"
+  ],
+  "expl": "Die Rendite liegt unter dem Zins. Jeder Euro Kredit kostet also mehr, als er einbringt. Wegen des hohen Verschuldungsgrads wirkt dieser Nachteil dreifach. Ergebnis: −6 %. Probe: 1.000.000 × 3 % = 30.000 €, minus 45.000 € Zinsen = −15.000 € Verlust. Das Eigenkapital schrumpft. Das ist ein negativer Leverage-Effekt."
+ },
+ {
+  "id": "wdh-tag05-32",
+  "q": "Ein Unternehmen hat eine Gesamtkapitalrentabilität von 8 %. Der Fremdkapitalzins steigt von 4 % auf 7 %. Wie wirkt sich das auf den Leverage-Effekt aus?",
+  "options": [
+   {
+    "t": "Der Abstand zwischen Rendite und Zins wird kleiner, der positive Hebel schwächer.",
+    "c": true
+   },
+   {
+    "t": "Der Hebel wird stärker, weil der Zins steigt.",
+    "c": false
+   },
+   {
+    "t": "Der Hebel wirkt jetzt negativ, weil der Zins gestiegen ist.",
+    "c": false
+   },
+   {
+    "t": "Der Zins hat keinen Einfluss, nur der Verschuldungsgrad zählt.",
+    "c": false
+   }
+  ],
+  "expl": "Ob und wie stark der Hebel nach oben wirkt, hängt an der Differenz aus GK-Rentabilität und FK-Zins. Vorher waren es 8 % − 4 % = 4 Prozentpunkte. Jetzt sind es nur noch 8 % − 7 % = 1 Prozentpunkt. Der Hebel wirkt also weiter positiv, aber viel schwächer. Erst wenn der Zins über 8 % steigt, wird er negativ."
+ },
+ {
+  "id": "wdh-tag05-33",
+  "typ": "offen",
+  "q": "Ein Unternehmen will seine Eigenkapitalrentabilität mit zusätzlichen Krediten steigern. Welche Risiken muss es dabei bedenken?",
+  "kernpunkte": [
+   "Zinsen sind fest vereinbart, die Rendite schwankt",
+   "Fällt die GK-Rentabilität unter den Zins, entsteht ein negativer Leverage-Effekt bis in den Verlust",
+   "Dauernde Verluste lassen das Eigenkapital schmelzen, im schlimmsten Fall droht Insolvenz",
+   "Eigenkapitalquote sinkt, neue Kredite werden teurer oder nicht mehr vergeben"
+  ],
+  "expl": "Der Hebel wirkt in beide Richtungen. Zinsen müssen immer bezahlt werden, auch in schlechten Jahren. Die Rendite kann aber sinken, zum Beispiel in einer Krise. Liegt sie dann unter dem Zins, sinkt die Eigenkapitalrentabilität stark, bei hoher Verschuldung bis in den Verlust. Außerdem sinkt die Eigenkapitalquote. Banken sehen das kritisch."
+ }
+]
