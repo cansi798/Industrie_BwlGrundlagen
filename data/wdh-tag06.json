@@ -484,7 +484,7 @@
    "−30.000 € + 100.000 € = 70.000 € Cashflow",
    "Ein Verlust heißt nicht automatisch, dass Geld fehlt"
   ],
-  "expl": "Im Gewinn sind Aufwendungen ohne Geldfluss enthalten, vor allem Abschreibungen. Bei Richter sind es 100.000 €. Indirekt gerechnet: −30.000 € + 100.000 € = 70.000 €. Die Abschreibungen machen den Verlust aus, aber das Geld ist im Unternehmen geblieben. Richter hat also trotz Verlust 70.000 € Geld erwirtschaftet. Ein Verlust bedeutet nicht automatisch Geldmangel."
+  "expl": "Im Gewinn sind Aufwendungen ohne Geldfluss enthalten, vor allem Abschreibungen. Bei Richter sind es 100.000 €. Indirekt gerechnet: −30.000 € + 100.000 € = 70.000 €. Die Abschreibungen drücken das Ergebnis ins Minus. Für sie ist aber kein Geld abgeflossen. Richter hat also trotz Verlust 70.000 € Geld erwirtschaftet. Ein Verlust bedeutet nicht automatisch Geldmangel."
  },
  {
   "id": "wdh-tag06-28",

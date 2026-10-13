@@ -323,7 +323,7 @@
  },
  {
   "id": "wdh-tag02-18",
-  "q": "Bei der Lackwerk Busch GmbH sind die Schulden größer als das Vermögen. Wie zeigt sie diesen Betrag in der Bilanz?",
+  "q": "Bei der Lackwerk Busch GmbH sind die Schulden größer als das Vermögen. Wie zeigt sie den Betrag, um den die Schulden das Vermögen übersteigen, in der Bilanz?",
   "options": [
    {
     "t": "Ganz unten auf der Aktivseite als „Nicht durch Eigenkapital gedeckter Fehlbetrag“",
@@ -546,7 +546,7 @@
  {
   "id": "wdh-tag02-30",
   "typ": "offen",
-  "q": "Wozu bereitet man eine Bilanz zu einer Strukturbilanz mit Prozentanteilen auf? Nenne zwei Gründe.",
+  "q": "Wozu bereitet man eine Bilanz zu einer Strukturbilanz mit Prozentanteilen auf? Nenne mindestens zwei Gründe.",
   "kernpunkte": [
    "Wenige Gruppen (AV, UV, EK, langfristiges FK, kurzfristiges FK) machen die Bilanz übersichtlich",
    "Prozentanteile machen Unternehmen verschiedener Größe vergleichbar",

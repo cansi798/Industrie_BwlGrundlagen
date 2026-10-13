@@ -586,7 +586,7 @@
  },
  {
   "id": "wdh-tag04-33",
-  "q": "Die goldene Bilanzregel vergleicht das gesamte Anlagevermögen mit dem gesamten langfristigen Kapital. Wie nennt man diese Betrachtung im Skript?",
+  "q": "Die goldene Bilanzregel vergleicht das gesamte Anlagevermögen mit dem gesamten langfristigen Kapital. Wie nennt man diese Betrachtung?",
   "options": [
    {
     "t": "Horizontale Bilanzstruktur",
@@ -605,6 +605,6 @@
     "c": false
    }
   ],
-  "expl": "Die goldene Bilanzregel stellt Posten der Aktivseite (Anlagevermögen) den Posten der Passivseite (langfristiges Kapital) gegenüber. Man liest die Bilanz also quer von links nach rechts. Deshalb spricht man von der horizontalen Bilanzstruktur. Sie überträgt die Fristenkongruenz auf die gesamte Bilanz."
+  "expl": "Die goldene Bilanzregel stellt Posten der Aktivseite (Anlagevermögen) den Posten der Passivseite (langfristiges Kapital) gegenüber. Man liest die Bilanz also quer von links nach rechts. Deshalb spricht man von der horizontalen Bilanzstruktur. Die goldene Bilanzregel überträgt so die Fristenkongruenz auf die gesamte Bilanz."
  }
 ]
