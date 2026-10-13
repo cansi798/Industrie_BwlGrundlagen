@@ -1,0 +1,624 @@
+[
+ {
+  "id": "wdh-tag02-01",
+  "q": "Frau Yilmaz misst am 30.12. im Lager 80 Eichenbretter aus und notiert Menge und Wert. Was tut sie gerade?",
+  "options": [
+   {
+    "t": "Sie macht eine Inventur.",
+    "c": true
+   },
+   {
+    "t": "Sie stellt die Bilanz auf.",
+    "c": false
+   },
+   {
+    "t": "Sie führt einen Eigenkapitalvergleich durch.",
+    "c": false
+   },
+   {
+    "t": "Sie gliedert das Inventar nach Fälligkeit.",
+    "c": false
+   }
+  ],
+  "expl": "Zählen, messen und wiegen ist die Inventur. Die Inventur ist eine Tätigkeit: die Bestandsaufnahme nach Menge und Wert. Aus ihrem Ergebnis entsteht danach das Inventar, also die lange Liste. Erst daraus wird die kurze Bilanz."
+ },
+ {
+  "id": "wdh-tag02-02",
+  "q": "Welche Posten stellt man mit einer buchmäßigen Inventur fest? (Mehrere Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Ein Darlehen bei der Sparkasse",
+    "c": true
+   },
+   {
+    "t": "Offene Forderungen an Kunden",
+    "c": true
+   },
+   {
+    "t": "Den Gabelstapler in der Werkhalle",
+    "c": false
+   },
+   {
+    "t": "Das Bargeld in der Kasse",
+    "c": false
+   }
+  ],
+  "expl": "Buchmäßig heißt: anhand von Belegen. Darlehen und Forderungen kann man nicht anfassen. Man prüft sie mit Verträgen, Rechnungen und Kontoauszügen. Den Gabelstapler und das Bargeld kann man anfassen und zählen. Dafür nutzt man die körperliche Inventur."
+ },
+ {
+  "id": "wdh-tag02-03",
+  "typ": "rechnen",
+  "q": "Die Metallbau Kröger KG hat ihr Inventar aufgestellt. Berechne das Reinvermögen.",
+  "angaben": "Gebäude: 220.000 €; Maschinen: 90.000 €; Vorräte: 40.000 €; Forderungen aus L+L: 30.000 €; Bankguthaben: 15.000 €; Kasse: 5.000 €; Darlehen: 180.000 €; Verbindlichkeiten aus L+L: 45.000 €",
+  "einheit": "€",
+  "loesung": 175000,
+  "rechnung": "(220000 + 90000 + 40000 + 30000 + 15000 + 5000) - (180000 + 45000)",
+  "schritte": [
+   "Reinvermögen = Summe des Vermögens − Summe der Schulden",
+   "Vermögen: 220.000 + 90.000 + 40.000 + 30.000 + 15.000 + 5.000 = 400.000 €",
+   "Schulden: 180.000 + 45.000 = 225.000 €",
+   "400.000 € − 225.000 € = 175.000 €"
+  ],
+  "expl": "Das Reinvermögen ist Teil C des Inventars. Man zieht alle Schulden vom gesamten Vermögen ab. Übrig bleibt, was den Eigentümern wirklich gehört. In der Bilanz heißt dieser Betrag Eigenkapital."
+ },
+ {
+  "id": "wdh-tag02-04",
+  "typ": "offen",
+  "q": "Vergleiche die Stichtagsinventur mit der permanenten Inventur. Welche Vorteile und Nachteile hat jedes Verfahren?",
+  "kernpunkte": [
+   "Stichtagsinventur: zeitnah um den Bilanzstichtag, sehr genau",
+   "Stichtagsinventur: viel Arbeit auf einmal, Betrieb oft unterbrochen",
+   "Permanente Inventur: laufende Lagerliste, Bestand jederzeit bekannt",
+   "Permanente Inventur: braucht gute Lagerbuchführung, einmal im Jahr trotzdem körperlich zählen"
+  ],
+  "expl": "Bei der Stichtagsinventur zählt man alles kurz vor oder nach dem 31.12. Das ist sehr genau. Es macht aber viel Arbeit auf einmal. Oft steht der Betrieb dann still. Bei der permanenten Inventur trägt man jeden Zugang und Abgang sofort ein. So kennt man den Bestand jederzeit. Dafür braucht man eine gute Lagerbuchführung. Und einmal im Jahr muss man trotzdem körperlich nachzählen."
+ },
+ {
+  "id": "wdh-tag02-05",
+  "q": "Der Bilanzstichtag der Firma Seidel ist der 31.12. Sie will eine verlegte Inventur machen. Welcher Zähltag ist erlaubt?",
+  "options": [
+   {
+    "t": "Der 15. Oktober",
+    "c": true
+   },
+   {
+    "t": "Der 15. September",
+    "c": false
+   },
+   {
+    "t": "Der 15. März des Folgejahres",
+    "c": false
+   },
+   {
+    "t": "Der 30. Juni",
+    "c": false
+   }
+  ],
+  "expl": "Bei der verlegten Inventur darf man bis zu drei Monate vor oder bis zu zwei Monate nach dem Stichtag zählen. Merkhilfe: „3 vor, 2 nach“. Der 15. Oktober liegt zweieinhalb Monate vor dem 31.12. Das passt. Der 15. September liegt zu früh, der 15. März zu spät. Die Werte rechnet man danach auf den Stichtag um."
+ },
+ {
+  "id": "wdh-tag02-06",
+  "q": "Wie werden die Schulden in Teil B des Inventars gegliedert?",
+  "options": [
+   {
+    "t": "In langfristige und kurzfristige Schulden",
+    "c": true
+   },
+   {
+    "t": "In Eigenkapital und Fremdkapital",
+    "c": false
+   },
+   {
+    "t": "In Anlagevermögen und Umlaufvermögen",
+    "c": false
+   },
+   {
+    "t": "In körperliche und buchmäßige Schulden",
+    "c": false
+   }
+  ],
+  "expl": "Das Inventar hat drei Teile. Teil A ist das Vermögen, geteilt in Anlage- und Umlaufvermögen. Teil B sind die Schulden. Sie werden in langfristige und kurzfristige Schulden geteilt. Teil C ist das Reinvermögen. Eigenkapital ist keine Schuld, deshalb passt diese Antwort nicht."
+ },
+ {
+  "id": "wdh-tag02-07",
+  "q": "Wann muss ein Einzelkaufmann keine Bücher führen und kein Inventar aufstellen?",
+  "options": [
+   {
+    "t": "Wenn er an zwei aufeinanderfolgenden Abschlussstichtagen höchstens 800.000 € Umsatzerlöse und höchstens 80.000 € Jahresüberschuss hat",
+    "c": true
+   },
+   {
+    "t": "Wenn er an zwei aufeinanderfolgenden Abschlussstichtagen höchstens 80.000 € Umsatzerlöse und höchstens 800.000 € Vermögen hat",
+    "c": false
+   },
+   {
+    "t": "Wenn er weniger als zehn Beschäftigte hat",
+    "c": false
+   },
+   {
+    "t": "Wenn er sein Unternehmen als GmbH führt",
+    "c": false
+   }
+  ],
+  "expl": "Das HGB macht nur für kleine Einzelkaufleute eine Ausnahme (§§ 241a, 242 Abs. 4 HGB). Beide Grenzen müssen an zwei Stichtagen nacheinander eingehalten sein: höchstens 800.000 € Umsatz und höchstens 80.000 € Jahresüberschuss. Für eine GmbH gilt die Ausnahme nie. Sie ist eine Kapitalgesellschaft."
+ },
+ {
+  "id": "wdh-tag02-08",
+  "typ": "rechnen",
+  "q": "Berechne die Summe des Umlaufvermögens der Polsterei Wendt GmbH.",
+  "angaben": "Maschinen: 120.000 €; Betriebs- und Geschäftsausstattung: 30.000 €; Vorräte: 64.000 €; Forderungen aus L+L: 38.000 €; Bankguthaben: 21.000 €; Kasse: 2.000 €",
+  "einheit": "€",
+  "loesung": 125000,
+  "rechnung": "64000 + 38000 + 21000 + 2000",
+  "schritte": [
+   "Umlaufvermögen = Vorräte + Forderungen + Bankguthaben + Kasse",
+   "64.000 + 38.000 + 21.000 + 2.000",
+   "= 125.000 €"
+  ],
+  "expl": "Zum Umlaufvermögen gehören Dinge, die nur kurz im Betrieb bleiben. Das sind Vorräte, Forderungen, Bank und Kasse. Maschinen und BGA dienen dem Betrieb dauerhaft. Sie gehören zum Anlagevermögen. Deshalb zählen sie hier nicht mit."
+ },
+ {
+  "id": "wdh-tag02-09",
+  "q": "Welche Aussage trifft auf die Bilanz zu, aber nicht auf das Inventar?",
+  "options": [
+   {
+    "t": "Sie zeigt nur Werte, zu Gruppen zusammengefasst, in Kontenform.",
+    "c": true
+   },
+   {
+    "t": "Sie nennt für jeden Vermögensteil Menge und Wert.",
+    "c": false
+   },
+   {
+    "t": "Sie steht in Staffelform untereinander.",
+    "c": false
+   },
+   {
+    "t": "Sie umfasst oft viele Seiten.",
+    "c": false
+   }
+  ],
+  "expl": "Das Inventar ist die lange Liste. Es steht in Staffelform und nennt Menge und Wert jedes Teils. Die Bilanz fasst das kurz zusammen. Sie zeigt keine Mengen mehr, nur Werte in Gruppen. Sie steht in Kontenform, also links Aktiva und rechts Passiva."
+ },
+ {
+  "id": "wdh-tag02-10",
+  "typ": "offen",
+  "q": "Erkläre den Weg von der Inventur über das Inventar zur Bilanz. Was passiert in jedem der drei Schritte?",
+  "kernpunkte": [
+   "Inventur: Tätigkeit, Bestand nach Menge und Wert aufnehmen (zählen, messen, wiegen)",
+   "Inventar: Ergebnis der Inventur, ausführliche Liste in Staffelform",
+   "Bilanz: kurze Gegenüberstellung von Aktiva und Passiva in Kontenform, nur Werte"
+  ],
+  "expl": "Zuerst kommt die Inventur. Das ist die Arbeit: Man zählt, misst und wiegt. Man nimmt auch Belege zur Hilfe. Das Ergebnis ist das Inventar. Es ist eine lange Liste mit Menge und Wert. Zum Schluss fasst man das Inventar in der Bilanz kurz zusammen. Die Bilanz zeigt nur noch Werte in Gruppen. Merksatz: Erst zählen, dann auflisten, dann kurz zusammenfassen."
+ },
+ {
+  "id": "wdh-tag02-11",
+  "q": "Welche Zuordnungen sind richtig? (Mehrere Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Laptops, die ein Computerhändler verkaufen will: Umlaufvermögen (Vorräte)",
+    "c": true
+   },
+   {
+    "t": "Der Lieferwagen, mit dem eine Bäckerei ausliefert: Anlagevermögen (BGA)",
+    "c": true
+   },
+   {
+    "t": "Mehl im Lager einer Bäckerei: Anlagevermögen",
+    "c": false
+   },
+   {
+    "t": "Eine Forderung an einen Kunden: Passivseite, Fremdkapital",
+    "c": false
+   }
+  ],
+  "expl": "Entscheidend ist der Zweck. Was verkauft werden soll, ist Umlaufvermögen. Was der Betrieb dauerhaft nutzt, ist Anlagevermögen. Mehl wird verbraucht, es ist also Umlaufvermögen (Vorräte). Eine Forderung heißt: Der Kunde schuldet uns Geld. Das ist Vermögen auf der Aktivseite."
+ },
+ {
+  "id": "wdh-tag02-12",
+  "q": "In welcher Reihenfolge stehen die Posten auf der Aktivseite von oben nach unten?",
+  "options": [
+   {
+    "t": "Gebäude – Maschinen – Vorräte – Forderungen – Kasse",
+    "c": true
+   },
+   {
+    "t": "Kasse – Forderungen – Vorräte – Maschinen – Gebäude",
+    "c": false
+   },
+   {
+    "t": "Vorräte – Gebäude – Maschinen – Kasse – Forderungen",
+    "c": false
+   },
+   {
+    "t": "Maschinen – Gebäude – Forderungen – Vorräte – Kasse",
+    "c": false
+   }
+  ],
+  "expl": "Die Aktiva sind nach steigender Liquidität geordnet. Liquidität heißt: Wie schnell wird daraus Geld? Oben steht, was nur schwer zu Geld wird, zum Beispiel ein Gebäude. Ganz unten steht, was schon Geld ist, nämlich Bank und Kasse."
+ },
+ {
+  "id": "wdh-tag02-13",
+  "typ": "offen",
+  "q": "Warum steht das Eigenkapital auf der Passivseite ganz oben und das kurzfristige Fremdkapital ganz unten?",
+  "kernpunkte": [
+   "Passiva sind nach Fälligkeit geordnet",
+   "Eigenkapital muss nicht zurückgezahlt werden und bleibt am längsten",
+   "Kurzfristiges Fremdkapital muss bald zurückgezahlt werden"
+  ],
+  "expl": "Die Passivseite ist nach Fälligkeit geordnet. Fälligkeit heißt: Wann muss das Geld zurück? Oben steht, was am längsten im Unternehmen bleibt. Das ist das Eigenkapital. Es gehört den Eigentümern und muss nicht zurückgezahlt werden. Danach kommt langfristiges Fremdkapital. Ganz unten steht, was bald gezahlt werden muss."
+ },
+ {
+  "id": "wdh-tag02-14",
+  "q": "Die Bilanz der Feinmechanik Roth GmbH zeigt Gewinnrücklagen von 200.000 €. Welche Aussage ist richtig?",
+  "options": [
+   {
+    "t": "Gewinne früherer Jahre sind im Unternehmen geblieben; wo das Geld steckt, zeigt die Aktivseite.",
+    "c": true
+   },
+   {
+    "t": "Auf dem Bankkonto liegen sicher mindestens 200.000 €.",
+    "c": false
+   },
+   {
+    "t": "Die Rücklagen gehören zum Fremdkapital, weil sie zurückgezahlt werden müssen.",
+    "c": false
+   },
+   {
+    "t": "Die Rücklagen stehen auf der Aktivseite im Umlaufvermögen.",
+    "c": false
+   }
+  ],
+  "expl": "Rücklagen sind Eigenkapital und stehen auf der Passivseite. Die Passivseite zeigt nur, woher Mittel kommen. Gewinnrücklagen sind einbehaltene Gewinne. Das Geld kann längst in Maschinen oder Vorräten stecken. Wie viel Geld wirklich da ist, sieht man auf der Aktivseite bei Bank und Kasse."
+ },
+ {
+  "id": "wdh-tag02-15",
+  "typ": "rechnen",
+  "q": "Die Elektro Hansen OHG hat ein Vermögen von 1.250.000 € und ein Eigenkapital von 450.000 €. Berechne das Fremdkapital.",
+  "angaben": "Vermögen: 1.250.000 €; Eigenkapital: 450.000 €",
+  "einheit": "€",
+  "loesung": 800000,
+  "rechnung": "1250000 - 450000",
+  "schritte": [
+   "Vermögen = Eigenkapital + Fremdkapital, also Fremdkapital = Vermögen − Eigenkapital",
+   "1.250.000 € − 450.000 €",
+   "= 800.000 €"
+  ],
+  "expl": "Die Bilanz ist immer im Gleichgewicht. Das Vermögen ist so groß wie Eigenkapital und Fremdkapital zusammen. Kennt man zwei Werte, findet man den dritten. Man stellt die Gleichung um und zieht das Eigenkapital vom Vermögen ab."
+ },
+ {
+  "id": "wdh-tag02-16",
+  "q": "Was sind Rückstellungen?",
+  "options": [
+   {
+    "t": "Schulden, deren Höhe oder Zeitpunkt noch nicht genau feststeht",
+    "c": true
+   },
+   {
+    "t": "Gewinne früherer Jahre, die im Unternehmen geblieben sind",
+    "c": false
+   },
+   {
+    "t": "Bargeld, das für schlechte Zeiten zurückgelegt wird",
+    "c": false
+   },
+   {
+    "t": "Forderungen, bei denen der Kunde vielleicht nicht zahlt",
+    "c": false
+   }
+  ],
+  "expl": "Rückstellungen gehören zum Fremdkapital (§ 249 HGB). Es sind Schulden. Man weiß aber noch nicht genau, wie hoch sie sind oder wann man zahlen muss. Ein Beispiel ist eine erwartete Steuernachzahlung. Einbehaltene Gewinne heißen dagegen Gewinnrücklagen und sind Eigenkapital."
+ },
+ {
+  "id": "wdh-tag02-17",
+  "typ": "offen",
+  "q": "Erkläre mit den Begriffen Mittelverwendung und Mittelherkunft, warum Aktiva und Passiva immer gleich groß sind.",
+  "kernpunkte": [
+   "Passiva = Mittelherkunft: Woher kommt das Geld? (Eigentümer, Banken, Lieferanten)",
+   "Aktiva = Mittelverwendung: Wofür wurde das Geld verwendet?",
+   "Beide Seiten zeigen dasselbe Geld aus zwei Blickwinkeln",
+   "Jeder Euro wird irgendwo verwendet, auch Geld auf dem Konto"
+  ],
+  "expl": "Die Passivseite zeigt, woher das Geld kommt: von den Eigentümern oder von fremden Geldgebern. Die Aktivseite zeigt, wofür das Geld verwendet wurde: Gebäude, Maschinen, Vorräte, Bank. Es ist dasselbe Geld, nur zweimal betrachtet. Selbst Geld auf dem Konto ist eine Verwendung. Deshalb gilt immer: Aktiva gleich Passiva."
+ },
+ {
+  "id": "wdh-tag02-18",
+  "q": "Bei der Lackwerk Busch GmbH sind die Schulden größer als das Vermögen. Wie zeigt sie diesen Betrag in der Bilanz?",
+  "options": [
+   {
+    "t": "Ganz unten auf der Aktivseite als „Nicht durch Eigenkapital gedeckter Fehlbetrag“",
+    "c": true
+   },
+   {
+    "t": "Als Rückstellung im Fremdkapital",
+    "c": false
+   },
+   {
+    "t": "Als Gewinnrücklage oben auf der Passivseite",
+    "c": false
+   },
+   {
+    "t": "Gar nicht, denn dann darf keine Bilanz aufgestellt werden",
+    "c": false
+   }
+  ],
+  "expl": "Sind die Schulden größer als das Vermögen, ist das Reinvermögen negativ. Man spricht von bilanzieller Überschuldung. Eine Kapitalgesellschaft zeigt den Betrag ganz unten auf der Aktivseite (§ 268 Abs. 3 HGB). Für eine GmbH ist das ein Alarmzeichen. Die Bilanz muss sie trotzdem aufstellen."
+ },
+ {
+  "id": "wdh-tag02-19",
+  "typ": "rechnen",
+  "q": "Die Bäckerei Lorenz e. K. ist ein Einzelunternehmen. Ermittle den Gewinn mit dem Eigenkapitalvergleich.",
+  "angaben": "Eigenkapital am 01.01.: 120.000 €; Eigenkapital am 31.12.: 135.000 €; Privatentnahmen: 42.000 €; Privateinlagen: 8.000 €",
+  "einheit": "€",
+  "loesung": 49000,
+  "rechnung": "135000 - 120000 + 42000 - 8000",
+  "schritte": [
+   "Gewinn = EK am Jahresende − EK am Jahresanfang + Privatentnahmen − Privateinlagen",
+   "135.000 − 120.000 = 15.000 €; 15.000 + 42.000 = 57.000 €",
+   "57.000 − 8.000 = 49.000 €"
+  ],
+  "expl": "Das Eigenkapital ist um 15.000 € gewachsen. Der Inhaber hat aber 42.000 € privat entnommen. Das hat das Eigenkapital gesenkt, ist aber kein Verlust. Deshalb rechnet man es wieder dazu. Die Einlage von 8.000 € hat das Eigenkapital erhöht, ist aber nicht verdient. Deshalb zieht man sie ab."
+ },
+ {
+  "id": "wdh-tag02-20",
+  "q": "Ein Einzelunternehmer nimmt Waren im Wert von 2.000 € für seinen Privathaushalt mit. Wie berücksichtigt man das beim Eigenkapitalvergleich?",
+  "options": [
+   {
+    "t": "Man addiert die 2.000 € zur Veränderung des Eigenkapitals.",
+    "c": true
+   },
+   {
+    "t": "Man zieht die 2.000 € von der Veränderung des Eigenkapitals ab.",
+    "c": false
+   },
+   {
+    "t": "Man lässt die 2.000 € weg, weil nur Geldentnahmen zählen.",
+    "c": false
+   },
+   {
+    "t": "Man bucht die 2.000 € als Verlust des Unternehmens.",
+    "c": false
+   }
+  ],
+  "expl": "Auch Sachen, die der Inhaber privat nutzt, sind eine Privatentnahme. Die Entnahme senkt das Eigenkapital. Sie ist aber kein Verlust des Betriebs. Deshalb macht man sie rückgängig und addiert sie. Merksatz: „Was rausging, kommt dazu. Was reinkam, geht weg.“"
+ },
+ {
+  "id": "wdh-tag02-21",
+  "typ": "offen",
+  "q": "Ein Kollege zieht beim Eigenkapitalvergleich die Privatentnahmen ab, statt sie zu addieren. Erkläre den Fehler und seine Folge.",
+  "kernpunkte": [
+   "Entnahme senkt das Eigenkapital, ist aber kein Verlust",
+   "Private Vorgänge werden rückgängig gemacht: Entnahmen addieren, Einlagen abziehen",
+   "Wer Entnahmen abzieht, rechnet den Gewinn zu klein"
+  ],
+  "expl": "Eine Privatentnahme hat das Eigenkapital schon gesenkt. Der Betrieb hat aber nicht schlecht gewirtschaftet. Beim Eigenkapitalvergleich macht man private Vorgänge deshalb rückgängig. Entnahmen werden addiert, Einlagen abgezogen. Zieht man die Entnahme ab, zählt sie doppelt gegen den Gewinn. Der Gewinn wird dann zu klein."
+ },
+ {
+  "id": "wdh-tag02-22",
+  "typ": "rechnen",
+  "q": "Schreibwaren Brinkmann e. K. ist ein Einzelunternehmen. Ermittle mit dem Eigenkapitalvergleich den Gewinn oder Verlust. Gib einen Verlust mit Minuszeichen an.",
+  "angaben": "Eigenkapital am 01.01.: 70.000 €; Eigenkapital am 31.12.: 74.000 €; Privatentnahmen: 6.000 €; Privateinlagen: 20.000 €",
+  "einheit": "€",
+  "loesung": -10000,
+  "rechnung": "74000 - 70000 + 6000 - 20000",
+  "schritte": [
+   "Gewinn = EK am Jahresende − EK am Jahresanfang + Privatentnahmen − Privateinlagen",
+   "74.000 − 70.000 = 4.000 €; 4.000 + 6.000 = 10.000 €",
+   "10.000 − 20.000 = −10.000 € (Verlust)"
+  ],
+  "expl": "Das Eigenkapital ist zwar um 4.000 € gestiegen. Der Grund ist aber die private Einlage von 20.000 €. Diese Einlage ist nicht verdient. Man zieht sie ab. Die Entnahme von 6.000 € rechnet man dazu. Am Ende bleibt ein Minus. Das Unternehmen hat also 10.000 € Verlust gemacht."
+ },
+ {
+  "id": "wdh-tag02-23",
+  "q": "Die Spedition Ruhland kauft einen Transporter und bezahlt ihn sofort per Banküberweisung. Welcher Fall der Bilanzveränderung liegt vor?",
+  "options": [
+   {
+    "t": "Aktivtausch",
+    "c": true
+   },
+   {
+    "t": "Passivtausch",
+    "c": false
+   },
+   {
+    "t": "Aktiv-Passiv-Mehrung",
+    "c": false
+   },
+   {
+    "t": "Aktiv-Passiv-Minderung",
+    "c": false
+   }
+  ],
+  "expl": "Zwei Posten ändern sich, und beide stehen auf der Aktivseite. Die Betriebs- und Geschäftsausstattung steigt. Das Bankguthaben sinkt um denselben Betrag. Es wird nur umgeschichtet. Die Bilanzsumme bleibt gleich. Das ist ein Aktivtausch."
+ },
+ {
+  "id": "wdh-tag02-24",
+  "q": "Bei welchen Geschäftsfällen steigt die Bilanzsumme? (Mehrere Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Ein Betrieb kauft Rohstoffe auf Ziel.",
+    "c": true
+   },
+   {
+    "t": "Ein Betrieb nimmt ein Bankdarlehen auf, das Geld wird dem Bankkonto gutgeschrieben.",
+    "c": true
+   },
+   {
+    "t": "Ein Betrieb hebt Bargeld vom Bankkonto ab und legt es in die Kasse.",
+    "c": false
+   },
+   {
+    "t": "Ein Betrieb bezahlt eine Lieferantenrechnung per Bank.",
+    "c": false
+   }
+  ],
+  "expl": "Die Bilanzsumme steigt nur bei einer Aktiv-Passiv-Mehrung. Dann wachsen beide Seiten gleich. Beim Kauf auf Ziel steigen Vorräte und Verbindlichkeiten. Beim Darlehen steigen Bank und Fremdkapital. Die Barabhebung ist ein Aktivtausch. Die Zahlung an den Lieferanten ist eine Aktiv-Passiv-Minderung. Dort sinkt die Summe."
+ },
+ {
+  "id": "wdh-tag02-25",
+  "typ": "rechnen",
+  "q": "Die Bilanzsumme der Fahrradbau Ostwind GmbH beträgt 950.000 €. Danach gibt es drei Geschäftsfälle. Berechne die neue Bilanzsumme.",
+  "angaben": "Bilanzsumme vorher: 950.000 €; Fall 1: Kauf von Rohstoffen auf Ziel: 20.000 €; Fall 2: Tilgung eines Darlehens per Bank: 15.000 €; Fall 3: Ein Kunde bezahlt eine Rechnung per Bank: 8.000 €",
+  "einheit": "€",
+  "loesung": 955000,
+  "rechnung": "950000 + 20000 - 15000",
+  "schritte": [
+   "Mehrung: Summe steigt; Minderung: Summe sinkt; Aktivtausch: Summe bleibt gleich",
+   "Fall 1: +20.000 €; Fall 2: −15.000 €; Fall 3: ± 0 €",
+   "950.000 + 20.000 − 15.000 = 955.000 €"
+  ],
+  "expl": "Fall 1 ist eine Aktiv-Passiv-Mehrung: Vorräte und Verbindlichkeiten steigen. Fall 2 ist eine Aktiv-Passiv-Minderung: Bank und Darlehen sinken. Fall 3 ist ein Aktivtausch: Forderungen sinken, Bank steigt. Beim Tausch bleibt die Bilanzsumme gleich. Er zählt also nicht mit."
+ },
+ {
+  "id": "wdh-tag02-26",
+  "typ": "offen",
+  "q": "Erkläre, warum die Bilanzsumme beim Aktivtausch gleich bleibt, bei der Aktiv-Passiv-Mehrung aber steigt. Nenne zu beiden Fällen ein Beispiel.",
+  "kernpunkte": [
+   "Aktivtausch: nur Aktivposten ändern sich, einer steigt, einer sinkt um denselben Betrag",
+   "Aktiv-Passiv-Mehrung: ein Aktivposten und ein Passivposten steigen gleich stark",
+   "Beispiel Tausch: Maschine per Bank gekauft; Beispiel Mehrung: Rohstoffe auf Ziel gekauft",
+   "In beiden Fällen bleibt die Bilanz im Gleichgewicht"
+  ],
+  "expl": "Beim Aktivtausch ändern sich nur Posten auf der Aktivseite. Ein Posten steigt, ein anderer sinkt gleich viel. Es wird nur umgeschichtet. Beispiel: Kauf einer Maschine per Bank. Bei der Aktiv-Passiv-Mehrung steigen ein Aktivposten und ein Passivposten. Beide Seiten werden gleich größer. Beispiel: Kauf von Rohstoffen auf Ziel. Die Bilanz bleibt in beiden Fällen im Gleichgewicht."
+ },
+ {
+  "id": "wdh-tag02-27",
+  "q": "Welche Posten gehören in der Strukturbilanz zum kurzfristigen Fremdkapital? (Mehrere Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Verbindlichkeiten aus L+L mit 30 Tagen Zahlungsziel",
+    "c": true
+   },
+   {
+    "t": "Ein Bankkredit mit einer Restlaufzeit von acht Monaten",
+    "c": true
+   },
+   {
+    "t": "Ein Darlehen mit einer Restlaufzeit von fünf Jahren",
+    "c": false
+   },
+   {
+    "t": "Gewinnrücklagen",
+    "c": false
+   }
+  ],
+  "expl": "Kurzfristig ist Fremdkapital in der Regel bei einer Restlaufzeit bis zu einem Jahr. Lieferantenschulden mit 30 Tagen Ziel und der Kredit mit acht Monaten passen. Das Darlehen läuft länger als ein Jahr. Es ist langfristiges Fremdkapital. Gewinnrücklagen sind gar kein Fremdkapital, sondern Eigenkapital."
+ },
+ {
+  "id": "wdh-tag02-28",
+  "q": "Wohin rechnet man im Kurs den Jahresüberschuss, wenn man eine Bilanz zur Strukturbilanz aufbereitet?",
+  "options": [
+   {
+    "t": "Ganz zum Eigenkapital",
+    "c": true
+   },
+   {
+    "t": "Ganz zum kurzfristigen Fremdkapital",
+    "c": false
+   },
+   {
+    "t": "Ganz zum langfristigen Fremdkapital",
+    "c": false
+   },
+   {
+    "t": "Er wird weggelassen, weil er kein Kapital ist",
+    "c": false
+   }
+  ],
+  "expl": "Der Jahresüberschuss ist der Gewinn des Jahres. Er steht in der Bilanz beim Eigenkapital. Im Kurs vereinfachen wir: Wir rechnen ihn ganz zum Eigenkapital. In der Praxis würde man den Teil, der ausgeschüttet wird, zum kurzfristigen Fremdkapital zählen."
+ },
+ {
+  "id": "wdh-tag02-29",
+  "typ": "rechnen",
+  "q": "Berechne für die Druckerei Albers GmbH den Anteil des Anlagevermögens an der Bilanzsumme (Anlagenintensität).",
+  "angaben": "Gebäude: 300.000 €; Maschinen: 180.000 €; Betriebs- und Geschäftsausstattung: 40.000 €; Vorräte: 150.000 €; Forderungen aus L+L: 90.000 €; Bankguthaben: 40.000 €",
+  "einheit": "%",
+  "loesung": 65,
+  "toleranz": 0.1,
+  "rechnung": "(300000 + 180000 + 40000) / (300000 + 180000 + 40000 + 150000 + 90000 + 40000) * 100",
+  "schritte": [
+   "Anteil in % = Betrag der Gruppe ÷ Bilanzsumme × 100",
+   "AV: 300.000 + 180.000 + 40.000 = 520.000 €; Bilanzsumme: 520.000 + 150.000 + 90.000 + 40.000 = 800.000 €",
+   "520.000 ÷ 800.000 = 0,65; 0,65 × 100 = 65 %"
+  ],
+  "expl": "Zuerst fasst man die Posten zu Gruppen zusammen. Gebäude, Maschinen und BGA sind Anlagevermögen. Die Bilanzsumme ist die Summe aller Aktiva. Dann teilt man das Anlagevermögen durch die Bilanzsumme und nimmt mal 100. 65 % ist für einen Industriebetrieb mit Maschinen typisch."
+ },
+ {
+  "id": "wdh-tag02-30",
+  "typ": "offen",
+  "q": "Wozu bereitet man eine Bilanz zu einer Strukturbilanz mit Prozentanteilen auf? Nenne zwei Gründe.",
+  "kernpunkte": [
+   "Wenige Gruppen (AV, UV, EK, langfristiges FK, kurzfristiges FK) machen die Bilanz übersichtlich",
+   "Prozentanteile machen Unternehmen verschiedener Größe vergleichbar",
+   "Die Strukturbilanz ist Grundlage für spätere Kennzahlen"
+  ],
+  "expl": "Eine normale Bilanz hat viele Posten. Für eine schnelle Beurteilung ist sie zu unübersichtlich. Die Strukturbilanz fasst alles in nur fünf Gruppen zusammen. Eurobeträge allein sagen wenig. Ob 720.000 € Eigenkapital viel sind, hängt von der Größe ab. Prozentanteile machen Firmen deshalb vergleichbar. Außerdem baut man später Kennzahlen darauf auf."
+ },
+ {
+  "id": "wdh-tag02-31",
+  "typ": "rechnen",
+  "q": "Berechne für die Kunststofftechnik Brandt GmbH den Anteil des kurzfristigen Fremdkapitals an der Bilanzsumme. Runde auf eine Nachkommastelle.",
+  "angaben": "Eigenkapital: 280.000 €; Darlehen (Restlaufzeit 6 Jahre): 340.000 €; Verbindlichkeiten aus L+L (Zahlungsziel 30 Tage): 110.000 €; Bankkredit (Restlaufzeit 3 Monate): 70.000 €",
+  "einheit": "%",
+  "loesung": 22.5,
+  "toleranz": 0.1,
+  "rechnung": "(110000 + 70000) / (280000 + 340000 + 110000 + 70000) * 100",
+  "schritte": [
+   "Anteil in % = Betrag der Gruppe ÷ Bilanzsumme × 100",
+   "Kurzfristiges FK: 110.000 + 70.000 = 180.000 €; Bilanzsumme: 280.000 + 340.000 + 110.000 + 70.000 = 800.000 €",
+   "180.000 ÷ 800.000 = 0,225; 0,225 × 100 = 22,5 %"
+  ],
+  "expl": "Kurzfristig sind Schulden mit einer Restlaufzeit bis zu einem Jahr. Das sind hier die Lieferantenschulden und der Bankkredit. Das Darlehen läuft sechs Jahre und ist langfristig. Die Bilanzsumme ist die Summe aller Passiva. 22,5 % des Kapitals müssen also innerhalb eines Jahres zurückgezahlt werden."
+ },
+ {
+  "id": "wdh-tag02-32",
+  "q": "Ein Stahlwerk und ein Onlinehändler vergleichen ihre Strukturbilanzen. Welche Aussage passt zur Vermögensstruktur?",
+  "options": [
+   {
+    "t": "Das Stahlwerk hat typischerweise eine höhere Anlagenintensität, weil viel Geld in Hallen und Maschinen gebunden ist.",
+    "c": true
+   },
+   {
+    "t": "Der Onlinehändler hat typischerweise die höhere Anlagenintensität, weil er viele Waren auf Lager hat.",
+    "c": false
+   },
+   {
+    "t": "Die Anlagenintensität ist bei beiden gleich, weil jede Seite 100 % ergibt.",
+    "c": false
+   },
+   {
+    "t": "Die Anlagenintensität zeigt, wie hoch der Anteil des Eigenkapitals ist.",
+    "c": false
+   }
+  ],
+  "expl": "Die Anlagenintensität ist der Anteil des Anlagevermögens an der Bilanzsumme. Industriebetriebe mit Hallen und Maschinen haben hier hohe Werte. Ein Onlinehändler hat wenig Anlagevermögen. Seine Waren sind Vorräte und damit Umlaufvermögen. Die Anlagenintensität gehört zur Aktivseite, nicht zum Eigenkapital."
+ },
+ {
+  "id": "wdh-tag02-33",
+  "typ": "rechnen",
+  "q": "Die Glaserei Neumann GmbH hat eine Bilanzsumme von 560.000 € und ein Eigenkapital von 180.000 €. Sie kauft Glas für 40.000 € auf Ziel. Berechne den Eigenkapitalanteil an der Bilanzsumme nach diesem Geschäftsfall.",
+  "angaben": "Bilanzsumme vorher: 560.000 €; Eigenkapital: 180.000 €; Kauf von Rohstoffen auf Ziel: 40.000 €",
+  "einheit": "%",
+  "loesung": 30,
+  "toleranz": 0.1,
+  "rechnung": "180000 / (560000 + 40000) * 100",
+  "schritte": [
+   "Anteil in % = Eigenkapital ÷ neue Bilanzsumme × 100",
+   "Neue Bilanzsumme: 560.000 + 40.000 = 600.000 €; 180.000 ÷ 600.000 = 0,30",
+   "0,30 × 100 = 30 %"
+  ],
+  "expl": "Der Kauf auf Ziel ist eine Aktiv-Passiv-Mehrung. Vorräte und Verbindlichkeiten steigen um 40.000 €. Die Bilanzsumme wächst auf 600.000 €. Das Eigenkapital bleibt gleich. Weil die Summe größer wird, sinkt der Anteil des Eigenkapitals. Vorher waren es etwa 32,1 %, jetzt 30 %."
+ },
+ {
+  "id": "wdh-tag02-34",
+  "typ": "offen",
+  "q": "Die Holzbau Krämer GmbH hat einen Eigenkapitalanteil von 45 %, die Möbelwerk Sander GmbH von 25 %. Welches Unternehmen ist unabhängiger von Banken? Begründe und nenne eine Grenze dieses Vergleichs.",
+  "kernpunkte": [
+   "Krämer ist unabhängiger, weil es mehr Kapital selbst aufbringt",
+   "Mehr Eigenkapital kann Verluste besser auffangen",
+   "Sander ist stärker auf fremde Geldgeber angewiesen",
+   "Grenze: Anteile immer mit Branche, Vorjahren oder ähnlichen Firmen vergleichen"
+  ],
+  "expl": "Krämer finanziert 45 % seines Kapitals selbst, Sander nur 25 %. Je mehr Eigenkapital, desto unabhängiger ist ein Unternehmen von Banken. Es kann Verluste auch besser auffangen. Sander braucht mehr Geld von fremden Geldgebern. Aber: Zahlen nie allein deuten. Ob ein Anteil gut ist, hängt von der Branche ab. Man vergleicht deshalb mit Vorjahren oder ähnlichen Unternehmen."
+ }
+]
