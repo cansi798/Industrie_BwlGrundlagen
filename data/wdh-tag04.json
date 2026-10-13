@@ -1,0 +1,610 @@
+[
+ {
+  "id": "wdh-tag04-01",
+  "q": "Welche dieser Kennzahlen ist eine Beziehungszahl?",
+  "options": [
+   {
+    "t": "Personalaufwand je Mitarbeiter",
+    "c": true
+   },
+   {
+    "t": "Fremdkapitalquote",
+    "c": false
+   },
+   {
+    "t": "Anteil des Umlaufvermögens am Gesamtvermögen",
+    "c": false
+   },
+   {
+    "t": "Bilanzsumme",
+    "c": false
+   }
+  ],
+  "expl": "Eine Beziehungszahl setzt zwei verschiedene Größen ins Verhältnis. Personalaufwand und Zahl der Mitarbeiter sind verschiedene Größen. Das Wort „je“ ist ein typisches Zeichen. Fremdkapitalquote und Anteil des Umlaufvermögens sind Gliederungszahlen: Teil durch Ganzes. Die Bilanzsumme ist eine absolute Kennzahl."
+ },
+ {
+  "id": "wdh-tag04-02",
+  "typ": "rechnen",
+  "q": "Berechne die Eigenkapitalquote der Becker Metallbau GmbH.",
+  "angaben": "Eigenkapital: 450.000 €; Fremdkapital: 1.050.000 €; Gesamtkapital: 1.500.000 €",
+  "einheit": "%",
+  "loesung": 30,
+  "toleranz": 0.1,
+  "rechnung": "450000 / 1500000 * 100",
+  "schritte": [
+   "Eigenkapitalquote = Eigenkapital : Gesamtkapital × 100",
+   "450.000 € : 1.500.000 € = 0,30",
+   "0,30 × 100 = 30 %"
+  ],
+  "expl": "Die Eigenkapitalquote ist eine Gliederungszahl. Man teilt einen Teil (das Eigenkapital) durch das Ganze (das Gesamtkapital). 30 % des Kapitals gehören dem Unternehmen selbst. Die restlichen 70 % sind Fremdkapital. Zusammen ergeben beide Quoten 100 %."
+ },
+ {
+  "id": "wdh-tag04-03",
+  "q": "Die Geschäftsführung der Hansen Kunststoff GmbH legt fest: Die Eigenkapitalquote darf nicht unter 35 % fallen. Welche Funktion von Kennzahlen wird hier genutzt?",
+  "options": [
+   {
+    "t": "Steuerung",
+    "c": true
+   },
+   {
+    "t": "Kontrolle",
+    "c": false
+   },
+   {
+    "t": "Information",
+    "c": false
+   },
+   {
+    "t": "Vergleich",
+    "c": false
+   }
+  ],
+  "expl": "Hier wird ein Ziel als Kennzahl vorgegeben. Das ist die Steuerung. So wissen alle Abteilungen, wohin die Reise geht. Kontrolle wäre es erst, wenn man später prüft, ob das Ziel erreicht wurde. Das geschieht vor allem mit dem Soll-Ist-Vergleich."
+ },
+ {
+  "id": "wdh-tag04-04",
+  "typ": "offen",
+  "q": "Warum braucht ein Unternehmen neben absoluten Kennzahlen auch relative Kennzahlen? Erkläre an einem Beispiel.",
+  "kernpunkte": [
+   "Absolute Kennzahlen stehen allein und zeigen die Größe (z. B. Gewinn in €)",
+   "Relative Kennzahlen teilen eine Zahl durch eine andere",
+   "Erst dadurch werden große und kleine Unternehmen vergleichbar",
+   "Beispiel: Gewinn im Verhältnis zum Umsatz statt Gewinn allein"
+  ],
+  "expl": "Eine absolute Kennzahl wird durch nichts geteilt, zum Beispiel ein Gewinn von 500.000 €. Sie zeigt die Größe. Ob der Betrieb gut wirtschaftet, sagt sie aber nicht. Dafür teilt man den Gewinn zum Beispiel durch den Umsatz. Das ist eine relative Kennzahl, auch Verhältniszahl genannt. Sie macht große und kleine Betriebe vergleichbar. Die absoluten Zahlen bleiben trotzdem wichtig: Sie sind die Bausteine für die relativen Kennzahlen."
+ },
+ {
+  "id": "wdh-tag04-05",
+  "q": "Welche Finanzierung verstößt gegen die goldene Finanzierungsregel?",
+  "options": [
+   {
+    "t": "Eine Lagerhalle, die 25 Jahre genutzt wird, wird mit dem Kontokorrentkredit bezahlt.",
+    "c": true
+   },
+   {
+    "t": "Rohstoffe, die in zwei Monaten verarbeitet sind, werden mit dem Zahlungsziel des Lieferanten bezahlt.",
+    "c": false
+   },
+   {
+    "t": "Ein Lkw, der acht Jahre genutzt wird, wird mit einem Darlehen über acht Jahre bezahlt.",
+    "c": false
+   },
+   {
+    "t": "Eine Maschine, die zehn Jahre läuft, wird mit Eigenkapital bezahlt.",
+    "c": false
+   }
+  ],
+  "expl": "Die goldene Finanzierungsregel heißt auch Fristenkongruenz. Die Dauer der Kapitalbindung und die Dauer der Kapitalüberlassung sollen übereinstimmen. Die Halle bindet das Geld 25 Jahre. Der Kontokorrentkredit ist aber kurzfristig. Die Bank kann ihn kürzen. Dann droht Zahlungsunfähigkeit. Die anderen drei Fälle passen: Die Frist des Kapitals ist mindestens so lang wie die Bindung."
+ },
+ {
+  "id": "wdh-tag04-06",
+  "typ": "rechnen",
+  "q": "Berechne den Umsatz je Mitarbeiter der Fischer Elektrotechnik KG.",
+  "angaben": "Umsatzerlöse: 3.600.000 €; Zahl der Mitarbeiter: 48",
+  "einheit": "€",
+  "loesung": 75000,
+  "rechnung": "3600000 / 48",
+  "schritte": [
+   "Umsatz je Mitarbeiter = Umsatz : Zahl der Mitarbeiter",
+   "3.600.000 € : 48",
+   "= 75.000 €"
+  ],
+  "expl": "Umsatz je Mitarbeiter ist eine Beziehungszahl. Sie setzt zwei verschiedene Größen ins Verhältnis: Euro und Personen. Man erkennt sie am Wort „je“. Jeder Mitarbeiter bringt im Durchschnitt 75.000 € Umsatz. Ob das gut ist, zeigt erst ein Vergleich, etwa mit dem Vorjahr oder der Branche."
+ },
+ {
+  "id": "wdh-tag04-07",
+  "q": "Der Umsatzindex der Lorenz Druck GmbH lautet: 2023 = 100 (Basisjahr), 2024 = 110, 2025 = 121. Welche Aussagen stimmen? (Mehrere Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Der Umsatz ist von 2023 bis 2025 um 21 % gestiegen.",
+    "c": true
+   },
+   {
+    "t": "Von 2024 auf 2025 ist der Index um 11 Punkte gestiegen.",
+    "c": true
+   },
+   {
+    "t": "Von 2024 auf 2025 ist der Umsatz um 11 % gestiegen.",
+    "c": false
+   },
+   {
+    "t": "Das Basisjahr der Indexreihe ist 2024.",
+    "c": false
+   }
+  ],
+  "expl": "Der Index vergleicht immer mit dem Basisjahr. 121 gegenüber 100 heißt: plus 21 % seit 2023. Von 2024 auf 2025 steigt der Index um 11 Punkte. In Prozent sind das aber nur 11 : 110 × 100 = 10 %. Indexpunkte und Prozent sind also nicht dasselbe. Das Basisjahr ist das Jahr mit dem Wert 100, also 2023."
+ },
+ {
+  "id": "wdh-tag04-08",
+  "typ": "rechnen",
+  "q": "Berechne den Anlagendeckungsgrad I der Weber Kunststoff KG.",
+  "angaben": "Eigenkapital: 520.000 €; langfristiges Fremdkapital: 400.000 €; Anlagevermögen: 800.000 €; Umlaufvermögen: 500.000 €",
+  "einheit": "%",
+  "loesung": 65,
+  "toleranz": 0.1,
+  "rechnung": "520000 / 800000 * 100",
+  "schritte": [
+   "Anlagendeckungsgrad I = Eigenkapital : Anlagevermögen × 100",
+   "520.000 € : 800.000 € = 0,65",
+   "0,65 × 100 = 65 %"
+  ],
+  "expl": "Der Anlagendeckungsgrad I prüft die enge goldene Bilanzregel. Er zeigt, wie viel Prozent des Anlagevermögens mit Eigenkapital bezahlt sind. Hier sind es 65 %. Die enge Regel ist nicht erfüllt, dafür bräuchte man 100 %. Für einen Industriebetrieb ist das aber normal. Werte zwischen 50 % und 100 % gelten oft als ordentlich."
+ },
+ {
+  "id": "wdh-tag04-09",
+  "q": "Die Schulte Maschinenbau AG vergleicht ihren tatsächlichen Materialaufwand 2025 mit dem geplanten Wert für 2025. Welche Vergleichsart ist das?",
+  "options": [
+   {
+    "t": "Soll-Ist-Vergleich",
+    "c": true
+   },
+   {
+    "t": "Zeitvergleich",
+    "c": false
+   },
+   {
+    "t": "Betriebsvergleich",
+    "c": false
+   },
+   {
+    "t": "Indexvergleich",
+    "c": false
+   }
+  ],
+  "expl": "Beim Soll-Ist-Vergleich vergleicht man den Plan (Soll) mit dem tatsächlichen Ergebnis (Ist). Beide gehören zum gleichen Zeitraum. Ein Zeitvergleich bräuchte verschiedene Jahre. Ein Betriebsvergleich bräuchte andere Unternehmen. Eselsbrücke: Ich gegen meinen Neujahrsvorsatz."
+ },
+ {
+  "id": "wdh-tag04-10",
+  "typ": "offen",
+  "q": "Worin unterscheiden sich die enge und die weite Fassung der goldenen Bilanzregel? Welche ist für einen Industriebetrieb der wichtigere Maßstab?",
+  "kernpunkte": [
+   "Eng: Anlagevermögen vollständig durch Eigenkapital gedeckt (Deckungsgrad I ≥ 100 %)",
+   "Weit: Anlagevermögen durch Eigenkapital plus langfristiges Fremdkapital gedeckt (Deckungsgrad II ≥ 100 %)",
+   "Die enge Fassung ist in der Industrie wegen teurer Anlagen selten erfüllt",
+   "Die weite Fassung sollte jedes gesunde Unternehmen erfüllen"
+  ],
+  "expl": "Beide Fassungen prüfen, ob das Anlagevermögen langfristig finanziert ist. Die enge Fassung lässt nur Eigenkapital zu. Eselsbrücke: Eng = Eigen. Industriebetriebe haben teure Gebäude und Maschinen. Deshalb erfüllen sie die enge Fassung nur selten. Die weite Fassung zählt das langfristige Fremdkapital dazu. Denn auch ein langes Darlehen steht lange zur Verfügung. Diese Fassung ist der wichtigere Maßstab."
+ },
+ {
+  "id": "wdh-tag04-11",
+  "typ": "rechnen",
+  "q": "Berechne die Fremdkapitalquote der Neumann Logistik GmbH.",
+  "angaben": "Eigenkapital: 640.000 €; Fremdkapital: 960.000 €; Gesamtkapital: 1.600.000 €",
+  "einheit": "%",
+  "loesung": 60,
+  "toleranz": 0.1,
+  "rechnung": "960000 / 1600000 * 100",
+  "schritte": [
+   "Fremdkapitalquote = Fremdkapital : Gesamtkapital × 100",
+   "960.000 € : 1.600.000 € = 0,60",
+   "0,60 × 100 = 60 %"
+  ],
+  "expl": "Die Fremdkapitalquote ist eine Gliederungszahl. Das Fremdkapital ist ein Teil des Gesamtkapitals. 60 % des Kapitals kommen also von Banken und Lieferanten. Probe: Die Eigenkapitalquote ist 640.000 € : 1.600.000 € × 100 = 40 %. Zusammen ergeben beide Quoten 100 %."
+ },
+ {
+  "id": "wdh-tag04-12",
+  "q": "Welche Posten zählen bei den Finanzierungsregeln zum langfristigen Kapital? (Mehrere Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Eigenkapital",
+    "c": true
+   },
+   {
+    "t": "Bankdarlehen mit einer Restlaufzeit von vier Jahren",
+    "c": true
+   },
+   {
+    "t": "Verbindlichkeiten aus Lieferungen und Leistungen",
+    "c": false
+   },
+   {
+    "t": "Bankkredit mit einer Restlaufzeit von sechs Monaten",
+    "c": false
+   }
+  ],
+  "expl": "Eigenkapital steht dem Unternehmen unbefristet zur Verfügung. Für die Finanzierungsregeln zählt außerdem alles Fremdkapital mit einer Restlaufzeit von mehr als einem Jahr zum langfristigen Kapital. Das Darlehen über vier Jahre gehört also dazu. Lieferantenschulden und ein Kredit über sechs Monate sind kurzfristiges Fremdkapital. Sie müssen innerhalb eines Jahres zurückgezahlt werden."
+ },
+ {
+  "id": "wdh-tag04-13",
+  "typ": "rechnen",
+  "q": "Berechne den Index des Materialaufwands der Krüger Holzbau GmbH für 2025. Basisjahr ist 2023 = 100.",
+  "angaben": "Materialaufwand 2023: 400.000 €; Materialaufwand 2024: 440.000 €; Materialaufwand 2025: 470.000 €",
+  "einheit": "",
+  "loesung": 117.5,
+  "toleranz": 0.1,
+  "rechnung": "470000 / 400000 * 100",
+  "schritte": [
+   "Indexzahl = Wert Berichtsjahr : Wert Basisjahr × 100",
+   "470.000 € : 400.000 € = 1,175",
+   "1,175 × 100 = 117,5"
+  ],
+  "expl": "Bei einer Indexreihe teilt man immer durch den Wert des Basisjahres, nicht durch das Vorjahr. Der Wert 2024 wird hier also nicht gebraucht. Ein Index von 117,5 heißt: Der Materialaufwand ist seit 2023 um 17,5 % gestiegen. Das ist ein Warnsignal, wenn der Umsatz langsamer gewachsen ist."
+ },
+ {
+  "id": "wdh-tag04-14",
+  "q": "Ein Industriebetrieb hat einen Anlagendeckungsgrad I von 70 %. Wie ist das zu bewerten?",
+  "options": [
+   {
+    "t": "Die enge goldene Bilanzregel ist nicht erfüllt, für einen Industriebetrieb ist der Wert aber ordentlich.",
+    "c": true
+   },
+   {
+    "t": "Die enge goldene Bilanzregel ist erfüllt, weil der Wert über 50 % liegt.",
+    "c": false
+   },
+   {
+    "t": "Der Betrieb hat eine Unterdeckung und ist sofort zahlungsunfähig.",
+    "c": false
+   },
+   {
+    "t": "Der Wert sagt nichts aus, weil der Deckungsgrad I nur für Handelsbetriebe gilt.",
+    "c": false
+   }
+  ],
+  "expl": "Die enge Fassung ist erst bei einem Deckungsgrad I von 100 % erfüllt. Dann wäre das ganze Anlagevermögen mit Eigenkapital bezahlt. Das schaffen Industriebetriebe mit teuren Anlagen selten. Werte zwischen 50 % und 100 % gelten dort oft als ordentlich. Wichtiger ist, dass der Deckungsgrad II mindestens 100 % erreicht."
+ },
+ {
+  "id": "wdh-tag04-15",
+  "typ": "offen",
+  "q": "Die Eigenkapitalquote der Roth Textil GmbH sinkt von 40 % auf 30 %. Erkläre den Unterschied zwischen der Veränderung in Prozentpunkten und in Prozent an diesem Beispiel.",
+  "kernpunkte": [
+   "Prozentpunkte zählen den Abstand: 40 − 30 = 10 Prozentpunkte",
+   "Prozent misst das Verhältnis zum Ausgangswert: 10 : 40 × 100 = 25 %",
+   "Die Quote ist also um 25 % gesunken, nicht um 10 %"
+  ],
+  "expl": "Prozentpunkte zählen nur den Abstand zwischen zwei Prozentwerten. Hier sind das 10 Prozentpunkte. Prozent misst dagegen das Verhältnis zum Ausgangswert. Der Ausgangswert ist 40 %. 10 : 40 × 100 = 25 %. Die Quote ist also um ein Viertel gesunken. Wer „um 10 %“ sagt, beschreibt die Veränderung falsch."
+ },
+ {
+  "id": "wdh-tag04-16",
+  "q": "An welcher Stelle steht der eiserne Bestand in der Formel für den Anlagendeckungsgrad III?",
+  "options": [
+   {
+    "t": "Im Nenner: Er wird zum Anlagevermögen addiert.",
+    "c": true
+   },
+   {
+    "t": "Im Zähler: Er wird zum Eigenkapital addiert.",
+    "c": false
+   },
+   {
+    "t": "Im Nenner: Er wird vom Anlagevermögen abgezogen.",
+    "c": false
+   },
+   {
+    "t": "Er kommt in der Formel nicht vor, nur das kurzfristige Fremdkapital.",
+    "c": false
+   }
+  ],
+  "expl": "Der eiserne Bestand ist ein Mindestvorrat, der nie unterschritten wird. Er bleibt dauerhaft im Betrieb wie eine Maschine. Deshalb zählt er zum langfristig gebundenen Vermögen. Vermögen steht im Nenner. Die Formel lautet: (Eigenkapital + langfristiges Fremdkapital) : (Anlagevermögen + langfristig gebundenes Umlaufvermögen) × 100. Ihn in den Zähler zu schreiben, ist ein häufiger Fehler."
+ },
+ {
+  "id": "wdh-tag04-17",
+  "typ": "rechnen",
+  "q": "Berechne die prozentuale Abweichung der Umsatzerlöse im Soll-Ist-Vergleich der Vogel Werkzeuge GmbH. Gib das Ergebnis mit Vorzeichen an und runde auf zwei Nachkommastellen.",
+  "angaben": "Umsatzerlöse Soll 2025: 800.000 €; Umsatzerlöse Ist 2025: 742.000 €",
+  "einheit": "%",
+  "loesung": -7.25,
+  "rechnung": "(742000 - 800000) / 800000 * 100",
+  "schritte": [
+   "Abweichung absolut = Ist − Soll; Abweichung in % = Abweichung : Soll × 100",
+   "742.000 € − 800.000 € = −58.000 €; −58.000 € : 800.000 € = −0,0725",
+   "−0,0725 × 100 = −7,25 %"
+  ],
+  "expl": "Die Abweichung rechnet man immer als Ist minus Soll. Für die Prozentangabe teilt man durch das Soll, also den Planwert. Das Ergebnis ist negativ: Es wurde 7,25 % weniger verkauft als geplant. Bei Umsatzerlösen ist eine negative Abweichung ungünstig."
+ },
+ {
+  "id": "wdh-tag04-18",
+  "q": "Die Brandt Fenster GmbH erfüllt am 31.12. die weite goldene Bilanzregel. Welche Schlussfolgerung ist zulässig?",
+  "options": [
+   {
+    "t": "Die Finanzierung wirkt am Stichtag solide. Wann genau Zahlungen im Jahr fällig werden, zeigt die Regel aber nicht.",
+    "c": true
+   },
+   {
+    "t": "Das Unternehmen kann nicht zahlungsunfähig werden.",
+    "c": false
+   },
+   {
+    "t": "Das Unternehmen erfüllt damit automatisch auch die enge Fassung.",
+    "c": false
+   },
+   {
+    "t": "Das Unternehmen hat damit eine gesetzliche Pflicht aus dem HGB erfüllt.",
+    "c": false
+   }
+  ],
+  "expl": "Die Finanzierungsregeln sind Faustregeln aus der Praxis, keine Gesetze. Die Bilanz zeigt nur einen Stichtag. Sie zeigt nicht, wann genau Zahlungen fällig sind. Deshalb ist Zahlungsunfähigkeit nicht ausgeschlossen. Die enge Fassung ist strenger: Sie zählt nur das Eigenkapital. Wer die weite Fassung erfüllt, erfüllt die enge also nicht automatisch."
+ },
+ {
+  "id": "wdh-tag04-19",
+  "typ": "offen",
+  "q": "Worin unterscheiden sich Zeitvergleich, Betriebsvergleich und Soll-Ist-Vergleich? Nenne zu jeder Art die Frage, die sie beantwortet.",
+  "kernpunkte": [
+   "Zeitvergleich: gleicher Betrieb, verschiedene Jahre – besser als früher?",
+   "Betriebsvergleich: verschiedene Betriebe, gleicher Zeitraum – besser als andere?",
+   "Soll-Ist-Vergleich: Plan gegen Wirklichkeit, gleicher Zeitraum – Ziel erreicht?",
+   "Beim Betriebsvergleich müssen die Betriebe ähnlich und die Kennzahlen gleich berechnet sein"
+  ],
+  "expl": "Eine Kennzahl allein sagt wenig. Erst der Vergleich zeigt, ob ein Wert gut oder schlecht ist. Beim Zeitvergleich schaut ein Betrieb auf seine eigenen früheren Jahre. Beim Betriebsvergleich schaut er auf andere Betriebe oder die Branche im gleichen Zeitraum. Beim Soll-Ist-Vergleich prüft er, ob der Plan erreicht wurde. Eselsbrücke: Ich, mein Nachbar, mein Vorsatz."
+ },
+ {
+  "id": "wdh-tag04-20",
+  "typ": "rechnen",
+  "q": "Berechne den Anlagendeckungsgrad II der Albers Kartonagen GmbH.",
+  "angaben": "Eigenkapital: 360.000 €; langfristiges Fremdkapital: 540.000 €; kurzfristiges Fremdkapital: 300.000 €; Anlagevermögen: 750.000 €",
+  "einheit": "%",
+  "loesung": 120,
+  "toleranz": 0.1,
+  "rechnung": "(360000 + 540000) / 750000 * 100",
+  "schritte": [
+   "Anlagendeckungsgrad II = (Eigenkapital + langfristiges Fremdkapital) : Anlagevermögen × 100",
+   "(360.000 € + 540.000 €) : 750.000 € = 900.000 € : 750.000 € = 1,2",
+   "1,2 × 100 = 120 %"
+  ],
+  "expl": "Der Anlagendeckungsgrad II prüft die weite goldene Bilanzregel. Im Zähler steht das langfristige Kapital, also Eigenkapital plus langfristiges Fremdkapital. Das kurzfristige Fremdkapital zählt nicht. 120 % liegen über der Grenze von 100 %. Die Regel ist erfüllt. Es gibt eine Überdeckung von 150.000 €. Damit wird ein Teil des Umlaufvermögens langfristig finanziert. Das ist gut."
+ },
+ {
+  "id": "wdh-tag04-21",
+  "q": "Welche Abweichungen im Soll-Ist-Vergleich sind ungünstig? (Mehrere Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Der Materialaufwand liegt 30.000 € über dem Plan.",
+    "c": true
+   },
+   {
+    "t": "Die Umsatzerlöse liegen 50.000 € unter dem Plan.",
+    "c": true
+   },
+   {
+    "t": "Der Jahresüberschuss liegt 20.000 € über dem Plan.",
+    "c": false
+   },
+   {
+    "t": "Die Eigenkapitalquote liegt 2 Prozentpunkte über dem Plan.",
+    "c": false
+   }
+  ],
+  "expl": "Ob eine Abweichung gut oder schlecht ist, hängt von der Kennzahl ab. Bei Aufwendungen und Kosten ist ein Wert über dem Plan ungünstig. Bei Umsatz und Gewinn ist ein Wert unter dem Plan ungünstig. Ein höherer Jahresüberschuss und eine höhere Eigenkapitalquote als geplant sind dagegen günstig."
+ },
+ {
+  "id": "wdh-tag04-22",
+  "typ": "offen",
+  "q": "Erkläre die Begriffe Kapitalbindung und Kapitalüberlassung. Warum sollen beide laut goldener Finanzierungsregel gleich lang sein?",
+  "kernpunkte": [
+   "Kapitalbindung (Aktivseite): Wie lange steckt das Geld im Vermögen fest?",
+   "Kapitalüberlassung (Passivseite): Wie lange darf das Unternehmen das Kapital behalten?",
+   "Ist das Kapital kürzer verfügbar als gebunden, muss man vorzeitig zurückzahlen oder neu finanzieren",
+   "Ziel ist die Sicherung der Liquidität"
+  ],
+  "expl": "Kapitalbindung betrifft die Aktivseite: Wie lange steckt das Geld zum Beispiel in einer Maschine fest? Kapitalüberlassung betrifft die Passivseite: Wie lange steht das Geld zur Verfügung? Ist der Kredit kürzer als die Nutzung, muss man zurückzahlen, bevor die Maschine ihr Geld verdient hat. Dann braucht man einen Anschlusskredit. Sagt die Bank Nein, droht Zahlungsunfähigkeit. Die Regel sichert also die Liquidität."
+ },
+ {
+  "id": "wdh-tag04-23",
+  "q": "Was versteht man unter Bilanzkosmetik?",
+  "options": [
+   {
+    "t": "Die bewusste Gestaltung der Bilanz zum Stichtag, damit Kennzahlen besser aussehen",
+    "c": true
+   },
+   {
+    "t": "Die Prüfung der Bilanz durch das Finanzamt",
+    "c": false
+   },
+   {
+    "t": "Die farbige Gestaltung der Bilanz für den Geschäftsbericht",
+    "c": false
+   },
+   {
+    "t": "Die Berechnung von Kennzahlen über mehrere Jahre",
+    "c": false
+   }
+  ],
+  "expl": "Die Bilanz zeigt den Stand an einem einzigen Tag, meist dem 31.12. Ein Unternehmen kann diesen Tag bewusst nutzen. Zum Beispiel sorgt es dafür, dass am Stichtag viel Geld auf dem Konto ist. Das nennt man Bilanzkosmetik. Sie ist ein Teil der Bilanzpolitik. Deshalb ist der Stichtag eine Grenze von Kennzahlen."
+ },
+ {
+  "id": "wdh-tag04-24",
+  "typ": "rechnen",
+  "q": "Berechne die Unterdeckung der Peters Gießerei GmbH bei der weiten goldenen Bilanzregel in Euro.",
+  "angaben": "Anlagevermögen: 1.200.000 €; Eigenkapital: 400.000 €; langfristiges Fremdkapital: 650.000 €; kurzfristiges Fremdkapital: 450.000 €",
+  "einheit": "€",
+  "loesung": 150000,
+  "rechnung": "1200000 - (400000 + 650000)",
+  "schritte": [
+   "Unterdeckung = Anlagevermögen − (Eigenkapital + langfristiges Fremdkapital)",
+   "Langfristiges Kapital: 400.000 € + 650.000 € = 1.050.000 €",
+   "1.200.000 € − 1.050.000 € = 150.000 €"
+  ],
+  "expl": "Das langfristige Kapital reicht nicht für das ganze Anlagevermögen. 150.000 € Anlagevermögen sind mit kurzfristigem Geld bezahlt. Der Deckungsgrad II liegt unter 100 %. Das verstößt gegen die Fristenkongruenz und ist ein Warnsignal. Abhilfe: kurzfristige Kredite in ein langfristiges Darlehen umschulden oder das Eigenkapital erhöhen."
+ },
+ {
+  "id": "wdh-tag04-25",
+  "q": "Eine Kennzahl teilt einen Teil durch das Ganze. Alle Teile zusammen ergeben 100 %. Um welche Art von Kennzahl handelt es sich?",
+  "options": [
+   {
+    "t": "Gliederungszahl",
+    "c": true
+   },
+   {
+    "t": "Beziehungszahl",
+    "c": false
+   },
+   {
+    "t": "Indexzahl",
+    "c": false
+   },
+   {
+    "t": "Absolute Kennzahl",
+    "c": false
+   }
+  ],
+  "expl": "Bei einer Gliederungszahl sind Teil und Ganzes von derselben Art, zum Beispiel beide Kapital. Ein Beispiel ist die Eigenkapitalquote. Merke den 100-%-Test: Ergeben alle Teile zusammen 100 %, ist es eine Gliederungszahl. Eine Beziehungszahl setzt dagegen zwei verschiedene Größen ins Verhältnis."
+ },
+ {
+  "id": "wdh-tag04-26",
+  "typ": "rechnen",
+  "q": "Die Eigenkapitalquote der Simon Bau GmbH steigt von 32 % auf 36 %. Um wie viel Prozent ist sie gestiegen? Runde auf eine Nachkommastelle.",
+  "angaben": "Eigenkapitalquote Vorjahr: 32 %; Eigenkapitalquote aktuelles Jahr: 36 %",
+  "einheit": "%",
+  "loesung": 12.5,
+  "toleranz": 0.1,
+  "rechnung": "(36 - 32) / 32 * 100",
+  "schritte": [
+   "Veränderung in % = (neuer Wert − alter Wert) : alter Wert × 100",
+   "(36 − 32) : 32 = 4 : 32 = 0,125",
+   "0,125 × 100 = 12,5 %"
+  ],
+  "expl": "Die Quote steigt um 4 Prozentpunkte. Prozentpunkte zählen nur den Abstand. Gefragt ist aber die Veränderung in Prozent. Dafür teilt man den Abstand durch den Ausgangswert 32. Das ergibt 12,5 %. Das Ergebnis ist günstig: Das Unternehmen wird unabhängiger von Banken."
+ },
+ {
+  "id": "wdh-tag04-27",
+  "q": "Ein Unternehmen hat einen Anlagendeckungsgrad II von 92 %. Welche Aussagen stimmen? (Mehrere Antworten sind richtig.)",
+  "options": [
+   {
+    "t": "Es liegt eine Unterdeckung vor.",
+    "c": true
+   },
+   {
+    "t": "Ein Teil des Anlagevermögens ist mit kurzfristigem Kapital finanziert.",
+    "c": true
+   },
+   {
+    "t": "Die enge goldene Bilanzregel kann trotzdem erfüllt sein.",
+    "c": false
+   },
+   {
+    "t": "Es liegt eine Überdeckung von 8 % vor.",
+    "c": false
+   }
+  ],
+  "expl": "Unter 100 % reicht das langfristige Kapital nicht für das Anlagevermögen. Das heißt Unterdeckung. Ein Teil des Anlagevermögens ist dann kurzfristig finanziert. Die enge Fassung kann nicht erfüllt sein. Der Deckungsgrad I nimmt nur das Eigenkapital. Er ist deshalb nie größer als der Deckungsgrad II. Eselsbrücke: Unter 100 läuft das Boot voll."
+ },
+ {
+  "id": "wdh-tag04-28",
+  "typ": "offen",
+  "q": "Warum darf sich die Geschäftsführung nicht allein auf Kennzahlen aus Bilanz und GuV verlassen? Nenne drei Grenzen.",
+  "kernpunkte": [
+   "Vergangenheit: Die Zahlen beschreiben das abgelaufene Jahr",
+   "Stichtag: Die Bilanz zeigt nur einen Tag, Bilanzkosmetik ist möglich",
+   "Keine Ursachen: Kennzahlen zeigen, dass etwas passiert ist, nicht warum",
+   "Weiche Faktoren wie Ruf, Mitarbeiterzufriedenheit oder Qualität fehlen"
+  ],
+  "expl": "Kennzahlen sind nützlich, aber man darf ihnen nicht blind vertrauen. Sie blicken zurück wie ein Rückspiegel. Die Bilanz zeigt nur den Stand an einem Tag. Kennzahlen nennen keine Ursachen: Sinkt der Gewinn, muss man den Grund suchen. Wichtige weiche Faktoren stehen in keiner Bilanz. Deshalb: nie nur eine Kennzahl ansehen, mehrere Jahre betrachten und nach Ursachen fragen."
+ },
+ {
+  "id": "wdh-tag04-29",
+  "q": "Was bezieht die weiteste Fassung der goldenen Bilanzregel (Anlagendeckungsgrad III) zusätzlich zum Anlagevermögen ein?",
+  "options": [
+   {
+    "t": "Den langfristig gebundenen Teil des Umlaufvermögens, vor allem den eisernen Bestand",
+    "c": true
+   },
+   {
+    "t": "Das gesamte kurzfristige Fremdkapital",
+    "c": false
+   },
+   {
+    "t": "Die Forderungen aus Lieferungen und Leistungen",
+    "c": false
+   },
+   {
+    "t": "Das gesamte Bankguthaben",
+    "c": false
+   }
+  ],
+  "expl": "Ein Teil der Vorräte bleibt immer im Lager. Das ist der eiserne Bestand. Er wird ständig verbraucht und wieder aufgefüllt. Deshalb ist er wie Anlagevermögen langfristig gebunden. Die weiteste Fassung fordert: Auch dieser Teil soll langfristig finanziert sein. Forderungen und Bankguthaben sind dagegen nur kurz gebunden."
+ },
+ {
+  "id": "wdh-tag04-30",
+  "typ": "rechnen",
+  "q": "Berechne den Anlagendeckungsgrad III der Kaiser Glas GmbH.",
+  "angaben": "Eigenkapital: 500.000 €; langfristiges Fremdkapital: 380.000 €; Anlagevermögen: 720.000 €; Umlaufvermögen: 400.000 €, davon eiserner Bestand: 80.000 €",
+  "einheit": "%",
+  "loesung": 110,
+  "toleranz": 0.1,
+  "rechnung": "(500000 + 380000) / (720000 + 80000) * 100",
+  "schritte": [
+   "Anlagendeckungsgrad III = (Eigenkapital + langfristiges Fremdkapital) : (Anlagevermögen + eiserner Bestand) × 100",
+   "(500.000 € + 380.000 €) : (720.000 € + 80.000 €) = 880.000 € : 800.000 € = 1,1",
+   "1,1 × 100 = 110 %"
+  ],
+  "expl": "Der eiserne Bestand bleibt dauerhaft im Lager. Er wird deshalb wie Anlagevermögen behandelt und kommt in den Nenner. Das übrige Umlaufvermögen zählt nicht. Der Zähler ist das langfristige Kapital. 110 % liegen über 100 %. Auch das langfristig gebundene Umlaufvermögen ist also langfristig finanziert. Die Regel ist erfüllt."
+ },
+ {
+  "id": "wdh-tag04-31",
+  "q": "Welche Angabe ist eine absolute Kennzahl?",
+  "options": [
+   {
+    "t": "Zahl der Mitarbeiter: 65",
+    "c": true
+   },
+   {
+    "t": "Umsatz je Mitarbeiter: 52.000 €",
+    "c": false
+   },
+   {
+    "t": "Eigenkapitalquote: 38 %",
+    "c": false
+   },
+   {
+    "t": "Umsatzindex: 108",
+    "c": false
+   }
+  ],
+  "expl": "Eine absolute Kennzahl steht für sich allein. Sie wird nicht durch eine andere Zahl geteilt. Die Zahl der Mitarbeiter ist so eine Zahl. Die anderen drei sind relative Kennzahlen: Umsatz je Mitarbeiter ist eine Beziehungszahl, die Eigenkapitalquote eine Gliederungszahl, der Umsatzindex eine Indexzahl. Eselsbrücke: Absolut steht ganz allein, relativ muss geteilt sein."
+ },
+ {
+  "id": "wdh-tag04-32",
+  "typ": "offen",
+  "q": "Die Wagner Stahl GmbH kauft eine Maschine mit einem kurzfristigen Kredit. Der Anlagendeckungsgrad II liegt danach immer noch über 100 %. Warum ist diese Finanzierung trotzdem kritisch, und was wäre besser?",
+  "kernpunkte": [
+   "Die goldene Bilanzregel betrachtet die ganze Bilanz, die Finanzierungsregel jede einzelne Investition",
+   "Die Maschine verstößt gegen die Fristenkongruenz",
+   "Der Kredit ist fällig, bevor die Maschine ihr Geld verdient hat (Anschlussfinanzierung nötig)",
+   "Besser: Investitionsdarlehen mit passender Laufzeit oder Eigenkapital"
+  ],
+  "expl": "Die goldene Bilanzregel vergleicht das gesamte Anlagevermögen mit dem gesamten langfristigen Kapital. Eine Überdeckung kann einen einzelnen Fehler verdecken. Die goldene Finanzierungsregel prüft jede Investition für sich. Die Maschine ist lange gebunden, der Kredit aber kurz. Er wird fällig, bevor die Maschine ihr Geld verdient hat. Besser ist ein Darlehen mit passender Laufzeit."
+ },
+ {
+  "id": "wdh-tag04-33",
+  "q": "Die goldene Bilanzregel vergleicht das gesamte Anlagevermögen mit dem gesamten langfristigen Kapital. Wie nennt man diese Betrachtung im Skript?",
+  "options": [
+   {
+    "t": "Horizontale Bilanzstruktur",
+    "c": true
+   },
+   {
+    "t": "Indexreihe",
+    "c": false
+   },
+   {
+    "t": "Soll-Ist-Vergleich",
+    "c": false
+   },
+   {
+    "t": "Beziehungszahl",
+    "c": false
+   }
+  ],
+  "expl": "Die goldene Bilanzregel stellt Posten der Aktivseite (Anlagevermögen) den Posten der Passivseite (langfristiges Kapital) gegenüber. Man liest die Bilanz also quer von links nach rechts. Deshalb spricht man von der horizontalen Bilanzstruktur. Sie überträgt die Fristenkongruenz auf die gesamte Bilanz."
+ }
+]
