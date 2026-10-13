@@ -24,12 +24,32 @@ export function allSessions(index) {
   return allDays(index).flatMap((d) => d.sessions.map((s) => ({ ...s, tag: d })));
 }
 
+export const WDH_ALLE = "wdh-alle";
+let wdhPromise = null;
+
+export function loadWiederholung() {
+  wdhPromise ??= fetchJson("data/wiederholung.json").catch((e) => {
+    wdhPromise = null;
+    throw e;
+  });
+  return wdhPromise;
+}
+
+async function ladeDatei(sid) {
+  if (sid === WDH_ALLE) {
+    const { sessions } = await loadWiederholung();
+    return (await Promise.all(sessions.map((s) => loadSession(s.id)))).flat();
+  }
+  const s = sid.startsWith("wdh-")
+    ? (await loadWiederholung()).sessions.find((x) => x.id === sid)
+    : allSessions(await loadIndex()).find((x) => x.id === sid);
+  if (!s) throw new Error(`Unbekannte Session: ${sid}`);
+  return fetchJson(s.datei);
+}
+
 export async function loadSession(sid) {
   if (!sessionCache.has(sid)) {
-    const index = await loadIndex();
-    const s = allSessions(index).find((x) => x.id === sid);
-    if (!s) throw new Error(`Unbekannte Session: ${sid}`);
-    sessionCache.set(sid, fetchJson(s.datei).catch((e) => {
+    sessionCache.set(sid, ladeDatei(sid).catch((e) => {
       sessionCache.delete(sid);
       throw e;
     }));

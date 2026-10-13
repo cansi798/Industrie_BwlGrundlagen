@@ -1,7 +1,7 @@
 import { h, topbar, fill, keepFocus } from "../lib/dom.js";
-import { loadIndex, loadSession, allSessions } from "../lib/data.js";
+import { loadIndex, loadSession, allSessions, loadWiederholung, WDH_ALLE } from "../lib/data.js";
 import { getProgress, setResult, load, save } from "../lib/store.js";
-import { shuffle, prepareQuestion, isCorrect } from "../lib/quiz.js";
+import { shuffle, prepareQuestion, isCorrect, parseZahl } from "../lib/quiz.js";
 import { frageView } from "../lib/frage.js";
 import { tagStyle } from "../lib/farben.js";
 
@@ -12,6 +12,17 @@ async function quelle(id, query) {
     const p = load("pruefung", null);
     const fragen = p ? p.fragen.filter((q) => !isCorrect(q, p.antworten[q.id])) : [];
     return { titel: "Falsche Fragen aus der Prüfung", fragen, back: "#/pruefung/ergebnis" };
+  }
+  if (id === WDH_ALLE || id.startsWith("wdh-")) {
+    const nurFalsche = query.get("nurFalsche") === "1";
+    let fragen = await loadSession(id);
+    if (nurFalsche) {
+      const p = getProgress();
+      fragen = fragen.filter((q) => p[q.id] === false);
+    }
+    if (id === WDH_ALLE) return { titel: "Wiederholung · Alle 200 gemischt", fragen, back: "#/", nurFalsche };
+    const w = (await loadWiederholung()).sessions.find((x) => x.id === id);
+    return { titel: `Wiederholung · ${w.titel}`, fragen, back: "#/", nurFalsche, tagNr: w.tagNr };
   }
   const s = allSessions(await loadIndex()).find((x) => x.id === id);
   if (!s) throw new Error(`Unbekannte Session ${id}`);
@@ -43,7 +54,9 @@ export async function render(root, { id, query }) {
 
   const runde = shuffle(fragen).map((q) => prepareQuestion(q));
   const n = runde.length;
-  const auswahl = new Map(); // frageId → Set gewählter Indizes
+  const auswahl = new Map(); // frageId → Set (MC), Text (Rechnen) oder Bewertung (Offen)
+  const texte = new Map(); // frageId → Antworttext bei offenen Aufgaben
+  const aufgedeckt = new Set(); // offene Aufgaben mit sichtbarer Lösung
   const ergebnis = new Map(); // frageId → true/false, sobald geprüft
   let i = 0;
   let ansicht = load("uebung.ansicht", "einzeln") === "liste" ? "liste" : "einzeln";
@@ -53,8 +66,52 @@ export async function render(root, { id, query }) {
   const richtigAnzahl = () => [...ergebnis.values()].filter(Boolean).length;
   const offenIndex = () => runde.findIndex((q) => !ergebnis.has(q.id));
 
+  function bereit(q) {
+    if (q.typ === "rechnen") return parseZahl(auswahl.get(q.id) ?? "") !== null;
+    if (q.typ === "offen") return true;
+    return gewaehlt(q).size > 0;
+  }
+
+  // Optionen für frageView; onNeu zeichnet nach einer Änderung neu (nicht beim Tippen)
+  function optionen(q, geprueft, onNeu) {
+    if (q.typ === "rechnen") {
+      return { selected: auswahl.get(q.id) ?? "", reveal: geprueft, onChange: (t) => auswahl.set(q.id, t) };
+    }
+    if (q.typ === "offen") {
+      return {
+        selected: auswahl.get(q.id), text: texte.get(q.id) ?? "", aufgedeckt: aufgedeckt.has(q.id), reveal: geprueft,
+        onText: (t) => texte.set(q.id, t),
+        onBewerten: (w) => { auswahl.set(q.id, w); pruefe(q); onNeu(true); },
+      };
+    }
+    return { selected: gewaehlt(q), reveal: geprueft, onChange: (s) => { auswahl.set(q.id, s); onNeu(false); } };
+  }
+
+  // Aktionsknopf: Prüfen bzw. Lösung zeigen; bei aufgedeckter offener Aufgabe keiner
+  function aktionsknopf(q, key, onPruefen, onZeigen) {
+    if (q.typ === "offen") {
+      if (aufgedeckt.has(q.id)) return null;
+      return h("button", { class: "btn btn-primary", "data-focus": key, onclick: () => { aufgedeckt.add(q.id); onZeigen(); } }, "Lösung zeigen");
+    }
+    return h("button", { class: "btn btn-primary", "data-focus": key, disabled: !bereit(q), onclick: () => { pruefe(q); onPruefen(); } }, "Prüfen");
+  }
+
+  // Tippen schaltet nur den Knopf (kein Neuzeichnen); Enter wirkt wie Klick auf Prüfen
+  function verdrahte(el, q, knopf) {
+    el.addEventListener("eingabe", (e) => {
+      if (q.typ === "rechnen" && knopf) knopf.disabled = !e.detail.gueltig;
+    });
+    el.addEventListener("absenden", () => {
+      if (knopf && !knopf.disabled && bereit(q)) knopf.click();
+    });
+  }
+
+  function fokusBewerten(wurzel, q) {
+    wurzel?.querySelector(`[data-focus^="bewerten:${q.id}:"]`)?.focus();
+  }
+
   function pruefe(q) {
-    const ok = isCorrect(q, gewaehlt(q));
+    const ok = isCorrect(q, q.typ ? (auswahl.get(q.id) ?? "") : gewaehlt(q));
     ergebnis.set(q.id, ok);
     setResult(q.id, ok);
   }
@@ -81,21 +138,24 @@ export async function render(root, { id, query }) {
   function zeichneEinzeln() {
     const q = runde[i];
     const geprueft = ergebnis.has(q.id);
-    const sel = gewaehlt(q);
+    const knopf = geprueft ? null : aktionsknopf(q, "next",
+      () => keepFocus(zeichne),
+      () => { keepFocus(zeichne); fokusBewerten(main, q); });
+    const karteEl = h("div", { class: "card" }, frageView(q, optionen(q, geprueft, (bewertet) => {
+      keepFocus(zeichne);
+      if (bewertet) main.querySelector('[data-focus="next"]')?.focus();
+    })));
+    verdrahte(karteEl, q, knopf);
     fill(main,
       umschalter(),
       h("div", { class: "quiz-head" },
         h("span", {}, `Frage ${i + 1} von ${n}`),
         h("span", { class: "muted" }, `${richtigAnzahl()} richtig`)),
       h("div", { class: "progress progress-thin" }, h("span", { style: `width:${(ergebnis.size / n) * 100}%` })),
-      h("div", { class: "card" }, frageView(q, {
-        selected: sel,
-        reveal: geprueft,
-        onChange: (s) => { auswahl.set(q.id, s); keepFocus(zeichne); },
-      })),
+      karteEl,
       h("div", { class: "actions sticky" }, geprueft
         ? h("button", { class: "btn btn-primary", "data-focus": "next", onclick: weiter }, offenIndex() === -1 ? "Auswertung" : "Weiter")
-        : h("button", { class: "btn btn-primary", "data-focus": "next", disabled: sel.size === 0, onclick: () => { pruefe(q); keepFocus(zeichne); } }, "Prüfen")));
+        : knopf));
   }
 
   function weiter() {
@@ -112,19 +172,15 @@ export async function render(root, { id, query }) {
 
   function karte(q, k) {
     const geprueft = ergebnis.has(q.id);
-    const sel = gewaehlt(q);
-    return h("article", { class: `card frage-karte ${geprueft ? (ergebnis.get(q.id) ? "ok" : "bad") : ""}`, id: `frage-${k + 1}` },
+    const knopf = geprueft ? null : aktionsknopf(q, `pruefen:${q.id}`,
+      () => { i = k; ersetzeKarte(q, k, true); },
+      () => { i = k; ersetzeKarte(q, k); fokusBewerten(document.getElementById(`frage-${k + 1}`), q); });
+    const el = h("article", { class: `card frage-karte ${geprueft ? (ergebnis.get(q.id) ? "ok" : "bad") : ""}`, id: `frage-${k + 1}` },
       h("div", { class: "karte-kopf" }, h("span", { class: "karte-nr" }, `Frage ${k + 1}`)),
-      frageView(q, {
-        selected: sel,
-        reveal: geprueft,
-        onChange: (s) => { auswahl.set(q.id, s); i = k; ersetzeKarte(q, k); },
-      }),
-      geprueft ? null : h("div", { class: "karte-aktion" },
-        h("button", {
-          class: "btn btn-primary", "data-focus": `pruefen:${q.id}`, disabled: sel.size === 0,
-          onclick: () => { pruefe(q); i = k; ersetzeKarte(q, k, true); },
-        }, "Prüfen")));
+      frageView(q, optionen(q, geprueft, (bewertet) => { i = k; ersetzeKarte(q, k, bewertet); })),
+      knopf ? h("div", { class: "karte-aktion" }, knopf) : null);
+    verdrahte(el, q, knopf);
+    return el;
   }
 
   function ersetzeKarte(q, k, fokusAufKarte = false) {
