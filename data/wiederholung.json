@@ -1,0 +1,48 @@
+{
+ "titel": "Wiederholung Tag 1–6",
+ "untertitel": "200 Aufgaben · Multiple Choice, offene Fragen, Rechnen",
+ "sessions": [
+  {
+   "id": "wdh-tag01",
+   "tagNr": 1,
+   "titel": "Tag 1: Wirtschaften verstehen und Unternehmensziele",
+   "datei": "data/wdh-tag01.json",
+   "anzahl": 34
+  },
+  {
+   "id": "wdh-tag02",
+   "tagNr": 2,
+   "titel": "Tag 2: Die Bilanz – Inventur, Inventar, Bilanz und Strukturbilanz",
+   "datei": "data/wdh-tag02.json",
+   "anzahl": 34
+  },
+  {
+   "id": "wdh-tag03",
+   "tagNr": 3,
+   "titel": "Tag 3: Die Gewinn- und Verlustrechnung (GuV)",
+   "datei": "data/wdh-tag03.json",
+   "anzahl": 33
+  },
+  {
+   "id": "wdh-tag04",
+   "tagNr": 4,
+   "titel": "Tag 4: Kennzahlen verstehen und Finanzierungsregeln",
+   "datei": "data/wdh-tag04.json",
+   "anzahl": 33
+  },
+  {
+   "id": "wdh-tag05",
+   "tagNr": 5,
+   "titel": "Tag 5: Rentabilitäten, EBIT, EBITDA und Leverage-Effekt",
+   "datei": "data/wdh-tag05.json",
+   "anzahl": 33
+  },
+  {
+   "id": "wdh-tag06",
+   "tagNr": 6,
+   "titel": "Tag 6: Liquidität und Cashflow – Kann das Unternehmen zahlen?",
+   "datei": "data/wdh-tag06.json",
+   "anzahl": 33
+  }
+ ]
+}
