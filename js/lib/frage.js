@@ -1,5 +1,6 @@
 import { h } from "./dom.js";
 import { isCorrect } from "./quiz.js";
+import { aufgabeView } from "./aufgabe.js";
 
 const LETTERS = ["A", "B", "C", "D", "E", "F"];
 
@@ -14,7 +15,16 @@ const MARK = {
   missed: ["richtig", "Richtige Antwort – nicht gewählt"],
 };
 
-export function frageView(q, { selected = new Set(), onChange = null, reveal = false } = {}) {
+/** Angaben-Kasten (null, wenn die Aufgabe keine Angaben hat). */
+export function angabenBox(q) {
+  return q.angaben ? h("div", { class: "angaben" },
+    h("span", { class: "angaben-titel" }, "Angaben"),
+    h("ul", {}, q.angaben.split(/\s*;\s*/).filter(Boolean).map((a) => h("li", {}, a)))) : null;
+}
+
+export function frageView(q, opts = {}) {
+  if (q.typ) return aufgabeView(q, opts);
+  const { selected = new Set(), onChange = null, reveal = false } = opts;
   const ok = reveal ? isCorrect(q, selected) : null;
   const textId = `ft-${q.id}`;
   const interaktiv = !reveal && !!onChange;
@@ -46,9 +56,7 @@ export function frageView(q, { selected = new Set(), onChange = null, reveal = f
     }));
 
   return h("div", { class: "frage" },
-    q.angaben ? h("div", { class: "angaben" },
-      h("span", { class: "angaben-titel" }, "Angaben"),
-      h("ul", {}, q.angaben.split(/\s*;\s*/).filter(Boolean).map((a) => h("li", {}, a)))) : null,
+    angabenBox(q),
     h("p", { class: "frage-text", id: textId }, q.q),
     q.multi ? h("p", { class: "hint" }, "Mehrere Antworten möglich") : null,
     list,

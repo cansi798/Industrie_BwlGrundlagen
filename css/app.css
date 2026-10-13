@@ -345,3 +345,14 @@ a { color: var(--accent); }
 .angaben-titel { display: block; font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
 .angaben ul { margin: 0; padding-left: 18px; font-size: .95rem; font-variant-numeric: tabular-nums; }
 .angaben li { margin: 2px 0; }
+
+/* Rechen- und offene Aufgaben */
+.zahl-eingabe { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.zahl-eingabe input { flex: 1 1 auto; min-width: 0; width: 100%; font: inherit; font-size: max(16px, 1rem); font-variant-numeric: tabular-nums; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+.einheit { flex: 0 0 auto; font-weight: 700; color: var(--muted); }
+textarea { display: block; width: 100%; min-height: 6.5em; box-sizing: border-box; font: inherit; font-size: max(16px, 1rem); padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); resize: vertical; }
+.loesung { margin: 16px 0 12px; padding: 10px 14px; border-radius: 10px; background: var(--surface); border: 1px solid var(--line); }
+.loesung ul { margin: 0 0 8px; padding-left: 18px; }
+.loesung p { margin: 4px 0 0; }
+ol.schritte { margin: 8px 0; padding-left: 22px; font-variant-numeric: tabular-nums; }
+.segmented.drei { grid-template-columns: repeat(3, 1fr); }
