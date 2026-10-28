@@ -3,7 +3,7 @@
 // CACHE erhöhen, wenn Dateien hinzukommen oder wegfallen und nach jedem
 // neuen Auslesen der Fragen (tools/extract.py) – dann lädt jedes Gerät beim
 // nächsten Start alle Fragen neu, auch Sessions, die es selten öffnet.
-const CACHE = "m094-v10";
+const CACHE = "m094-v11";
 
 const APP = [
   "./",
@@ -24,6 +24,7 @@ const APP = [
   "js/views/unterricht.js",
   "js/views/wiederholen.js",
   "js/views/wiederholungsquiz.js",
+  "js/views/videos.js",
   "js/views/pruefung-setup.js",
   "js/views/pruefung.js",
   "js/views/ergebnis.js",
@@ -33,6 +34,7 @@ const APP = [
   "data/index.json",
   "data/wiederholung.json",
   "data/wiederholungsquiz.json",
+  "data/videos.json",
 ];
 
 self.addEventListener("install", (event) => {
@@ -60,6 +62,8 @@ self.addEventListener("activate", (event) => {
 // Stale-while-revalidate: sofort aus dem Cache, im Hintergrund aktualisieren.
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET" || new URL(event.request.url).origin !== location.origin) return;
+  // Videos direkt aus dem Netz streamen (Range-Anfragen, zu groß für den Cache)
+  if (new URL(event.request.url).pathname.includes("/videos/")) return;
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);
     const cached = await cache.match(event.request, { ignoreSearch: true });

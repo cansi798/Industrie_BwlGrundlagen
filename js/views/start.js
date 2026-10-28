@@ -1,5 +1,5 @@
 import { h } from "../lib/dom.js";
-import { loadIndex, loadWiederholung, loadWiederholungsquiz, allSessions } from "../lib/data.js";
+import { loadIndex, loadWiederholung, loadWiederholungsquiz, loadVideos, allSessions } from "../lib/data.js";
 import { getProgress, load } from "../lib/store.js";
 
 export function idsVon(s) {
@@ -49,6 +49,9 @@ export async function render(root) {
   } catch { /* Wiederholung optional */ }
   const w = zaehle([...new Set(wdhIds)], progress);
 
+  let vids = null;
+  try { vids = await loadVideos(); } catch { /* Videos optional */ }
+
   const laufend = load("pruefung", null);
   const offen = laufend && !laufend.abgegeben;
 
@@ -75,6 +78,11 @@ export async function render(root) {
         titel: "Wiederholung",
         text: "Die wichtigsten Fragen je Tag und vertiefende Aufgaben für die Klausur",
         stand: w.gesamt ? `${w.richtig}/${w.gesamt} richtig` : null, pct: w.gesamt ? w.pct : null,
-      })),
+      }),
+      vids ? dashKachel({
+        href: "#/videos", icon: "▶", variante: "video",
+        titel: "Videozusammenfassung",
+        text: vids.videos.length === 1 ? `${vids.videos[0].titel} · ${vids.videos[0].dauer}` : `${vids.videos.length} Erklärvideos zum Wiederholen`,
+      }) : null),
     h("footer", { class: "footer muted" }, "Dein Fortschritt wird nur auf diesem Gerät gespeichert."));
 }

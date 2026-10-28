@@ -401,3 +401,13 @@ ol.schritte { margin: 8px 0; padding-left: 22px; font-variant-numeric: tabular-n
 }
 .day { scroll-margin-top: 76px; }
 .nur-falsche { margin-top: 14px; text-align: center; }
+
+/* ---------- Videozusammenfassung ---------- */
+.dash-video { --k: #c2410c; --k-soft: #fdeee4; }
+@media (prefers-color-scheme: dark) { .dash-video { --k: #fb9a63; --k-soft: #3a2418; } }
+.video-karte { padding: 0; overflow: hidden; }
+.video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #000; }
+.video-info { padding: 14px 18px 18px; }
+.video-info h2 { margin: 0 0 6px; font-size: 1.25rem; }
+.video-info p { margin: 0; }
+.video-meta { font-size: .8rem; font-weight: 700; letter-spacing: .04em; color: var(--accent); margin-bottom: 4px !important; }

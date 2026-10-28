@@ -5,6 +5,7 @@ import * as wiederholung from "./views/wiederholung.js";
 import * as unterricht from "./views/unterricht.js";
 import * as wiederholen from "./views/wiederholen.js";
 import * as wiederholungsquiz from "./views/wiederholungsquiz.js";
+import * as videos from "./views/videos.js";
 import * as pruefungSetup from "./views/pruefung-setup.js";
 import * as pruefung from "./views/pruefung.js";
 import * as ergebnis from "./views/ergebnis.js";
@@ -14,6 +15,7 @@ const ROUTES = [
   [/^#\/unterricht\/?$/, unterricht],
   [/^#\/wiederholen\/?$/, wiederholen],
   [/^#\/wiederholungsquiz\/?$/, wiederholungsquiz],
+  [/^#\/videos\/?$/, videos],
   [/^#\/wiederholung\/?$/, wiederholung],
   [/^#\/session\/([\w-]+)(?:\?(.*))?$/, session],
   [/^#\/pruefung\/?$/, pruefungSetup],

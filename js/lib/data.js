@@ -35,6 +35,15 @@ export function loadWiederholung() {
   return wdhPromise;
 }
 
+let videoPromise = null;
+export function loadVideos() {
+  videoPromise ??= fetchJson("data/videos.json").catch((e) => {
+    videoPromise = null;
+    throw e;
+  });
+  return videoPromise;
+}
+
 export const WQ_ALLE = "wq-alle";
 let wqPromise = null;
 

@@ -1,0 +1,15 @@
+{
+ "titel": "Videozusammenfassungen",
+ "untertitel": "Kurze Erklärvideos zum Wiederholen der wichtigsten Inhalte",
+ "videos": [
+  {
+   "id": "anatomie",
+   "titel": "Anatomie eines Unternehmens",
+   "beschreibung": "Warum wir wirtschaften, magisches Dreieck aus Liquidität, Rentabilität und Sicherheit, Vermögen und Kapital in der Bilanz, profitabel oder liquide.",
+   "tage": "Tag 1 bis 6",
+   "dauer": "7 Min.",
+   "datei": "videos/anatomie-eines-unternehmens.mp4",
+   "bild": "videos/anatomie-eines-unternehmens.jpg"
+  }
+ ]
+}
