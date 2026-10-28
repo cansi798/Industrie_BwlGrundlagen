@@ -1,5 +1,5 @@
 import { h, topbar, fill, keepFocus } from "../lib/dom.js";
-import { loadIndex, loadSession, allSessions, loadWiederholung, WDH_ALLE } from "../lib/data.js";
+import { loadIndex, loadSession, allSessions, loadWiederholung, WDH_ALLE, loadWiederholungsquiz, WQ_ALLE } from "../lib/data.js";
 import { getProgress, setResult, load, save } from "../lib/store.js";
 import { shuffle, prepareQuestion, isCorrect, parseZahl } from "../lib/quiz.js";
 import { frageView } from "../lib/frage.js";
@@ -12,6 +12,18 @@ async function quelle(id, query) {
     const p = load("pruefung", null);
     const fragen = p ? p.fragen.filter((q) => !isCorrect(q, p.antworten[q.id])) : [];
     return { titel: "Falsche Fragen aus der Prüfung", fragen, back: "#/pruefung/ergebnis" };
+  }
+  if (id === WQ_ALLE || id.startsWith("wq-")) {
+    const nurFalsche = query.get("nurFalsche") === "1";
+    let fragen = await loadSession(id);
+    if (nurFalsche) {
+      const p = getProgress();
+      fragen = fragen.filter((q) => p[q.id] === false);
+    }
+    const wq = await loadWiederholungsquiz();
+    if (id === WQ_ALLE) return { titel: `Wiederholungsquiz · Alle ${fragen.length} gemischt`, fragen, back: "#/wiederholungsquiz", nurFalsche };
+    const w = wq.sessions.find((x) => x.id === id);
+    return { titel: `Wiederholungsquiz · ${w.titel}`, fragen, back: "#/wiederholungsquiz", nurFalsche, tagNr: w.tagNr };
   }
   if (id === WDH_ALLE || id.startsWith("wdh-")) {
     const nurFalsche = query.get("nurFalsche") === "1";
@@ -32,7 +44,7 @@ async function quelle(id, query) {
     const p = getProgress();
     fragen = fragen.filter((q) => p[q.id] === false);
   }
-  return { titel: `Tag ${s.tag.nr} · ${s.titel}`, fragen, back: "#/", nurFalsche, tagNr: s.tag.nr };
+  return { titel: `Tag ${s.tag.nr} · ${s.titel}`, fragen, back: "#/unterricht", nurFalsche, tagNr: s.tag.nr };
 }
 
 export async function render(root, { id, query }) {

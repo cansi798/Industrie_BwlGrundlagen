@@ -362,3 +362,42 @@ textarea { display: block; width: 100%; min-height: 6.5em; box-sizing: border-bo
 ol.schritte { margin: 8px 0; padding-left: 22px; font-variant-numeric: tabular-nums; }
 .segmented.drei { grid-template-columns: repeat(3, 1fr); }
 .hint[hidden] { display: none; }
+
+/* ---------- Dashboard: große Auswahlkacheln ---------- */
+.dash { display: grid; gap: 14px; margin-bottom: 24px; }
+.dash-kachel {
+  position: relative; display: grid; grid-template-columns: auto 1fr; grid-template-areas: "icon text" "stand stand" "bar bar";
+  gap: 12px 14px; align-content: start; padding: 20px 44px 18px 18px;
+  border-radius: var(--radius); text-decoration: none; color: var(--ink);
+  background: var(--surface); border: 1.5px solid var(--line); border-top: 6px solid var(--k);
+  box-shadow: var(--shadow); transition: transform .15s, border-color .15s;
+}
+.dash-kachel:hover { border-color: var(--k); }
+.dash-kachel:active { transform: scale(.985); }
+.dash-kachel:focus-visible { outline: 3px solid var(--k); outline-offset: 2px; }
+.dash-icon { grid-area: icon; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 14px; background: var(--k-soft); color: var(--k); font-size: 1.6rem; }
+.dash-text { grid-area: text; display: flex; flex-direction: column; gap: 4px; }
+.dash-text strong { font-family: var(--serif); font-size: 1.3rem; line-height: 1.2; }
+.dash-beschreibung { color: var(--muted); font-size: .92rem; line-height: 1.4; }
+.dash-stand { grid-area: stand; font-size: .85rem; font-weight: 700; color: var(--k); font-variant-numeric: tabular-nums; }
+.dash-kachel .progress { grid-area: bar; }
+.dash-kachel .progress > span { background: var(--k); }
+.dash-pfeil { position: absolute; right: 16px; top: 50%; transform: translateY(-50%); font-size: 2rem; color: var(--k); }
+.dash-unterricht { --k: #2b6cb0; --k-soft: #e6eef8; }
+.dash-pruefung { --k: #b5730b; --k-soft: #fdf3dc; }
+.dash-wiederholung { --k: var(--accent); --k-soft: var(--accent-soft); }
+.dash-vertiefung { --k: #6b46c1; --k-soft: #efeafa; }
+@media (prefers-color-scheme: dark) {
+  .dash-unterricht { --k: #7fb2ec; --k-soft: #1c2a3c; }
+  .dash-pruefung { --k: #f2b54a; --k-soft: #3a2e15; }
+  .dash-vertiefung { --k: #b39cf0; --k-soft: #2a2340; }
+}
+.intro { margin: 0 0 14px; }
+.sprung { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+.sprung-tag, .sprung-tag:visited {
+  --day-strong: hsl(var(--h) 55% 38%);
+  display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px;
+  background: var(--day-strong); color: #fff; font-weight: 700; text-decoration: none;
+}
+.day { scroll-margin-top: 76px; }
+.nur-falsche { margin-top: 14px; text-align: center; }

@@ -2,12 +2,18 @@ import { h } from "./lib/dom.js";
 import * as start from "./views/start.js";
 import * as session from "./views/session.js";
 import * as wiederholung from "./views/wiederholung.js";
+import * as unterricht from "./views/unterricht.js";
+import * as wiederholen from "./views/wiederholen.js";
+import * as wiederholungsquiz from "./views/wiederholungsquiz.js";
 import * as pruefungSetup from "./views/pruefung-setup.js";
 import * as pruefung from "./views/pruefung.js";
 import * as ergebnis from "./views/ergebnis.js";
 
 const ROUTES = [
   [/^#?\/?$/, start],
+  [/^#\/unterricht\/?$/, unterricht],
+  [/^#\/wiederholen\/?$/, wiederholen],
+  [/^#\/wiederholungsquiz\/?$/, wiederholungsquiz],
   [/^#\/wiederholung\/?$/, wiederholung],
   [/^#\/session\/([\w-]+)(?:\?(.*))?$/, session],
   [/^#\/pruefung\/?$/, pruefungSetup],

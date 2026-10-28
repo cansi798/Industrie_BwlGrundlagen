@@ -1,0 +1,234 @@
+{
+ "titel": "Wiederholungsquiz Tag 1–12",
+ "untertitel": "Die 10 wichtigsten Fragen je Tag · 120 Fragen · mit Erklärung",
+ "sessions": [
+  {
+   "id": "wq-tag01",
+   "tagNr": 1,
+   "titel": "Tag 1: Wirtschaften verstehen und Unternehmensziele",
+   "datei": "data/wq-tag01.json",
+   "anzahl": 10,
+   "ids": [
+    "tag01-1-07",
+    "tag01-1-14",
+    "tag01-1-26",
+    "tag01-1-37",
+    "tag01-1-51",
+    "tag01-2-05",
+    "tag01-2-47",
+    "tag01-2-16",
+    "tag01-2-21",
+    "tag01-2-29"
+   ]
+  },
+  {
+   "id": "wq-tag02",
+   "tagNr": 2,
+   "titel": "Tag 2: Die Bilanz – Inventur, Inventar, Bilanz und Strukturbilanz",
+   "datei": "data/wq-tag02.json",
+   "anzahl": 10,
+   "ids": [
+    "tag02-1-03",
+    "tag02-1-16",
+    "tag02-1-29",
+    "tag02-1-33",
+    "tag02-1-52",
+    "tag02-2-03",
+    "tag02-2-24",
+    "tag02-2-42",
+    "tag02-2-10",
+    "tag02-2-53"
+   ]
+  },
+  {
+   "id": "wq-tag03",
+   "tagNr": 3,
+   "titel": "Tag 3: Die Gewinn- und Verlustrechnung (GuV)",
+   "datei": "data/wq-tag03.json",
+   "anzahl": 10,
+   "ids": [
+    "tag03-1-05",
+    "tag03-1-11",
+    "tag03-1-21",
+    "tag03-1-42",
+    "tag03-1-58",
+    "tag03-2-40",
+    "tag03-2-17",
+    "tag03-2-45",
+    "tag03-2-12",
+    "tag03-2-36"
+   ]
+  },
+  {
+   "id": "wq-tag04",
+   "tagNr": 4,
+   "titel": "Tag 4: Kennzahlen verstehen und Finanzierungsregeln",
+   "datei": "data/wq-tag04.json",
+   "anzahl": 10,
+   "ids": [
+    "tag04-1-01",
+    "tag04-1-08",
+    "tag04-1-31",
+    "tag04-1-37",
+    "tag04-1-22",
+    "tag04-2-05",
+    "tag04-2-16",
+    "tag04-2-31",
+    "tag04-2-25",
+    "tag04-2-46"
+   ]
+  },
+  {
+   "id": "wq-tag05",
+   "tagNr": 5,
+   "titel": "Tag 5: Rentabilitäten, EBIT, EBITDA und Leverage-Effekt",
+   "datei": "data/wq-tag05.json",
+   "anzahl": 10,
+   "ids": [
+    "tag05-1-01",
+    "tag05-1-07",
+    "tag05-1-21",
+    "tag05-1-31",
+    "tag05-1-50",
+    "tag05-2-01",
+    "tag05-2-11",
+    "tag05-2-25",
+    "tag05-2-33",
+    "tag05-2-55"
+   ]
+  },
+  {
+   "id": "wq-tag06",
+   "tagNr": 6,
+   "titel": "Tag 6: Liquidität und Cashflow – Kann das Unternehmen zahlen?",
+   "datei": "data/wq-tag06.json",
+   "anzahl": 10,
+   "ids": [
+    "tag06-1-01",
+    "tag06-1-14",
+    "tag06-1-41",
+    "tag06-1-45",
+    "tag06-1-38",
+    "tag06-2-02",
+    "tag06-2-10",
+    "tag06-2-15",
+    "tag06-2-27",
+    "tag06-2-49"
+   ]
+  },
+  {
+   "id": "wq-tag07",
+   "tagNr": 7,
+   "titel": "Tag 7: Deckungsbeitrag und Break-even",
+   "datei": "data/wq-tag07.json",
+   "anzahl": 10,
+   "ids": [
+    "tag07-1-01",
+    "tag07-1-18",
+    "tag07-1-26",
+    "tag07-1-47",
+    "tag07-2-04",
+    "tag07-2-45",
+    "tag07-2-54",
+    "tag07-2-13",
+    "tag07-2-26",
+    "tag07-2-33"
+   ]
+  },
+  {
+   "id": "wq-tag08",
+   "tagNr": 8,
+   "titel": "Tag 8: Kapitalstruktur und Bonität",
+   "datei": "data/wq-tag08.json",
+   "anzahl": 10,
+   "ids": [
+    "tag08-1-01",
+    "tag08-1-03",
+    "tag08-1-04",
+    "tag08-1-33",
+    "tag08-1-22",
+    "tag08-2-01",
+    "tag08-2-09",
+    "tag08-2-20",
+    "tag08-2-31",
+    "tag08-2-55"
+   ]
+  },
+  {
+   "id": "wq-tag09",
+   "tagNr": 9,
+   "titel": "Tag 9: Kennzahlensysteme – DuPont-System und Balanced Scorecard",
+   "datei": "data/wq-tag09.json",
+   "anzahl": 10,
+   "ids": [
+    "tag09-1-03",
+    "tag09-1-11",
+    "tag09-1-31",
+    "tag09-1-20",
+    "tag09-1-34",
+    "tag09-2-07",
+    "tag09-2-20",
+    "tag09-2-32",
+    "tag09-2-26",
+    "tag09-2-45"
+   ]
+  },
+  {
+   "id": "wq-tag10",
+   "tagNr": 10,
+   "titel": "Tag 10: Wiederholung und Vertiefung – Fallstudie Nordholz GmbH",
+   "datei": "data/wq-tag10.json",
+   "anzahl": 10,
+   "ids": [
+    "tag10-1-06",
+    "tag10-1-17",
+    "tag10-1-24",
+    "tag10-1-52",
+    "tag10-1-38",
+    "tag10-2-07",
+    "tag10-2-17",
+    "tag10-2-41",
+    "tag10-2-28",
+    "tag10-2-46"
+   ]
+  },
+  {
+   "id": "wq-tag11",
+   "tagNr": 11,
+   "titel": "Tag 11: Kaufmann, Handelsregister, Firma und Vollmachten",
+   "datei": "data/wq-tag11.json",
+   "anzahl": 10,
+   "ids": [
+    "tag11-1-08",
+    "tag11-1-22",
+    "tag11-1-17",
+    "tag11-1-37",
+    "tag11-2-19",
+    "tag11-2-38",
+    "tag11-2-46",
+    "tag11-1-51",
+    "tag11-2-41",
+    "tag11-2-58"
+   ]
+  },
+  {
+   "id": "wq-tag12",
+   "tagNr": 12,
+   "titel": "Tag 12: Rechtsformen der Unternehmen",
+   "datei": "data/wq-tag12.json",
+   "anzahl": 10,
+   "ids": [
+    "tag12-1-10",
+    "tag12-1-35",
+    "tag12-1-51",
+    "tag12-1-49",
+    "tag12-1-55",
+    "tag12-2-03",
+    "tag12-2-07",
+    "tag12-2-23",
+    "tag12-2-43",
+    "tag12-2-51"
+   ]
+  }
+ ]
+}

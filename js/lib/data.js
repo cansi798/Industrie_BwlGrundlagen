@@ -35,7 +35,27 @@ export function loadWiederholung() {
   return wdhPromise;
 }
 
+export const WQ_ALLE = "wq-alle";
+let wqPromise = null;
+
+export function loadWiederholungsquiz() {
+  wqPromise ??= fetchJson("data/wiederholungsquiz.json").catch((e) => {
+    wqPromise = null;
+    throw e;
+  });
+  return wqPromise;
+}
+
 async function ladeDatei(sid) {
+  if (sid === WQ_ALLE) {
+    const { sessions } = await loadWiederholungsquiz();
+    return (await Promise.all(sessions.map((s) => loadSession(s.id)))).flat();
+  }
+  if (sid.startsWith("wq-")) {
+    const s = (await loadWiederholungsquiz()).sessions.find((x) => x.id === sid);
+    if (!s) throw new Error(`Unbekannte Session: ${sid}`);
+    return fetchJson(s.datei);
+  }
   if (sid === WDH_ALLE) {
     const { sessions } = await loadWiederholung();
     return (await Promise.all(sessions.map((s) => loadSession(s.id)))).flat();

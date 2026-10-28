@@ -6,6 +6,10 @@ Mobile Lernapp zum Modul M-094 mit allen Online-Quizzen (Tag 1–15, 29 Sessions
 
 ## Was die App kann
 
+Die Startseite ist ein Dashboard mit drei Kacheln: **Unterricht** (alle Tage und Sessions), **Prüfungssimulation** und **Wiederholung** (Wiederholungsquiz Tag 1–12 und Wiederholung Tag 1–6).
+
+- **Wiederholungsquiz Tag 1–12:** Je Tag die 10 wichtigsten Fragen (120 Fragen), einzeln je Tag oder alle gemischt, danach nur die falschen Fragen üben. Die Fragen sind Kopien aus den Sessions mit gleicher ID, der Fortschritt zählt also auch im Unterricht. Daten: `data/wiederholungsquiz.json` und `data/wq-tagNN.json` (von Hand gepflegt, Test: `tests/wiederholungsquiz.test.mjs`).
+
 - **Üben pro Session:** Fragen und Antworten in zufälliger Reihenfolge, nach jeder Frage sofort die Lösung mit einer Erklärung in einfacher Sprache. Danach kann man nur die falschen Fragen wiederholen.
 - **Prüfungssimulator:** 30 Zufallsfragen aus frei wählbaren Tagen, gleichmäßig verteilt. Die Antworten erscheinen in zufälliger Reihenfolge. Während der Prüfung gibt es kein Feedback, optional läuft ein Zeitlimit von 45 Minuten. Man kann Frage für Frage blättern oder alle Fragen untereinander auf einer Seite bearbeiten. Am Ende stehen Punktzahl, Bestanden (ab 50 %), das Ergebnis nach Themen und alle Lösungen mit Erklärung.
 - **Offline und als App:** Nach dem ersten Öffnen funktioniert die App ohne Internet. Über „Zum Startbildschirm hinzufügen“ lässt sie sich wie eine App installieren.

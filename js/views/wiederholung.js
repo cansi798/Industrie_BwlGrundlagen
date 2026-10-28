@@ -16,7 +16,7 @@ export async function render(root) {
   };
 
   root.append(
-    topbar(w.titel, "#/"),
+    topbar(w.titel, "#/wiederholen"),
     h("div", { class: "page" },
       h("section", { class: "teil wiederholung" },
         h("p", { class: "muted" }, w.untertitel),
