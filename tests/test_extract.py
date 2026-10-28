@@ -31,8 +31,8 @@ class TestExtract(unittest.TestCase):
         cls.questions = {s["id"]: load_questions(s) for s in cls.sessions}
 
     def test_counts(self):
-        self.assertEqual(len(self.sessions), 27)
-        self.assertEqual(sum(s["anzahl"] for s in self.sessions), 1620)
+        self.assertEqual(len(self.sessions), 29)
+        self.assertEqual(sum(s["anzahl"] for s in self.sessions), 1740)
         for s in self.sessions:
             self.assertEqual(len(self.questions[s["id"]]), s["anzahl"])
 

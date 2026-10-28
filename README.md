@@ -1,6 +1,6 @@
 # M-094 Lernapp – BWL-Grundlagen & Recht
 
-Mobile Lernapp zum Modul M-094 mit allen Online-Quizzen (Tag 1–15, 27 Sessions, 1.620 Fragen).
+Mobile Lernapp zum Modul M-094 mit allen Online-Quizzen (Tag 1–15, 29 Sessions, 1.740 Fragen).
 
 **App öffnen:** https://cansi798.github.io/Industrie_BwlGrundlagen/
 
@@ -39,7 +39,7 @@ node --test tests/wiederholung.test.mjs
 ```bash
 npm test                                   # Quizlogik und Wiederholung (node --test)
 node --test tests/wiederholung.test.mjs    # Wiederholung Tag 1–6: 200 Aufgaben, IDs, Typen
-python -m unittest tests/test_extract.py   # Daten: 27 Sessions, 1.620 Fragen, IDs, Erklärungen
+python -m unittest tests/test_extract.py   # Daten: 29 Sessions, 1.740 Fragen, IDs, Erklärungen
 ```
 
 ## Aufbau

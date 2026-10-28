@@ -217,6 +217,12 @@
      "titel": "Kaufmann, Handelsregister, Firma und Vollmachten",
      "sessions": [
       {
+       "id": "tag11-1",
+       "titel": "Vormittag: Kaufmannseigenschaft und Handelsregister",
+       "datei": "data/tag11-1.json",
+       "anzahl": 60
+      },
+      {
        "id": "tag11-2",
        "titel": "Nachmittag: Firmenrecht und Vertretung",
        "datei": "data/tag11-2.json",
@@ -254,6 +260,12 @@
        "id": "tag13-1",
        "titel": "Vormittag: Unternehmenszusammenschlüsse",
        "datei": "data/tag13-1.json",
+       "anzahl": 60
+      },
+      {
+       "id": "tag13-2",
+       "titel": "Nachmittag: Rechtssubjekte und Rechtsobjekte",
+       "datei": "data/tag13-2.json",
        "anzahl": 60
       }
      ]
